@@ -1,5 +1,13 @@
 import hashlib
 
+def out():
+    print("FCDS")
+    def inn():
+        print("jiji")
+    inn()
+out()
+
+
 # data = []
 
 # def read_file(f):

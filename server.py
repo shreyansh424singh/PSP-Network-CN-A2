@@ -13,7 +13,9 @@ bufferSize  = 1024
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"
 data = []
-ports = []
+server_ports = []
+client_ports = []
+
 socket_list_tcp = []
 socket_list_tcp_2 = []
 socket_list_udp = []
@@ -36,11 +38,16 @@ def initial_send():
 
     connectionSocket, addr = TCPServerSocket.accept()
 
-    t = str(n)
+    t = str(n) + " " + str(len(data))
     for i in range(n):
         temp1 = str(random.randint(1024, 49000))
         temp2 = str(random.randint(1024, 49000))
-        ports.append((int(temp1), int(temp2)))
+        server_ports.append((int(temp1), int(temp2)))
+        t += " " + temp1 + " " + temp2
+    for i in range(n):
+        temp1 = str(random.randint(1024, 49000))
+        temp2 = str(random.randint(1024, 49000))
+        client_ports.append((int(temp1), int(temp2)))
         t += " " + temp1 + " " + temp2
     # print(t)
     
@@ -118,7 +125,7 @@ def handle_client(port1, port2):
 # connect to n clients using threads
 def start():
     for i in range(n):
-        thread = threading.Thread(target=handle_client, args=(ports[i]))
+        thread = threading.Thread(target=handle_client, args=(server_ports[i]))
         thread.start()
 
 def main():
