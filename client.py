@@ -55,36 +55,14 @@ def handle(p1, p2):
     client_udp_2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     client_udp_2.bind((SERVER,port4))
 
-    incoming_data = client_tcp_1.recv(2048).decode()
+    # initial data for clients
+    incoming_data = client_tcp_1.recv(2048*n).decode()
 
-    print(incoming_data + " in data\n")
-
-    while incoming_data != " -1 ":
-        # print(incoming_data + " in data\n")
-        temp = incoming_data.split()
-        if(len(temp)<2): 
-            time.sleep(1)
-            continue
-        if(temp[0] == "-1"): break
-        index = temp[0]
-        val = temp[1]
-        client_data[int(index)] = val
-        incoming_data = client_tcp_1.recv(2048).decode()
-
-    #  def rcv_initial_data():
-    #     incoming_data = client_tcp_1.recv(2048).decode()
-    #     print(incoming_data + " in data")
-    #     try:
-    #         while incoming_data != "-1" and incoming_data != nullcontext:
-    #             temp = incoming_data.split()
-    #             index = temp[0]
-    #             val = temp[1]
-    #             client_data[int(index)] = val
-    #             incoming_data = client_tcp_1.recv(2048).decode()
-    #     except:
-    #         time.sleep(1)
-    #         rcv_initial_data()
-    # rcv_initial_data()
+    temp = incoming_data.split()
+    i = 0
+    while i<len(temp):
+        client_data[int(temp[i])] = temp[i+1]
+        i+=2
 
     client_tcp_1.close()
     print(client_data)

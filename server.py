@@ -18,8 +18,6 @@ client_ports = []
 
 socket_list_tcp = []
 socket_list_tcp_2 = []
-socket_list_udp = []
-socket_list_udp_2 = []
 # address pair is also needed for udp
 
 def read_file(f):
@@ -100,23 +98,18 @@ def handle_client(port1, port2):
     # connectionSocket_2, addr = TCPServerSocket_2.accept()
     # socket_list_tcp_2.append(connectionSocket_2)
 
-    # UDPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-    # UDPServerSocket.bind((localIP, port1))
-    # socket_list_udp.append(UDPServerSocket)
+    UDPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+    UDPServerSocket.bind((localIP, port1))
 
-    # UDPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-    # UDPServerSocket_2.bind((localIP, port2))
-    # socket_list_udp_2.append(UDPServerSocket_2)
+    UDPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+    UDPServerSocket_2.bind((localIP, port2))
 
-
+    temp = ""
     for i in range(num_packets):
-        temp = str(c1) + " " + data[c1] + " "
-        connectionSocket.send(temp.encode())
+        temp += str(c1) + " " + data[c1] + " "
         c1+=1
-        print(temp + " data send\n")
-        # print("\n")
-    
-    temp = " " + str(-1) + " "
+    # print(f"data send {temp}")
+
     connectionSocket.send(temp.encode())
 
     print("connection closed with ",addr)
@@ -139,61 +132,3 @@ def main():
     start()
 
 main()
-
-# #initial connection to transfer ports
-# def initial_send():
-
-#     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-#     server.bind((SERVER, 20002))
-#     server.listen(1)
-
-#     connectionSocket, addr = server.accept()
-
-#     print("Connection Established")
-
-#     t = str(n)
-#     for i in range(2*n):
-#         t += " " + str(random.randint(1024, 49000))
-#     print(t)
-
-#     connectionSocket.send(t.encode())
-#     connectionSocket.close()
-    
-# def main():
-#     while True:
-#         initial_send()
-
-# main()
-
-
-# def handle_client(conn, addr):
-#     print(f"[NEW CONNECTION] {addr} connected.")
-
-#     connected = True
-#     while connected:
-#         msg_length = conn.recv(HEADER).decode(FORMAT)
-#         if msg_length:
-#             msg_length = int(msg_length)
-#             msg = conn.recv(msg_length).decode(FORMAT)
-#             if msg == DISCONNECT_MESSAGE:
-#                 connected = False
-
-#             print(f"[{addr}] {msg}")
-#             conn.send("Msg received".encode(FORMAT))
-
-#     conn.close()
-        
-
-# def start():
-#     server.listen()
-#     print(f"[LISTENING] Server is listening on {SERVER}")
-#     while True:
-#         conn, addr = server.accept()
-#         thread = threading.Thread(target=handle_client, args=(conn, addr))
-#         thread.start()
-#         print(f"[ACTIVE CONNECTIONS] {threading.activeCount() - 1}")
-
-
-# print("[STARTING] server is starting...")
-# start()
-
