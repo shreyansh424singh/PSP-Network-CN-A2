@@ -86,7 +86,7 @@ def handle_client(port1, port2):
 
     TCPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
     TCPServerSocket.bind((localIP, port1))
-    TCPServerSocket.listen(1)
+    TCPServerSocket.listen(n)
 
     print(f"TCP server up with port no {port1} and {localIP}")
 
@@ -94,29 +94,30 @@ def handle_client(port1, port2):
     socket_list_tcp.append(connectionSocket)
 
 
-    TCPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
-    TCPServerSocket_2.bind((localIP, port2))
-    TCPServerSocket_2.listen(1)
-    connectionSocket_2, addr = TCPServerSocket_2.accept()
-    socket_list_tcp_2.append(connectionSocket_2)
+    # TCPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
+    # TCPServerSocket_2.bind((localIP, port2))
+    # TCPServerSocket_2.listen(1)
+    # connectionSocket_2, addr = TCPServerSocket_2.accept()
+    # socket_list_tcp_2.append(connectionSocket_2)
 
-    UDPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-    UDPServerSocket.bind((localIP, port1))
-    socket_list_udp.append(UDPServerSocket)
+    # UDPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+    # UDPServerSocket.bind((localIP, port1))
+    # socket_list_udp.append(UDPServerSocket)
 
-    UDPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-    UDPServerSocket_2.bind((localIP, port2))
-    socket_list_udp_2.append(UDPServerSocket_2)
+    # UDPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+    # UDPServerSocket_2.bind((localIP, port2))
+    # socket_list_udp_2.append(UDPServerSocket_2)
 
 
     for i in range(num_packets):
-        temp = str(c1) + " " + data[c1]
+        temp = str(c1) + " " + data[c1] + " "
         connectionSocket.send(temp.encode())
         c1+=1
         print(temp + " data send\n")
         # print("\n")
     
-    connectionSocket.send(str(-1).encode())
+    temp = " " + str(-1) + " "
+    connectionSocket.send(temp.encode())
 
     print("connection closed with ",addr)
 
