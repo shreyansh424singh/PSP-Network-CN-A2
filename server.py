@@ -22,6 +22,7 @@ socket_list_tcp = []
 socket_list_tcp_2 = []
 
 busy = False
+# lock = threading.Lock()
 
 class LRUCache:
 
@@ -31,11 +32,13 @@ class LRUCache:
   self.capacity = capacity
 
  def get(self, key: int) -> string:
+#   lock.acquire()
   if key not in self.cache:
    return "-1"
   else:
    self.cache.move_to_end(key)
    return self.cache[key]
+#   lock.release()   
 
  def put(self, key: int, value: string) -> None:
   self.cache[key] = value
@@ -87,27 +90,39 @@ def initial_send():
 # Brodcast request to all clients and return data
 def handle_request(client_id: int, packet_id: int, TCPServerSocket_2: socket.socket, UDPServerSocket_2: socket.socket) -> string:
     global n, busy
+    # lock.acquire()
+    print(busy)
+    while busy == True:
+        print("wrong")
+        time.sleep(1)
     busy = True
 
-    for i in range(n):
+    i = -1
+    while i<n:
+        i+=1
+        print(f"{i} i and client id {client_id} ")
         if(i == client_id): continue
         message = "Chunk_Request_S  " + str(packet_id) + " "
         UDPServerSocket_2.sendto(message.encode(), (localIP, client_ports[i][1]))
         try:
             data_recieved = socket_list_tcp_2[i].recv(1024).decode()
+            print(f"Data recieved from client {i} for packet {packet_id} is {data_recieved} ")
         except:
-            print(f"Chunk_Request_S send to {i} but nothing recieved. Retrying....")
+            print(f"Chunk_Request_S for {packet_id} send to {i} but nothing recieved. Retrying....")
             i-=1
             continue
         socket_list_tcp_2[i].send("OK".encode())
         if(data_recieved == "Not_Present"):
             continue
         else:
+            # lock.release()
+            busy = False
             return data_recieved
 
     busy = False
+    # lock.release()
     print("ERROR no client has data")
-    return ""
+    return "ERROR no client has data"
 
 
 # handles queries from client, brodcast to all clients then send back to client
@@ -139,26 +154,26 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
     print(f"{temp} recieved via tcp for {request[1]}")
 
 
-    data_to_send = data[int(request[1])]
-    TCPServerSocket_1.send(data_to_send.encode())
-    print(f"{request[1]} Data send: {data_to_send}")
-
-
-
-
-    # # check cache
-    # data_to_send = cache.get(int(request[1]))
-    # # if not in cache brodcast request to all clients
-    # # and update cache
-    # if(data_to_send == "-1"):
-    #     while busy == True:
-    #         time.sleep(1)
-    #     data_to_send = handle_request(index, int(request[1]), TCPServerSocket_2, UDPServerSocket_2)
-    #     cache.put(int(request[1]), data_to_send)
-
-    # # send data back to requesting client
+    # data_to_send = data[int(request[1])]
     # TCPServerSocket_1.send(data_to_send.encode())
     # print(f"{request[1]} Data send: {data_to_send}")
+
+
+
+
+    # check cache
+    data_to_send = cache.get(int(request[1]))
+    # if not in cache brodcast request to all clients
+    # and update cache
+    if(data_to_send == "-1"):
+        while busy == True:
+            time.sleep(1)
+        data_to_send = handle_request(index, int(request[1]), TCPServerSocket_2, UDPServerSocket_2)
+        cache.put(int(request[1]), data_to_send)
+
+    # send data back to requesting client
+    TCPServerSocket_1.send(data_to_send.encode())
+    print(f"{request[1]} Data send: {data_to_send}")
 
 
 
@@ -232,7 +247,7 @@ def main():
     global data, cache
     cache = LRUCache(n)
 
-    for piece in read_file(open("./A2_small_file.txt", 'r')):
+    for piece in read_file(open("./test1.txt", 'r')):
         data.append(hashlib.md5(piece.encode()).hexdigest())
 
     initial_send()

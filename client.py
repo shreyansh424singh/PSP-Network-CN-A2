@@ -61,8 +61,8 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
                 msgFromServer = udp_socket.recvfrom(1024)
                 print(msgFromServer[0].decode())
             except:
-                try_reuest()
                 print(f"Requesting for ack client {index} packet {x} ")
+                try_reuest()
         try_reuest()
         while(msgFromServer[0].decode() != "Chunk_Request_Ack"):
             print("UDP ask ACK ERROR")
@@ -76,7 +76,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
         tcp_socket.settimeout(10)
         try:
             client_data[index][x] =  tcp_socket.recv(1024).decode()
-            print(f"Chunk_Request {index} Send and recieved {client_data[index][x]}")
+            print(f"Chunk_Request {x} by {index} Send and recieved {client_data[index][x]}")
         except:
             print("Chunk_Request_Ack_Ack Send but Not recieved Data")
 
@@ -84,8 +84,10 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
 
     print(f"Client {index} has recieved all data")
 
-    udp_socket.close()
-    tcp_socket.close()
+    print(client_data[index])
+
+    # udp_socket.close()
+    # tcp_socket.close()
 
 
 # answer queries from the server
@@ -95,6 +97,8 @@ def ans_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
     msgFromServer, _ = udp_socket.recvfrom(1024)
 
     temp = (msgFromServer.decode()).split()
+
+    print(f" query recieved by client {index} is {temp} ")
 
     if(temp[0] != "Chunk_Request_S"): 
         print(f"Error in recieving query {temp}")
@@ -106,7 +110,10 @@ def ans_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
     else:   
         data_send = client_data[index].get(int(temp[1]))
     tcp_socket.send(data_send.encode())
-    message = tcp_socket.recv(1024)
+
+    message = tcp_socket.recv(1024).decode()
+    if(message != "OK"): print("some error in answering query")
+
 
     # infinite loop
     # have an ack from server to close this
@@ -158,11 +165,14 @@ def handle(p1, p2, index):
         client_data[index][int(temp[i])] = temp[i+1]
         i+=2
 
+    # for i in range(len(client_data)):
+    #     print(client_data[i])
+
 
     client_thread_1 = threading.Thread(target=ask_query, args=(client_udp_1, client_tcp_1, index))
     client_thread_2 = threading.Thread(target=ans_query, args=(client_udp_2, client_tcp_2, index))
     client_thread_1.start()
-    # client_thread_2.start()
+    client_thread_2.start()
 
 
 
