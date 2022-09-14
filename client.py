@@ -1,4 +1,5 @@
 from contextlib import nullcontext
+from email import message
 import socket
 import threading
 import time
@@ -49,16 +50,19 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
 
         # when data is not present, select a port at random to request
         temp = "Chunk_Request " + str(x) + " "
+        print(temp)
         msgFromServer = ()
         def try_reuest():
             nonlocal msgFromServer
             y = random.randint(0, n-1)
-            udp_socket.sendto(temp.encode(), (SERVER, server_ports[index][0]))
+            udp_socket.sendto(temp.encode(), (SERVER, server_ports[y][0]))
             try:
                 # ack from server
                 msgFromServer = udp_socket.recvfrom(1024)
+                print(msgFromServer[0].decode())
             except:
                 try_reuest()
+                print(f"Requesting for ack client {index} packet {x} ")
         try_reuest()
         while(msgFromServer[0].decode() != "Chunk_Request_Ack"):
             print("UDP ask ACK ERROR")
@@ -72,10 +76,13 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
         tcp_socket.settimeout(10)
         try:
             client_data[index][x] =  tcp_socket.recv(1024).decode()
+            print(f"Chunk_Request {index} Send and recieved {client_data[index][x]}")
         except:
-            print("Chunk_Request_Ack_Ack Done but Not recieved Data")
+            print("Chunk_Request_Ack_Ack Send but Not recieved Data")
 
     # need to send ack to server that all chunks recieved
+
+    print(f"Client {index} has recieved all data")
 
     udp_socket.close()
     tcp_socket.close()
@@ -91,7 +98,7 @@ def ans_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
 
     if(temp[0] != "Chunk_Request_S"): 
         print(f"Error in recieving query {temp}")
-        ans_query()
+        ans_query(udp_socket, tcp_socket, index)
 
     data_send = ""
     if client_data[index].get(int(temp[1])) == None:    
@@ -99,10 +106,11 @@ def ans_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
     else:   
         data_send = client_data[index].get(int(temp[1]))
     tcp_socket.send(data_send.encode())
+    message = tcp_socket.recv(1024)
 
     # infinite loop
     # have an ack from server to close this
-    ans_query()
+    ans_query(udp_socket, tcp_socket, index)
 
 
 
@@ -154,7 +162,7 @@ def handle(p1, p2, index):
     client_thread_1 = threading.Thread(target=ask_query, args=(client_udp_1, client_tcp_1, index))
     client_thread_2 = threading.Thread(target=ans_query, args=(client_udp_2, client_tcp_2, index))
     client_thread_1.start()
-    client_thread_2.start()
+    # client_thread_2.start()
 
 
 
