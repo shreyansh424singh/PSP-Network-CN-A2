@@ -74,6 +74,9 @@ def initial_send():
         client_ports.append((int(temp1), int(temp2)))
         t += " " + temp1 + " " + temp2
     # print(t)
+
+    print("client ports")
+    print(client_ports)
     
     while True:
         connectionSocket.send(t.encode())
@@ -88,7 +91,7 @@ def initial_send():
 
 
 # Brodcast request to all clients and return data
-def handle_request(client_id: int, packet_id: int, TCPServerSocket_2: socket.socket, UDPServerSocket_2: socket.socket) -> string:
+def handle_request(client_id: int, packet_id: int, UDPServerSocket_2: socket.socket) -> string:
     global n, busy
     # lock.acquire()
     print(busy)
@@ -100,7 +103,6 @@ def handle_request(client_id: int, packet_id: int, TCPServerSocket_2: socket.soc
     i = -1
     while i<n:
         i+=1
-        print(f"{i} i and client id {client_id} ")
         if(i == client_id): continue
         message = "Chunk_Request_S  " + str(packet_id) + " "
         UDPServerSocket_2.sendto(message.encode(), (localIP, client_ports[i][1]))
@@ -126,11 +128,11 @@ def handle_request(client_id: int, packet_id: int, TCPServerSocket_2: socket.soc
 
 
 # handles queries from client, brodcast to all clients then send back to client
-def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_2: socket.socket, UDPServerSocket_1: socket.socket, UDPServerSocket_2: socket.socket):
+def handle_client(index: int, UDPServerSocket_1: socket.socket, UDPServerSocket_2: socket.socket):
     global data
 
     # listen query from clients
-    client_req, _ = UDPServerSocket_1.recvfrom(1024)
+    client_req, address = UDPServerSocket_1.recvfrom(1024)
     request = client_req.decode().split()
     
     print(f"Server recieved request from Client {request}")
@@ -138,49 +140,49 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
     if(request[0] != "Chunk_Request"): print(f"Some error in chunk reuest {request}")
 
     temp = "Chunk_Request_Ack"
-    UDPServerSocket_1.sendto(temp.encode(), (localIP, client_ports[index][0]))
+    UDPServerSocket_1.sendto(temp.encode(), address)
 
     print(f"Chunk_Request_Ack send for {request[1]}")
 
     # check ack from client using tcp and timeout , recurse
-    TCPServerSocket_1.settimeout(1)
+    socket_list_tcp[int(request[2])].settimeout(1)
     try:
-        temp = TCPServerSocket_1.recv(1024).decode()
+        temp = socket_list_tcp[int(request[2])].recv(1024).decode()
     except:
         time.sleep(1)
         print("Chunk_Request_Ack but not recieved Ack via TCP")
-        handle_client(index, TCPServerSocket_1, TCPServerSocket_2, UDPServerSocket_1, UDPServerSocket_2)
+        handle_client(index, UDPServerSocket_1, UDPServerSocket_2)
         
     print(f"{temp} recieved via tcp for {request[1]}")
 
 
-    # data_to_send = data[int(request[1])]
+    data_to_send = data[int(request[1])]
+    socket_list_tcp[int(request[2])].send(data_to_send.encode())
+    print(f"{request[1]} Data send: {data_to_send}")
+
+
+
+
+    # # check cache
+    # data_to_send = cache.get(int(request[1]))
+    # # if not in cache brodcast request to all clients
+    # # and update cache
+    # if(data_to_send == "-1"):
+    #     while busy == True:
+    #         time.sleep(1)
+    #     data_to_send = handle_request(index, int(request[1]), UDPServerSocket_2)
+    #     cache.put(int(request[1]), data_to_send)
+
+    # # send data back to requesting client
     # TCPServerSocket_1.send(data_to_send.encode())
     # print(f"{request[1]} Data send: {data_to_send}")
 
 
 
 
-    # check cache
-    data_to_send = cache.get(int(request[1]))
-    # if not in cache brodcast request to all clients
-    # and update cache
-    if(data_to_send == "-1"):
-        while busy == True:
-            time.sleep(1)
-        data_to_send = handle_request(index, int(request[1]), TCPServerSocket_2, UDPServerSocket_2)
-        cache.put(int(request[1]), data_to_send)
-
-    # send data back to requesting client
-    TCPServerSocket_1.send(data_to_send.encode())
-    print(f"{request[1]} Data send: {data_to_send}")
-
-
-
-
 
     # recurse
-    handle_client(index, TCPServerSocket_1, TCPServerSocket_2, UDPServerSocket_1, UDPServerSocket_2)
+    handle_client(index, UDPServerSocket_1, UDPServerSocket_2)
 
 
 def send_chunks(port1, port2):
@@ -230,7 +232,7 @@ def send_chunks(port1, port2):
     connectionSocket.send(temp.encode())
 
     # handles queries from client, brodcast to all clients then send back to client
-    handle_client(client_id, connectionSocket, connectionSocket_2, UDPServerSocket, UDPServerSocket_2)
+    handle_client(client_id, UDPServerSocket, UDPServerSocket_2)
 
     # print("connection closed with ",addr)
     # connectionSocket.close()

@@ -1,10 +1,8 @@
-from contextlib import nullcontext
-from email import message
 import socket
 import threading
 import time
 import random
-from xmlrpc import client
+# from collections import OrderedDict
 
 HEADER = 64
 FORMAT = 'utf-8'
@@ -49,7 +47,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
         if client_data[index].get(x) != None: continue  
 
         # when data is not present, select a port at random to request
-        temp = "Chunk_Request " + str(x) + " "
+        temp = "Chunk_Request " + str(x) + " " + str(index) + " "
         print(temp)
         msgFromServer = ()
         def try_reuest():
