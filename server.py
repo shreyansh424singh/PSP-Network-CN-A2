@@ -21,6 +21,9 @@ client_ports = []
 socket_list_tcp = []
 socket_list_tcp_2 = []
 
+listen_sck_1 = []
+listen_sck_2 = []
+
 busy = False
 # lock = threading.Lock()
 
@@ -128,7 +131,7 @@ def handle_request(client_id: int, packet_id: int, UDPServerSocket_2: socket.soc
 
 
 # handles queries from client, brodcast to all clients then send back to client
-def handle_client(index: int, UDPServerSocket_1: socket.socket, UDPServerSocket_2: socket.socket):
+def handle_client(index: int, TCPServerSocket: socket.socket, UDPServerSocket_1: socket.socket, UDPServerSocket_2: socket.socket):
     global data
 
     # listen query from clients
@@ -144,21 +147,51 @@ def handle_client(index: int, UDPServerSocket_1: socket.socket, UDPServerSocket_
 
     print(f"Chunk_Request_Ack send for {request[1]}")
 
-    # check ack from client using tcp and timeout , recurse
-    socket_list_tcp[int(request[2])].settimeout(1)
+
+
+
+# make new tcp connection
+    connectionSocket, addr = TCPServerSocket.accept()
+    print(f"new tcp connection established with {addr}")
+
     try:
-        temp = socket_list_tcp[int(request[2])].recv(1024).decode()
+        temp = connectionSocket.recv(1024).decode().split()
     except:
         time.sleep(1)
         print("Chunk_Request_Ack but not recieved Ack via TCP")
-        handle_client(index, UDPServerSocket_1, UDPServerSocket_2)
-        
-    print(f"{temp} recieved via tcp for {request[1]}")
-
-
+        handle_client(index, TCPServerSocket, UDPServerSocket_1, UDPServerSocket_2)
+    
     data_to_send = data[int(request[1])]
-    socket_list_tcp[int(request[2])].send(data_to_send.encode())
+    connectionSocket.send(data_to_send.encode())
     print(f"{request[1]} Data send: {data_to_send}")
+
+    connectionSocket.close()
+
+
+
+
+
+
+    # # check ack from client using tcp and timeout , recurse
+    # socket_list_tcp[int(request[2])].settimeout(1)
+    # try:
+    #     temp = socket_list_tcp[int(request[2])].recv(1024).decode().split()
+    # except:
+    #     time.sleep(1)
+    #     print("Chunk_Request_Ack but not recieved Ack via TCP")
+    #     handle_client(index, TCPServerSocket, UDPServerSocket_1, UDPServerSocket_2)
+        
+    # print(f"{temp} recieved via tcp for {request}")
+
+    # if(temp[1] != request[2]):
+    #     print(f"Erorr in client {temp[1]} and request {request[2]} ")
+
+
+    # data_to_send = data[int(request[1])]
+    # socket_list_tcp[int(request[2])].send(data_to_send.encode())
+    # print(f"{request[1]} Data send: {data_to_send}")
+
+
 
 
 
@@ -182,7 +215,7 @@ def handle_client(index: int, UDPServerSocket_1: socket.socket, UDPServerSocket_
 
 
     # recurse
-    handle_client(index, UDPServerSocket_1, UDPServerSocket_2)
+    handle_client(index, TCPServerSocket, UDPServerSocket_1, UDPServerSocket_2)
 
 
 def send_chunks(port1, port2):
@@ -202,6 +235,7 @@ def send_chunks(port1, port2):
     TCPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
     TCPServerSocket.bind((localIP, port1))
     TCPServerSocket.listen(n)
+    listen_sck_1.append(TCPServerSocket)
 
     print(f"TCP server up with port no {port1} and {localIP}")
 
@@ -212,6 +246,7 @@ def send_chunks(port1, port2):
     TCPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
     TCPServerSocket_2.bind((localIP, port2))
     TCPServerSocket_2.listen(n)
+    listen_sck_2.append(TCPServerSocket_2)
     connectionSocket_2, _ = TCPServerSocket_2.accept()
     socket_list_tcp_2.append(connectionSocket_2)
     connectionSocket_2.settimeout(2)
@@ -231,11 +266,17 @@ def send_chunks(port1, port2):
     # send initial data to clients
     connectionSocket.send(temp.encode())
 
-    # handles queries from client, brodcast to all clients then send back to client
-    handle_client(client_id, UDPServerSocket, UDPServerSocket_2)
+
 
     # print("connection closed with ",addr)
-    # connectionSocket.close()
+    connectionSocket.close()
+    connectionSocket_2.close()
+
+
+
+    # handles queries from client, brodcast to all clients then send back to client
+    handle_client(client_id, TCPServerSocket, UDPServerSocket, UDPServerSocket_2)
+
 
 # connect to n clients using threads
 def start():

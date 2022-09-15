@@ -40,6 +40,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
 
     udp_socket.settimeout(1)
     x = 0
+    y = 0
 
     while (len(client_data[index]) < data_size):
         x = random.randint(0, data_size-1)
@@ -51,7 +52,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
         print(temp)
         msgFromServer = ()
         def try_reuest():
-            nonlocal msgFromServer
+            nonlocal msgFromServer, y
             y = random.randint(0, n-1)
             udp_socket.sendto(temp.encode(), (SERVER, server_ports[y][0]))
             try:
@@ -67,16 +68,38 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
             try_reuest()
         print(msgFromServer)
 
-        # send ack to server using tcp
-        temp = "Chunk_Request_Ack_Ack"
-        tcp_socket.send(temp.encode())
 
-        tcp_socket.settimeout(10)
+
+        # new TCP connection
+        new_tcp_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        new_tcp_sock.connect((SERVER, server_ports[y][0]))
+
+        # send ack to server using tcp
+        temp = "Chunk_Request_Ack_Ack " + str(index) + " "
+        new_tcp_sock.send(temp.encode())
+
+        new_tcp_sock.settimeout(10)
         try:
-            client_data[index][x] =  tcp_socket.recv(1024).decode()
+            client_data[index][x] =  new_tcp_sock.recv(1024).decode()
             print(f"Chunk_Request {x} by {index} Send and recieved {client_data[index][x]}")
         except:
             print("Chunk_Request_Ack_Ack Send but Not recieved Data")
+
+        new_tcp_sock.close()
+
+
+
+
+        # # send ack to server using tcp
+        # temp = "Chunk_Request_Ack_Ack " + str(index) + " "
+        # tcp_socket.send(temp.encode())
+
+        # tcp_socket.settimeout(10)
+        # try:
+        #     client_data[index][x] =  tcp_socket.recv(1024).decode()
+        #     print(f"Chunk_Request {x} by {index} Send and recieved {client_data[index][x]}")
+        # except:
+        #     print("Chunk_Request_Ack_Ack Send but Not recieved Data")
 
     # need to send ack to server that all chunks recieved
 
