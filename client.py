@@ -32,7 +32,7 @@ def initial_rec():
 
     client.send(str(-1).encode())
     client.close()
-    print(server_ports)
+    print(client_ports)
 
 # ask missing chunks from server
 def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
@@ -87,20 +87,6 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
 
         new_tcp_sock.close()
 
-
-
-
-        # # send ack to server using tcp
-        # temp = "Chunk_Request_Ack_Ack " + str(index) + " "
-        # tcp_socket.send(temp.encode())
-
-        # tcp_socket.settimeout(10)
-        # try:
-        #     client_data[index][x] =  tcp_socket.recv(1024).decode()
-        #     print(f"Chunk_Request {x} by {index} Send and recieved {client_data[index][x]}")
-        # except:
-        #     print("Chunk_Request_Ack_Ack Send but Not recieved Data")
-
     # need to send ack to server that all chunks recieved
 
     print(f"Client {index} has recieved all data")
@@ -112,33 +98,65 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
 
 
 # answer queries from the server
-def ans_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
+def ans_query(tcp_socket: socket.socket, index: int):
     global client_data
 
-    msgFromServer, _ = udp_socket.recvfrom(1024)
+
+
+
+
+# make new udp socket
+    udp_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+    udp_socket.bind((SERVER,client_ports[index][1]))
+
+    print(f"new udp socket made by client{index} on port {client_ports[index][1]} ")
+
+    msgFromServer, addr = udp_socket.recvfrom(1024)
+
+    udp_socket.sendto("Request recieved".encode(), addr)
+
 
     temp = (msgFromServer.decode()).split()
 
-    print(f" query recieved by client {index} is {temp} ")
+    print(f" query recieved by client: {index} port no: {client_ports[index][1]} is {temp} address {addr} ")
 
     if(temp[0] != "Chunk_Request_S"): 
         print(f"Error in recieving query {temp}")
-        ans_query(udp_socket, tcp_socket, index)
+        ans_query(tcp_socket, index)
 
     data_send = ""
     if client_data[index].get(int(temp[1])) == None:    
         data_send = "Not_Present"
     else:   
         data_send = client_data[index].get(int(temp[1]))
-    tcp_socket.send(data_send.encode())
 
-    message = tcp_socket.recv(1024).decode()
-    if(message != "OK"): print("some error in answering query")
+# close udp socket
+    udp_socket.close()
+
+    print(f"data: {data_send} to addr: {addr} ")
+
+    new_tcp_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    new_tcp_sock.connect(addr)
+
+    new_tcp_sock.send(data_send.encode())
+
+    message = new_tcp_sock.recv(1024).decode()
+    if(message != "OK"): print(f"some error in answering query messaage : {message} ")
+
+    new_tcp_sock.close()
+
+
+
+
+    # tcp_socket.send(data_send.encode())
+
+    # message = tcp_socket.recv(1024).decode()
+    # if(message != "OK"): print("some error in answering query")
 
 
     # infinite loop
     # have an ack from server to close this
-    ans_query(udp_socket, tcp_socket, index)
+    ans_query(tcp_socket, index)
 
 
 
@@ -174,8 +192,9 @@ def handle(p1, p2, index):
     client_udp_1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     client_udp_1.bind((SERVER,port3))
 
-    client_udp_2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    client_udp_2.bind((SERVER,port4))
+    # client_udp_2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    # client_udp_2.bind((SERVER,port4))
+    print(f"port3 {port3} port4 {port4} ")
 
     # initial data for clients
     incoming_data = client_tcp_1.recv(2048*n).decode()
@@ -191,7 +210,7 @@ def handle(p1, p2, index):
 
 
     client_thread_1 = threading.Thread(target=ask_query, args=(client_udp_1, client_tcp_1, index))
-    client_thread_2 = threading.Thread(target=ans_query, args=(client_udp_2, client_tcp_2, index))
+    client_thread_2 = threading.Thread(target=ans_query, args=(client_tcp_2, index))
     client_thread_1.start()
     client_thread_2.start()
 
