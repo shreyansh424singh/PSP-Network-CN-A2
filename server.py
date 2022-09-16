@@ -113,7 +113,7 @@ def handle_request(client_id: int, packet_id: int, TCPServerSocket_2: socket.soc
         print(i)
         if(i == client_id): continue
         message = "Chunk_Request_S  " + str(packet_id) + " "
-        print(message)
+        print(f"{message} client {client_id} ")
         UDPServerSocket_2.sendto(message.encode(), (localIP, client_ports[i][1]))
         print(f"query: {message} send to client {i} port no {client_ports[i][1]} ")
 
@@ -124,8 +124,7 @@ def handle_request(client_id: int, packet_id: int, TCPServerSocket_2: socket.soc
             i-=1
             continue
 
-        connectionSocket, addr = TCPServerSocket_2.accept()
-        print(f"new TCP connection for ans query with {addr} ")
+        connectionSocket, _ = TCPServerSocket_2.accept()
 
         try:
             data_recieved = connectionSocket.recv(1024).decode()
@@ -141,12 +140,14 @@ def handle_request(client_id: int, packet_id: int, TCPServerSocket_2: socket.soc
             # lock.release()
             busy = False
             connectionSocket.close()
-            return data_recieved
+            return data_recieved+"#"
         
     connectionSocket.close()
 
 
-
+    print(f"ERROR no client has packet {packet_id} Retrying.........")
+    busy = False
+    handle_request(client_id, packet_id, TCPServerSocket_2, UDPServerSocket_2)
 
 
 
@@ -171,7 +172,6 @@ def handle_request(client_id: int, packet_id: int, TCPServerSocket_2: socket.soc
 
     busy = False
     # lock.release()
-    print("ERROR no client has data")
     return "ERROR no client has data"
 
 
@@ -197,8 +197,7 @@ def handle_client(index: int, TCPServerSocket: socket.socket, TCPServerSocket_2:
 
     # check ack from client using tcp and timeout , recurse
     # make new tcp connection
-    connectionSocket, addr = TCPServerSocket.accept()
-    print(f"new tcp connection established with {addr}")
+    connectionSocket, _ = TCPServerSocket.accept()
 
     try:
         temp = connectionSocket.recv(1024).decode().split()
@@ -209,31 +208,33 @@ def handle_client(index: int, TCPServerSocket: socket.socket, TCPServerSocket_2:
     
 
 # # sending data from server for testing purpose
-    # data_to_send = data[int(request[1])]
-    # connectionSocket.send(data_to_send.encode())
-    # print(f"{request[1]} Data send: {data_to_send}")
+#     data_to_send = data[int(request[1])]+"#"
+#     connectionSocket.send(data_to_send.encode())
+#     print(f"{request[1]} Data send: {data_to_send}")
+
+
 
     # data_to_send = "-1"
     # check cache
-    data_to_send = cache.get(int(request[1]))
+    data_to_send = cache.get(int(request[1]))+"#"
 
-
-    if(data_to_send != "-1"):
+    if(data_to_send != "-1#"):
         print(f"packetno: {request[1]} data: {data_to_send}")
 
     # if not in cache brodcast request to all clients
     # and update cache
-    if(data_to_send == "-1"):
+    if(data_to_send == "-1#"):
         while busy == True:
             print(busy)
             time.sleep(1)
-        data_to_send = handle_request(index, int(request[1]), TCPServerSocket_2, UDPServerSocket_2)
+        data_to_send = handle_request(int(request[2]), int(request[1]), TCPServerSocket_2, UDPServerSocket_2)
         cache.put(int(request[1]), data_to_send)
 
     # send data back to requesting client
     connectionSocket.send(data_to_send.encode())
     print(f"chunk :{request[1]} send to client {request[2]} {data_to_send}")
 
+    msg = connectionSocket.recv(1024)
 
     connectionSocket.close()
 
@@ -315,7 +316,8 @@ def main():
     global data, cache
     cache = LRUCache(n)
 
-    for piece in read_file(open("./A2_small_file.txt", 'r')):
+    # for piece in read_file(open("./A2_small_file.txt", 'r')):
+    for piece in read_file(open("./test1.txt", 'r')):
         data.append(hashlib.md5(piece.encode()).hexdigest())
 
     initial_send()
