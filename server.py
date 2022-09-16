@@ -35,10 +35,13 @@ class LRUCache:
   self.capacity = capacity
 
  def get(self, key: int) -> string:
+  lock.acquire()
   if key not in self.cache:
+   lock.release()
    return "-1"
   else:
    self.cache.move_to_end(key)
+   lock.release()
    return self.cache[key]
 
  def put(self, key: int, value: string) -> None:

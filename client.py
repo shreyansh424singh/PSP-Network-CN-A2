@@ -94,6 +94,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
         new_tcp_sock.settimeout(10)
         try:
             temp =  new_tcp_sock.recv(1024).decode().split('#')
+            time.sleep(1)
             client_data[index][x] = temp[0] 
             print(f"Chunk_Request {x} by {index} portno: {server_ports[y][0]} Send and recieved {temp}")
         except:
@@ -156,15 +157,6 @@ def ans_query(tcp_socket: socket.socket, index: int):
     if(message != "OK"): print(f"some error in answering query messaage : {message} ")
 
     new_tcp_sock.close()
-
-
-
-
-    # tcp_socket.send(data_send.encode())
-
-    # message = tcp_socket.recv(1024).decode()
-    # if(message != "OK"): print("some error in answering query")
-
 
     # infinite loop
     # have an ack from server to close this
