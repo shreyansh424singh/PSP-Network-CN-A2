@@ -2,7 +2,6 @@ import socket
 import threading
 import time
 import random
-# from collections import OrderedDict
 
 HEADER = 64
 FORMAT = 'utf-8'
@@ -42,30 +41,23 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
     global client_data
 
     udp_socket.settimeout(1)
-    x = -1
+    x = 0
     y = 0
-
-    print(client_data)
-
 
     while (len(client_data[index]) < data_size):
         # x = random.randint(0, data_size-1)
         x = (x+1) % data_size
 
-        print(f"client {index} cache has {client_data[index].get(x)} for packet no {x} ")
-
         # if data is present with client
         if client_data[index].get(x) != None: continue  
 
-
         # when data is not present, select a port at random to request
-        temp = "Chunk_Request " + str(x) + " " + str(index) + " "
-        
+        temp = "Chunk_Request " + str(x) + " "+ str(index) + " "
+
         msgFromServer = ()
         def try_reuest():
             nonlocal msgFromServer, y
             print(temp)
-            # select random server port
             y = random.randint(0, n-1)
             udp_socket.sendto(temp.encode(), (SERVER, server_ports[y][0]))
             try:
@@ -81,28 +73,19 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
             try_reuest()
         print(msgFromServer)
 
-
-
-        # new TCP connection
-        new_tcp_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        new_tcp_sock.connect((SERVER, server_ports[y][0]))
-
         # send ack to server using tcp
-        temp = "Chunk_Request_Ack_Ack " + str(index) + " "
-        new_tcp_sock.send(temp.encode())
+        temp = "Chunk_Request_Ack_Ack" + str(index) + " "
+        tcp_socket.send(temp.encode())
 
-        new_tcp_sock.settimeout(10)
+        tcp_socket.settimeout(10)
         try:
-            temp =  new_tcp_sock.recv(1024).decode().split('#')
-            time.sleep(1)
-            client_data[index][x] = temp[0] 
+            temp =  tcp_socket.recv(1024).decode().split('#')
+            client_data[index][int(temp[0])] = temp[1] 
             print(f"Chunk_Request {x} by {index} portno: {server_ports[y][0]} Send and recieved {temp}")
         except:
             print("Chunk_Request_Ack_Ack Send but Not recieved Data")
 
-        new_tcp_sock.send("OK".encode())
-
-        new_tcp_sock.close()
+        tcp_socket.send("OK".encode())
 
     # need to send ack to server that all chunks recieved
 
@@ -115,27 +98,20 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
 
 
 # answer queries from the server
-def ans_query(tcp_socket: socket.socket, index: int):
+def ans_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
     global client_data
 
-# make new udp socket
-    udp_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-    udp_socket.bind((SERVER,client_ports[index][1]))
-
-    print(f"new udp socket made by client{index} on port {client_ports[index][1]} ")
-
     msgFromServer, addr = udp_socket.recvfrom(1024)
-
+    # ack
     udp_socket.sendto("Request recieved".encode(), addr)
-
 
     temp = (msgFromServer.decode()).split()
 
-    print(f" query recieved by client: {index} port no: {client_ports[index][1]} is {temp} address {addr} ")
+    print(f" query recieved by client {index} is {temp} ")
 
     if(temp[0] != "Chunk_Request_S"): 
         print(f"Error in recieving query {temp}")
-        ans_query(tcp_socket, index)
+        ans_query(udp_socket, tcp_socket, index)
 
     data_send = ""
     if client_data[index].get(int(temp[1])) == None:    
@@ -143,24 +119,15 @@ def ans_query(tcp_socket: socket.socket, index: int):
     else:   
         data_send = client_data[index].get(int(temp[1]))
 
-# close udp socket
-    udp_socket.close()
+    tcp_socket.send(data_send.encode())
 
-    print(f"data: {data_send} packetno: {temp[1]} to addr: {addr} ")
+    message = tcp_socket.recv(1024).decode()
+    if(message != "OK"): print("some error in answering query")
 
-    new_tcp_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    new_tcp_sock.connect(addr)
-
-    new_tcp_sock.send(data_send.encode())
-
-    message = new_tcp_sock.recv(1024).decode()
-    if(message != "OK"): print(f"some error in answering query messaage : {message} ")
-
-    new_tcp_sock.close()
 
     # infinite loop
     # have an ack from server to close this
-    ans_query(tcp_socket, index)
+    ans_query(udp_socket, tcp_socket, index)
 
 
 
@@ -179,7 +146,7 @@ def handle(p1, p2, index):
             client_tcp_1.connect((SERVER, port1))
             print(f"connected with port no: {port1}")
         except:
-            time.sleep(1)
+            # time.sleep(1)
             tcp_conn()
     tcp_conn()
 
@@ -189,16 +156,15 @@ def handle(p1, p2, index):
             client_tcp_2.connect((SERVER, port2))
             print(f"connected with port no: {port2}")
         except:
-            time.sleep(1)
+            # time.sleep(1)
             tcp_conn1()
     tcp_conn1()
 
     client_udp_1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     client_udp_1.bind((SERVER,port3))
 
-    # client_udp_2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    # client_udp_2.bind((SERVER,port4))
-    print(f"port3 {port3} port4 {port4} ")
+    client_udp_2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    client_udp_2.bind((SERVER,port4))
 
     # initial data for clients
     incoming_data = client_tcp_1.recv(2048*n).decode()
@@ -214,7 +180,7 @@ def handle(p1, p2, index):
 
 
     client_thread_1 = threading.Thread(target=ask_query, args=(client_udp_1, client_tcp_1, index))
-    client_thread_2 = threading.Thread(target=ans_query, args=(client_tcp_2, index))
+    client_thread_2 = threading.Thread(target=ans_query, args=(client_udp_2, client_tcp_2, index))
     client_thread_1.start()
     client_thread_2.start()
 
