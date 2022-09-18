@@ -1,3 +1,4 @@
+from fileinput import filename
 import socket
 import string 
 import threading
@@ -58,6 +59,14 @@ def read_file(f):
             break
         yield data
 
+def split_file(file_name, chunk_size):
+    c = 0
+    with open(file_name) as f:
+        chunk = f.read(chunk_size)
+        while chunk:
+            data.append(chunk)
+            chunk = f.read(chunk_size)
+
 #initial connection to transfer ports
 def initial_send():
     TCPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
@@ -91,6 +100,7 @@ def initial_send():
         if message == -1:
             print("connection closed with ",addr)
             connectionSocket.close()
+            TCPServerSocket.close()
             break
 
 
@@ -169,26 +179,24 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
         
     print(f"{temp} recieved via tcp for {request[1]}")
 
+    try:
+        print(f"{int(request[2])} {int(temp[1])}  ")
+    except:
+        total_recieved+=1
+        return
+
     # check cache
     data_to_send = cache.get(int(request[1]))
     # if not in cache brodcast request to all clients
     # and update cache
 
+    # with concurrent.futures.ThreadPoolExecutor() as executor:
+    #     future = executor.submit(handle_request, int(request[2]), int(temp[1]), UDPServerSocket_2)
+    #     data_to_send = future.result()
+    #     print(data_to_send)
 
-
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        future = executor.submit(handle_request, int(request[2]), int(temp[1]), UDPServerSocket_2)
-        data_to_send = future.result()
-        print(data_to_send)
-
-
-
-    # if(data_to_send == "-1"):
-        # data_to_send = handle_request(int(request[2]), int(temp[1]), UDPServerSocket_2)
-
-
-
-
+    if(data_to_send == "-1"):
+        data_to_send = handle_request(int(request[2]), int(temp[1]), UDPServerSocket_2)
 
 
     print(f" {temp} {request[1]} ")
@@ -198,17 +206,18 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
     data_to_send = "#" + data_to_send + "#"
     data_to_send = request[1] + data_to_send
     try:
-        TCPServerSocket_1.send(data_to_send.encode())
+        TCPServerSocket_1.send(data_to_send.encode('utf-8', 'ignore'))
     except:
         TCPServerSocket_1.close()
         return
-    print(f"chunk :{request[1]} send to client {request[2]} {data_to_send}")
+    print(f"chunk :{request[1]} send to client {request[2]}")
 
     try:
         # ack from client
-        _ =  TCPServerSocket_1.recv(1024)
+        ax =  TCPServerSocket_1.recv(1024)
+        print(f"ack from client {ax} ........................... ")
     except:
-        TCPServerSocket_1.send(data_to_send.encode())
+        TCPServerSocket_1.send(data_to_send.encode('utf-8', 'ignore'))
         print("ERROR no tcp ack recieved")
 
     # recurse
@@ -252,13 +261,17 @@ def send_chunks(port1, port2):
     UDPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
     UDPServerSocket_2.bind((localIP, port2))
 
-    temp = ""
+# initial send
+    connectionSocket.send(str(num_packets).encode())
+    _ = connectionSocket.recv(1024)
     for i in range(num_packets):
-        temp += str(c1) + " " + data[c1] + " "
+        temp = str(c1) + '#' + data[c1]
         c1+=1
-
-    # send initial data to clients
-    connectionSocket.send(temp.encode())
+        connectionSocket.send(temp.encode('utf-8', 'ignore'))
+        _ = connectionSocket.recv(1024)
+    while True:
+        msg = connectionSocket.recv(1024).decode()
+        if msg == "done": break
 
     # handles queries from client, brodcast to all clients then send back to client
     handle_client(client_id, connectionSocket, connectionSocket_2, UDPServerSocket, UDPServerSocket_2)
@@ -267,12 +280,12 @@ def send_chunks(port1, port2):
         message = "Close "
         for i in range(n):
             UDPServerSocket_2.sendto(message.encode(), (localIP, client_ports[i][1]))
-        TCPServerSocket.close()
-        TCPServerSocket_2.close()
-        connectionSocket.close
-        connectionSocket_2.close
-        UDPServerSocket.close()
-        UDPServerSocket_2.close()
+    TCPServerSocket.close()
+    TCPServerSocket_2.close()
+    connectionSocket.close
+    connectionSocket_2.close
+    UDPServerSocket.close()
+    UDPServerSocket_2.close()
 
 
 # connect to n clients using threads
@@ -287,9 +300,17 @@ def main():
     global data, cache
     cache = LRUCache(n)
 
-    for piece in read_file(open("./A2_small_file.txt", 'r')):
-    # for piece in read_file(open("./test1.txt", 'r')):
-        data.append(hashlib.md5(piece.encode()).hexdigest())
+    # for piece in read_file(open("./A2_small_file.txt", 'r')):
+    # # for piece in read_file(open("./test1.txt", 'r')):
+    #     data.append(hashlib.md5(piece.encode()).hexdigest())
+
+    file_name = "./A2_small_file.txt"
+    # file_name = "./test1.txt"
+    split_file(file_name, 1024)
+
+    temp = open("./A2_small_file.txt", 'r')
+    # temp = open("./test1.txt", 'r')
+    print(hashlib.md5(temp.read().encode()).hexdigest())
 
     initial_send()
     start()
