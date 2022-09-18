@@ -1,0 +1,3728 @@
+client ports
+[(11705, 24356), (14921, 19552), (1504, 36804), (31681, 38395), (26889, 32805)]
+server ports
+[(27678, 45931), (9366, 7970), (22192, 27983), (41597, 11366), (29399, 37052)]
+5
+112
+client 1 has 23 chunks 
+Chunk_Request 5 1  
+client 3 has 22 chunks 
+Chunk_Request 11 3  
+client 0 has 23 chunks 
+Chunk_Request 81 0  
+client 4 has 22 chunks 
+Chunk_Request 25 4  
+client 2 has 22 chunks 
+Chunk_Request 97 2  
+Client 0 recieved c9cf8c7ea19a7265cf362711e56941ed for query 81 81 
+client 0 has 24 chunks 
+Chunk_Request 36 0  
+Client 0 recieved 3a2ea164331e78703402d25a0557ce49 for query 36 36 
+client 0 has 25 chunks 
+Chunk_Request 23 0  
+Client 3 recieved aac8f5cbc031e52011708cd0939569e7 for query 11 11 
+client 3 has 23 chunks 
+Chunk_Request 92 3  
+Client 2 recieved e58fee2888199e3882757987ffe8c8de for query 97 97 
+client 2 has 23 chunks 
+Chunk_Request 91 2  
+Client 3 recieved Retry for query 92 92 
+Client 1 recieved ac36d2bf39458752d569b6e25fd694dc for query 5 5 
+client 3 has 24 chunks 
+Chunk_Request 91 3  
+client 1 has 24 chunks 
+Chunk_Request 81 1  
+Client 4 recieved c9cf8c7ea19a7265cf362711e56941ed for query 25 25 
+client 4 has 23 chunks 
+Chunk_Request 83 4  
+Client 1 recieved af386e70331a520287001602f2d18d95 for query 81 81 
+client 1 has 25 chunks 
+Chunk_Request 53 1  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 23 23 
+client 0 has 26 chunks 
+Chunk_Request 66 0  
+Client 3 recieved Retry for query 91 91 
+client 3 has 25 chunks 
+Chunk_Request 2 3  
+Client 3 recieved abdb0780892382af07642a04cde7ae05 for query 2 2 
+client 3 has 26 chunks 
+Chunk_Request 52 3  
+client 2 has 23 chunks 
+Chunk_Request 36 2  
+Client 2 recieved Retry for query 91 36 
+client 2 has 24 chunks 
+Chunk_Request 103 2  
+Client 2 recieved 3a2ea164331e78703402d25a0557ce49 for query 36 103 
+client 2 has 25 chunks 
+Chunk_Request 45 2  
+Client 2 recieved aac8f5cbc031e52011708cd0939569e7 for query 103 45 
+client 2 has 26 chunks 
+Chunk_Request 109 2  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 66 66 
+client 0 has 27 chunks 
+Chunk_Request 43 0  
+Client 3 recieved Retry for query 52 52 
+client 3 has 27 chunks 
+Chunk_Request 44 3  
+Client 1 recieved ea77f0ea9880feabadb055d50af58ffa for query 53 53 
+client 1 has 26 chunks 
+Chunk_Request 69 1  
+Client 2 recieved 18cf36bf4a8317695925916da1761922 for query 45 109 
+client 2 has 27 chunks 
+Chunk_Request 74 2  
+Client 4 recieved Retry for query 83 83 
+client 4 has 24 chunks 
+Chunk_Request 18 4  
+Client 1 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 69 69 
+Client 0 recieved 0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d for query 43 43 
+client 0 has 28 chunks 
+Chunk_Request 39 0  
+client 1 has 27 chunks 
+Chunk_Request 59 1  
+Client 3 recieved b75f2dbf46a8d665104a03c0480ea65eNot_Present for query 44 44 
+client 3 has 28 chunks 
+Chunk_Request 43 3  
+Client 3 recieved 0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d for query 43 43 
+client 3 has 29 chunks 
+Chunk_Request 46 3  
+Client 4 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 18 18 
+client 4 has 25 chunks 
+Chunk_Request 66 4  
+Client 2 recieved Retry for query 109 74 
+client 2 has 28 chunks 
+Chunk_Request 32 2  
+Client 0 recieved 879020560c9f14dd113cceeace174df1 for query 39 39 
+client 0 has 29 chunks 
+Chunk_Request 76 0  
+Client 4 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6c for query 66 66 
+client 4 has 26 chunks 
+Chunk_Request 15 4  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 76 76 
+client 0 has 30 chunks 
+Chunk_Request 83 0  
+Client 3 recieved Retry for query 46 46 
+client 3 has 30 chunks 
+Chunk_Request 107 3  
+Client 1 recieved e28d72929585961d4e56ab9f55955145 for query 59 59 
+client 1 has 28 chunks 
+Chunk_Request 64 1  
+Client 4 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 15 15 
+client 4 has 27 chunks 
+Chunk_Request 37 4  
+Client 0 recieved 8b367b0b5950dc473722cadb975b44f2 for query 83 83 
+client 0 has 31 chunks 
+Chunk_Request 111 0  
+Client 2 recieved Retry for query 74 32 
+client 2 has 29 chunks 
+Chunk_Request 4 2  
+Client 3 recieved 268afae1ece4c9af4ab76fa7299677a7Not_Present for query 107 107 
+client 3 has 31 chunks 
+Chunk_Request 29 3  
+Client 4 recieved Retry for query 37 37 
+Client 1 recieved Retry for query 64 64 
+client 4 has 28 chunks 
+Chunk_Request 67 4  
+client 1 has 29 chunks 
+Chunk_Request 103 1  
+Client 3 recieved 83981728fd7636cf30dbb12e23fb17a3 for query 29 29 
+client 3 has 32 chunks 
+Chunk_Request 63 3  
+Client 0 recieved Retry for query 111 111 
+client 0 has 32 chunks 
+Chunk_Request 37 0  
+Client 1 recieved 72319444be332681abb1ff4b6156cdfc for query 103 103 
+client 1 has 30 chunks 
+Chunk_Request 11 1  
+Client 0 recieved 0bfe90c515546dd008d0e95d69e12bf1 for query 37 37 
+client 0 has 33 chunks 
+Chunk_Request 104 0  
+Client 3 recieved 81292ba3a05c353bbbb08bdb7d6280a2 for query 63 63 
+client 3 has 33 chunks 
+Chunk_Request 17 3  
+Client 4 recieved 81292ba3a05c353bbbb08bdb7d6280a2 for query 67 67 
+client 4 has 29 chunks 
+Chunk_Request 31 4  
+Client 2 recieved Retry for query 74 4 
+client 2 has 29 chunks 
+Chunk_Request 20 2  
+Client 1 recieved 76c8dff61ddde16d97cbad613f25725d for query 11 11 
+client 1 has 31 chunks 
+Chunk_Request 84 1  
+Client 3 recieved 9d9ec827980c629a33a81814efc3cf1e for query 17 17 
+client 3 has 34 chunks 
+Chunk_Request 97 3  
+Client 0 recieved Retry for query 104 104 
+client 0 has 34 chunks 
+Chunk_Request 92 0  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 84 84 
+client 1 has 32 chunks 
+Chunk_Request 88 1  
+Client 3 recieved fb9f79347943c50597e278e1be6ae562 for query 97 97 
+client 3 has 35 chunks 
+Chunk_Request 93 3  
+client 4 has 29 chunks 
+Chunk_Request 20 4  
+Client 4 recieved Retry for query 31 20 
+client 4 has 30 chunks 
+Chunk_Request 8 4  
+Client 1 recieved ac36d2bf39458752d569b6e25fd694dc for query 88 88 
+client 1 has 33 chunks 
+Chunk_Request 87 1  
+Client 0 recieved Retry for query 92 92 
+client 0 has 35 chunks 
+Chunk_Request 38 0  
+Client 2 recieved Retry for query 32 20 
+client 2 has 30 chunks 
+Chunk_Request 18 2  
+Client 2 recieved Retry for query 32 18 
+client 2 has 30 chunks 
+Chunk_Request 13 2  
+Client 4 recieved d2a23398c2df465e6ee00990b3c9ddee for query 20 8 
+client 4 has 31 chunks 
+Chunk_Request 85 4  
+Client 3 recieved Retry for query 93 93 
+client 3 has 36 chunks 
+Chunk_Request 40 3  
+Client 1 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 87 87 
+client 1 has 34 chunks 
+Chunk_Request 92 1  
+Client 2 recieved b9b2f5779c8a6cffa10388fc6fc62e97 for query 4 13 
+client 2 has 31 chunks 
+Chunk_Request 75 2  
+Client 3 recieved c9b52c95f66df0697292aeb6b313bda84595102f4ea9da9e07a4c31dd54c5c99 for query 40 40 
+client 3 has 37 chunks 
+Chunk_Request 12 3  
+Client 2 recieved b9b2f5779c8a6cffa10388fc6fc62e97 for query 4 75 
+client 2 has 31 chunks 
+Chunk_Request 106 2  
+Client 2 recieved efefb73c55476f269f91b2b024760f47 for query 20 106 
+client 2 has 32 chunks 
+Chunk_Request 7 2  
+Client 2 recieved efefb73c55476f269f91b2b024760f47 for query 20 7 
+client 2 has 32 chunks 
+Chunk_Request 82 2  
+client 0 has 35 chunks 
+Chunk_Request 51 0  
+client 1 has 34 chunks 
+Chunk_Request 72 1  
+Client 4 recieved 0ae8d86474e0aca39e145d4580ba1fc6 for query 8 85 
+client 4 has 32 chunks 
+Chunk_Request 33 4  
+Client 0 recieved Retry for query 38 51 
+client 0 has 36 chunks 
+Chunk_Request 62 0  
+Client 1 recieved efefb73c55476f269f91b2b024760f47 for query 92 72 
+client 1 has 35 chunks 
+Chunk_Request 72 1  
+Client 3 recieved 866912a07d1e44c131d209298f97a6ab for query 12 12 
+client 3 has 38 chunks 
+Chunk_Request 19 3  
+Client 0 recieved RetryNot_Present for query 51 62 
+client 0 has 37 chunks 
+Chunk_Request 46 0  
+Client 0 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 62 46 
+client 0 has 38 chunks 
+Chunk_Request 40 0  
+Client 4 recieved b9b2f5779c8a6cffa10388fc6fc62e97 for query 85 33 
+client 4 has 33 chunks 
+Chunk_Request 34 4  
+Client 3 recieved Retry for query 19 19 
+client 3 has 39 chunks 
+Chunk_Request 9 3  
+Client 2 recieved Retry for query 18 82 
+client 2 has 33 chunks 
+Chunk_Request 29 2  
+Client 3 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 9 9 
+client 3 has 40 chunks 
+Chunk_Request 90 3  
+Client 3 recieved cf2e001fc76c9357b168373c469a9cd4 for query 90 90 
+client 3 has 41 chunks 
+Chunk_Request 58 3  
+Client 2 recieved dc5f78ec0790562826b14c8eabe7a7c8 for query 13 29 
+client 2 has 34 chunks 
+Chunk_Request 81 2  
+Client 0 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 62 40 
+client 0 has 38 chunks 
+Chunk_Request 88 0  
+Client 4 recieved b9b2f5779c8a6cffa10388fc6fc62e97 for query 85 34 
+client 4 has 33 chunks 
+Chunk_Request 49 4  
+Client 1 recieved Retry for query 72 72 
+client 1 has 36 chunks 
+Chunk_Request 67 1  
+Client 3 recieved Retry for query 58 58 
+client 3 has 42 chunks 
+Chunk_Request 15 3  
+Client 0 recieved 8424b082bea9aac9a92c1425022e9116 for query 46 88 
+client 0 has 39 chunks 
+Chunk_Request 45 0  
+Client 2 recieved a6d80fd65ca19f00f324491f347ced3a for query 75 81 
+client 2 has 35 chunks 
+Chunk_Request 100 2  
+Client 3 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 15 15 
+client 3 has 43 chunks 
+Chunk_Request 111 3  
+Client 3 recieved Retry for query 111 111 
+client 3 has 44 chunks 
+Chunk_Request 26 3  
+Client 3 recieved efefb73c55476f269f91b2b024760f47 for query 26 26 
+client 3 has 45 chunks 
+Chunk_Request 28 3  
+Client 3 recieved 2109525b566d4f40cea444e996cefa9b for query 28 28 
+client 3 has 46 chunks 
+Chunk_Request 21 3  
+Client 4 recieved Retry for query 85 49 
+client 4 has 33 chunks 
+Chunk_Request 49 4  
+Client 2 recieved a6d80fd65ca19f00f324491f347ced3a for query 75 100 
+client 2 has 35 chunks 
+Chunk_Request 15 2  
+Client 3 recieved 268afae1ece4c9af4ab76fa7299677a7Not_Present for query 21 21 
+client 3 has 47 chunks 
+Chunk_Request 47 3  
+Client 3 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 47 47 
+client 3 has 48 chunks 
+Chunk_Request 45 3  
+Client 0 recieved 3c957577cfc05101c7901e761a1e255b for query 40 45 
+client 0 has 40 chunks 
+Chunk_Request 64 0  
+Client 1 recieved Retry for query 72 67 
+client 1 has 36 chunks 
+Chunk_Request 48 1  
+Client 2 recieved Retry for query 106 15 
+client 2 has 36 chunks 
+Chunk_Request 70 2  
+Client 1 recieved Retry for query 72 48 
+client 1 has 36 chunks 
+Chunk_Request 46 1  
+Client 1 recieved Retry for query 72 46 
+client 1 has 36 chunks 
+Chunk_Request 108 1  
+Client 1 recieved 18e850ebc701032f369e7c49d29beb89 for query 67 108 
+client 1 has 37 chunks 
+Chunk_Request 98 1  
+Client 3 recieved Retry for query 45 45 
+client 3 has 49 chunks 
+Chunk_Request 20 3  
+Client 0 recieved 3c957577cfc05101c7901e761a1e255b for query 40 64 
+client 0 has 40 chunks 
+Chunk_Request 85 0  
+Client 0 recieved 37065b004931bfc16f0e947ac5d06542 for query 88 85 
+client 0 has 41 chunks 
+Chunk_Request 90 0  
+Client 4 recieved 7336270e1b8d5b7d66d7ae5d8fcea2a7 for query 33 49 
+Client 0 recieved Retry for query 45 90 
+client 0 has 42 chunks 
+Chunk_Request 97 0  
+client 4 has 34 chunks 
+Chunk_Request 36 4  
+Client 1 recieved 18e850ebc701032f369e7c49d29beb89 for query 67 98 
+client 1 has 37 chunks 
+Chunk_Request 106 1  
+Client 3 recieved b9b2f5779c8a6cffa10388fc6fc62e97 for query 20 20 
+client 3 has 50 chunks 
+Chunk_Request 25 3  
+Client 3 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 25 25 
+client 3 has 51 chunks 
+Chunk_Request 27 3  
+Client 2 recieved ac36d2bf39458752d569b6e25fd694dc for query 7 70 
+client 2 has 37 chunks 
+Chunk_Request 81 2  
+Client 1 recieved 18e850ebc701032f369e7c49d29beb89 for query 67 106 
+client 1 has 37 chunks 
+Chunk_Request 95 1  
+Client 4 recieved Retry for query 33 36 
+client 4 has 34 chunks 
+Chunk_Request 39 4  
+Client 0 recieved Retry for query 45 97 
+client 0 has 42 chunks 
+Chunk_Request 78 0  
+Client 0 recieved Retry for query 45 78 
+client 0 has 42 chunks 
+Chunk_Request 30 0  
+Client 4 recieved acf0b819992e4f5669918e957bdc41b1 for query 34 39 
+client 4 has 35 chunks 
+Chunk_Request 24 4  
+Client 2 recieved Retry for query 82 81 
+client 2 has 38 chunks 
+Chunk_Request 81 2  
+Client 2 recieved Retry for query 82 81 
+client 2 has 38 chunks 
+Chunk_Request 70 2  
+Client 3 recieved Retry for query 27 27 
+client 3 has 52 chunks 
+Chunk_Request 60 3  
+Client 4 recieved acf0b819992e4f5669918e957bdc41b1 for query 34 24 
+client 4 has 35 chunks 
+Chunk_Request 81 4  
+Client 3 recieved 72319444be332681abb1ff4b6156cdfc for query 60 60 
+client 3 has 53 chunks 
+Chunk_Request 49 3  
+Client 1 recieved 9b3e7ad1f0332971ee3b9b20b3a317fe for query 48 95 
+client 1 has 38 chunks 
+Chunk_Request 94 1  
+Client 0 recieved Retry for query 64 30 
+client 0 has 43 chunks 
+Chunk_Request 89 0  
+Client 2 recieved 66e9e1debb36785f726de806e548f250 for query 29 70 
+client 2 has 39 chunks 
+Chunk_Request 81 2  
+Client 3 recieved Retry for query 49 49 
+client 3 has 54 chunks 
+Chunk_Request 34 3  
+Client 3 recieved af386e70331a520287001602f2d18d95 for query 34 34 
+client 3 has 55 chunks 
+Chunk_Request 104 3  
+Client 0 recieved Retry for query 64 89 
+client 0 has 43 chunks 
+Chunk_Request 60 0  
+Client 0 recieved 6cb86850c95057bbd05ebca8a86903f1 for query 85 60 
+client 0 has 44 chunks 
+Chunk_Request 91 0  
+Client 4 recieved Retry for query 49 81 
+Client 3 recieved c9cf8c7ea19a7265cf362711e56941ed for query 104 104 
+client 3 has 56 chunks 
+Chunk_Request 54 3  
+Client 0 recieved 8424b082bea9aac9a92c1425022e9116 for query 90 91 
+client 4 has 36 chunks 
+Chunk_Request 60 4  
+client 0 has 45 chunks 
+Chunk_Request 96 0  
+Client 3 recieved Retry for query 54 54 
+client 3 has 57 chunks 
+Chunk_Request 42 3  
+Client 4 recieved Retry for query 49 60 
+client 4 has 36 chunks 
+Chunk_Request 50 4  
+Client 1 recieved 268afae1ece4c9af4ab76fa7299677a766e9e1debb36785f726de806e548f250 for query 46 94 
+client 1 has 39 chunks 
+Chunk_Request 56 1  
+Client 4 recieved Retry for query 49 50 
+client 4 has 36 chunks 
+Chunk_Request 68 4  
+Client 2 recieved Retry for query 81 81 
+client 2 has 40 chunks 
+Chunk_Request 0 2  
+Client 3 recieved fb9f79347943c50597e278e1be6ae562 for query 42 42 
+client 3 has 58 chunks 
+Chunk_Request 8 3  
+Client 3 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 8 8 
+client 3 has 59 chunks 
+Chunk_Request 4 3  
+Client 4 recieved Retry for query 49 68 
+client 4 has 36 chunks 
+Chunk_Request 80 4  
+Client 4 recieved Retry for query 49 80 
+client 4 has 36 chunks 
+Chunk_Request 24 4  
+Client 2 recieved Retry for query 81 0 
+client 2 has 40 chunks 
+Chunk_Request 105 2  
+Client 0 recieved e58fee2888199e3882757987ffe8c8deNot_Present for query 97 96 
+client 0 has 46 chunks 
+Chunk_Request 91 0  
+Client 0 recieved e58fee2888199e3882757987ffe8c8deNot_Present for query 97 91 
+client 0 has 46 chunks 
+Chunk_Request 84 0  
+Client 2 recieved aac8f5cbc031e52011708cd0939569e7 for query 100 105 
+client 2 has 41 chunks 
+Chunk_Request 83 2  
+Client 3 recieved Retry for query 4 4 
+client 3 has 60 chunks 
+Chunk_Request 0 3  
+Client 1 recieved 6bd51da3a7a050044571b6a42d2c263c for query 108 56 
+client 1 has 40 chunks 
+Chunk_Request 19 1  
+Client 0 recieved 3a2ea164331e78703402d25a0557ce49 for query 78 84 
+client 0 has 47 chunks 
+Chunk_Request 25 0  
+Client 4 recieved c9b52c95f66df0697292aeb6b313bda8 for query 36 24 
+client 4 has 37 chunks 
+Chunk_Request 21 4  
+Client 4 recieved c9b52c95f66df0697292aeb6b313bda8 for query 36 21 
+client 4 has 37 chunks 
+Chunk_Request 62 4  
+Client 2 recieved aac8f5cbc031e52011708cd0939569e7 for query 100 83 
+client 2 has 41 chunks 
+Chunk_Request 87 2  
+Client 0 recieved 242735909685039364c16660c4bfa1a9 for query 30 25 
+client 0 has 48 chunks 
+Chunk_Request 53 0  
+Client 3 recieved Retry for query 0 0 
+client 3 has 61 chunks 
+Chunk_Request 53 3  
+Client 0 recieved 242735909685039364c16660c4bfa1a9 for query 30 53 
+client 0 has 48 chunks 
+Chunk_Request 102 0  
+Client 0 recieved 242735909685039364c16660c4bfa1a9 for query 30 102 
+client 0 has 48 chunks 
+Chunk_Request 32 0  
+Client 4 recieved 83d6758cfb6e98dfe9fcb90b3b8efc86 for query 39 62 
+client 4 has 38 chunks 
+Chunk_Request 55 4  
+Client 1 recieved ea77f0ea9880feabadb055d50af58ffa for query 98 19 
+client 1 has 41 chunks 
+Chunk_Request 107 1  
+Client 3 recieved Retry for query 53 53 
+client 3 has 62 chunks 
+Chunk_Request 41 3  
+Client 2 recieved 13018a28b3fd510d378ec6dc642d8d8e for query 15 87 
+client 2 has 42 chunks 
+Chunk_Request 104 2  
+Client 2 recieved 13018a28b3fd510d378ec6dc642d8d8e for query 15 104 
+client 2 has 42 chunks 
+Chunk_Request 96 2  
+Client 2 recieved a8bb04eff0609cdb6d9736db02f5a6cf for query 70 96 
+client 2 has 43 chunks 
+Chunk_Request 11 2  
+Client 4 recieved ea77f0ea9880feabadb055d50af58ffa for query 24 55 
+client 4 has 39 chunks 
+Chunk_Request 54 4  
+Client 0 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 89 32 
+client 0 has 49 chunks 
+Chunk_Request 74 0  
+Client 1 recieved ea77f0ea9880feabadb055d50af58ffa for query 98 107 
+client 1 has 41 chunks 
+Chunk_Request 0 1  
+Client 0 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 89 74 
+client 0 has 49 chunks 
+Chunk_Request 65 0  
+Client 3 recieved Retry for query 41 41 
+client 3 has 63 chunks 
+Chunk_Request 95 3  
+Client 1 recieved 60cef7cad04f7567cf3182540b874a36 for query 106 0 
+client 1 has 42 chunks 
+Chunk_Request 70 1  
+Client 3 recieved 48287adca124f6fe4a6bc73ba794e658Not_Present for query 95 95 
+client 3 has 64 chunks 
+Chunk_Request 55 3  
+Client 3 recieved 72319444be332681abb1ff4b6156cdfc for query 55 55 
+client 3 has 65 chunks 
+Chunk_Request 65 3  
+Client 2 recieved a8bb04eff0609cdb6d9736db02f5a6cf for query 70 11 
+client 2 has 43 chunks 
+Chunk_Request 10 2  
+Client 1 recieved 60cef7cad04f7567cf3182540b874a36 for query 106 70 
+client 1 has 42 chunks 
+Chunk_Request 68 1  
+Client 4 recieved Retry for query 24 54 
+client 4 has 39 chunks 
+Chunk_Request 23 4  
+Client 4 recieved c9cf8c7ea19a7265cf362711e56941ed for query 81 23 
+client 4 has 40 chunks 
+Chunk_Request 53 4  
+Client 4 recieved c9cf8c7ea19a7265cf362711e56941ed for query 81 53 
+client 4 has 40 chunks 
+Chunk_Request 59 4  
+Client 4 recieved c9cf8c7ea19a7265cf362711e56941ed for query 81 59 
+client 4 has 40 chunks 
+Chunk_Request 82 4  
+Client 4 recieved c81b59f1f5f8983cb7022a2eb948d38c for query 60 82 
+client 4 has 41 chunks 
+Chunk_Request 82 4  
+Client 0 recieved c81b59f1f5f8983cb7022a2eb948d38c for query 60 65 
+client 0 has 50 chunks 
+Chunk_Request 93 0  
+Client 4 recieved c81b59f1f5f8983cb7022a2eb948d38c for query 60 82 
+client 4 has 41 chunks 
+Chunk_Request 77 4  
+Client 4 recieved af386e70331a520287001602f2d18d95 for query 50 77 
+client 4 has 42 chunks 
+Chunk_Request 40 4  
+Client 3 recieved 412baa92fa780a43195045fed27b241e0acbdd79a021220384e019379a5ded3e for query 65 65 
+client 3 has 66 chunks 
+Chunk_Request 7 3  
+Client 3 recieved 37065b004931bfc16f0e947ac5d06542 for query 7 7 
+client 3 has 67 chunks 
+Chunk_Request 14 3  
+Client 3 recieved 7de81776b97131ff731908c313e4c8fe for query 14 14 
+client 3 has 68 chunks 
+Chunk_Request 10 3  
+Client 3 recieved 8d322215602a07aff7543c36b0828f02 for query 10 10 
+client 3 has 69 chunks 
+Chunk_Request 36 3  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 36 36 
+client 3 has 70 chunks 
+Chunk_Request 106 3  
+Client 3 recieved aac8f5cbc031e52011708cd0939569e7 for query 106 106 
+client 3 has 71 chunks 
+Chunk_Request 103 3  
+Client 2 recieved c9cf8c7ea19a7265cf362711e56941ed for query 81 10 
+client 2 has 43 chunks 
+Chunk_Request 80 2  
+Client 1 recieved 48287adca124f6fe4a6bc73ba794e658Not_Present for query 95 68 
+client 1 has 43 chunks 
+Chunk_Request 51 1  
+Client 0 recieved Retry for query 91 93 
+client 0 has 51 chunks 
+Chunk_Request 41 0  
+Client 4 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 68 40 
+client 4 has 43 chunks 
+Chunk_Request 79 4  
+Client 4 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 68 79 
+client 4 has 43 chunks 
+Chunk_Request 17 4  
+Client 0 recieved Retry for query 96 41 
+client 0 has 52 chunks 
+Chunk_Request 84 0  
+Client 2 recieved 72319444be332681abb1ff4b6156cdfc for query 81 80 
+client 2 has 43 chunks 
+Chunk_Request 35 2  
+Client 1 recieved 0625637adf4f30194bf27bddd839d16b for query 95 51 
+client 1 has 43 chunks 
+Chunk_Request 97 1  
+client 3 has 71 chunks 
+Chunk_Request 59 3  
+Client 0 recieved Retry for query 96 84 
+client 0 has 52 chunks 
+Chunk_Request 49 0  
+Client 3 recieved Retry for query 103 59 
+client 3 has 72 chunks 
+Chunk_Request 13 3  
+Client 2 recieved 5fa9a92b7ff0ec79a0aaddf8affaf887 for query 70 35 
+client 2 has 43 chunks 
+Chunk_Request 23 2  
+Client 2 recieved 5fa9a92b7ff0ec79a0aaddf8affaf887 for query 70 23 
+client 2 has 43 chunks 
+Chunk_Request 42 2  
+Client 2 recieved 5fa9a92b7ff0ec79a0aaddf8affaf887 for query 70 42 
+client 2 has 43 chunks 
+Chunk_Request 99 2  
+Client 2 recieved e28d72929585961d4e56ab9f55955145 for query 81 99 
+client 2 has 43 chunks 
+Chunk_Request 42 2  
+Client 2 recieved e28d72929585961d4e56ab9f55955145 for query 81 42 
+client 2 has 43 chunks 
+Chunk_Request 102 2  
+Client 2 recieved e28d72929585961d4e56ab9f55955145 for query 81 102 
+client 2 has 43 chunks 
+Chunk_Request 95 2  
+Client 0 recieved Retry for query 96 49 
+client 0 has 52 chunks 
+Chunk_Request 52 0  
+Client 4 recieved c9cf8c7ea19a7265cf362711e56941edNot_Present for query 80 17 
+client 4 has 44 chunks 
+Chunk_Request 12 4  
+Client 2 recieved 60cef7cad04f7567cf3182540b874a36 for query 0 95 
+client 2 has 44 chunks 
+Chunk_Request 1 2  
+Client 2 recieved 60cef7cad04f7567cf3182540b874a36 for query 0 1 
+client 2 has 44 chunks 
+Chunk_Request 5 2  
+Client 1 recieved ed4b8159be2b86a8f138ff9e192a13f6 for query 94 97 
+client 1 has 44 chunks 
+Chunk_Request 107 1  
+Client 1 recieved ed4b8159be2b86a8f138ff9e192a13f6 for query 94 107 
+client 1 has 44 chunks 
+Chunk_Request 85 1  
+Client 3 recieved aac8f5cbc031e52011708cd0939569e7Not_Present for query 59 13 
+client 3 has 73 chunks 
+Chunk_Request 13 3  
+Client 4 recieved Retry for query 24 12 
+client 4 has 44 chunks 
+Chunk_Request 28 4  
+Client 0 recieved e28d72929585961d4e56ab9f55955145 for query 91 52 
+client 0 has 52 chunks 
+Chunk_Request 73 0  
+Client 4 recieved Retry for query 24 28 
+client 4 has 44 chunks 
+Chunk_Request 32 4  
+Client 0 recieved c9cf8c7ea19a7265cf362711e56941ed for query 84 73 
+client 0 has 53 chunks 
+Chunk_Request 68 0  
+Client 3 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 13 13 
+client 3 has 74 chunks 
+Chunk_Request 24 3  
+Client 2 recieved 242735909685039364c16660c4bfa1a9 for query 105 5 
+client 2 has 45 chunks 
+Chunk_Request 23 2  
+Client 1 recieved ed4b8159be2b86a8f138ff9e192a13f6 for query 94 85 
+client 1 has 44 chunks 
+Chunk_Request 104 1  
+Client 4 recieved b75f2dbf46a8d665104a03c0480ea65e for query 21 32 
+client 4 has 45 chunks 
+Chunk_Request 48 4  
+Client 0 recieved c9cf8c7ea19a7265cf362711e56941ed for query 84 68 
+client 0 has 53 chunks 
+Chunk_Request 75 0  
+Client 3 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 13 24 
+client 3 has 74 chunks 
+Chunk_Request 16 3  
+Client 3 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 13 16 
+client 3 has 74 chunks 
+Chunk_Request 32 3  
+Client 0 recieved dc5f78ec0790562826b14c8eabe7a7c8 for query 25 75 
+client 0 has 54 chunks 
+Chunk_Request 67 0  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 83 23 
+client 2 has 46 chunks 
+Chunk_Request 90 2  
+Client 4 recieved af386e70331a520287001602f2d18d95 for query 62 48 
+client 4 has 46 chunks 
+Chunk_Request 41 4  
+Client 0 recieved bc4de9c73a7c59fd25b78cdedf6583c0 for query 53 67 
+client 0 has 55 chunks 
+Chunk_Request 70 0  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 83 90 
+Client 3 recieved ea77f0ea9880feabadb055d50af58ffa for query 24 32 
+client 2 has 46 chunks 
+Chunk_Request 90 2  
+client 3 has 75 chunks 
+Chunk_Request 102 3  
+Client 1 recieved RetryNot_Present for query 94 104 
+client 1 has 44 chunks 
+Chunk_Request 107 1  
+Client 0 recieved bc4de9c73a7c59fd25b78cdedf6583c0 for query 53 70 
+client 0 has 55 chunks 
+Chunk_Request 61 0  
+Client 3 recieved ea77f0ea9880feabadb055d50af58ffa for query 24 102 
+client 3 has 75 chunks 
+Chunk_Request 5 3  
+Client 4 recieved 8b367b0b5950dc473722cadb975b44f2Not_Present for query 62 41 
+client 4 has 46 chunks 
+Chunk_Request 75 4  
+Client 1 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 56 107 
+client 1 has 45 chunks 
+Chunk_Request 57 1  
+Client 2 recieved d97d14994606d57eb22c10c237fa547f for query 87 90 
+client 2 has 47 chunks 
+Chunk_Request 30 2  
+Client 0 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 102 61 
+client 0 has 56 chunks 
+Chunk_Request 69 0  
+Client 1 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 56 57 
+client 1 has 45 chunks 
+Chunk_Request 62 1  
+Client 2 recieved d97d14994606d57eb22c10c237fa547f for query 87 30 
+client 2 has 47 chunks 
+Chunk_Request 94 2  
+Client 3 recieved Retry for query 16 5 
+client 3 has 76 chunks 
+Chunk_Request 1 3  
+Client 1 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 56 62 
+client 1 has 45 chunks 
+Chunk_Request 77 1  
+Client 0 recieved a2dea404f53f5089f53828ae4a674688Not_Present for query 32 69 
+client 0 has 57 chunks 
+Chunk_Request 98 0  
+Client 2 recieved d97d14994606d57eb22c10c237fa547f for query 87 94 
+client 2 has 47 chunks 
+Chunk_Request 108 2  
+Client 4 recieved Retry for query 55 75 
+client 4 has 47 chunks 
+Chunk_Request 4 4  
+Client 3 recieved 72319444be332681abb1ff4b6156cdfc for query 32 1 
+client 3 has 77 chunks 
+Chunk_Request 37 3  
+Client 0 recieved 72319444be332681abb1ff4b6156cdfc for query 32 98 
+client 0 has 57 chunks 
+Chunk_Request 80 0  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 19 77 
+client 1 has 46 chunks 
+Chunk_Request 52 1  
+Client 4 recieved Retry for query 55 4 
+client 4 has 47 chunks 
+Chunk_Request 64 4  
+Client 3 recieved 72319444be332681abb1ff4b6156cdfc for query 32 37 
+client 3 has 77 chunks 
+Chunk_Request 1 3  
+Client 2 recieved Retry for query 104 108 
+client 2 has 48 chunks 
+Chunk_Request 39 2  
+Client 0 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 74 80 
+client 0 has 58 chunks 
+Chunk_Request 33 0  
+Client 2 recieved Retry for query 96 39 
+client 2 has 49 chunks 
+Chunk_Request 77 2  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 19 52 
+client 1 has 46 chunks 
+Chunk_Request 85 1  
+Client 4 recieved aac8f5cbc031e52011708cd0939569e7 for query 54 64 
+client 4 has 48 chunks 
+Chunk_Request 86 4  
+Client 4 recieved aac8f5cbc031e52011708cd0939569e7 for query 54 86 
+client 4 has 48 chunks 
+Chunk_Request 53 4  
+Client 4 recieved aac8f5cbc031e52011708cd0939569e7 for query 54 53 
+client 4 has 48 chunks 
+Chunk_Request 79 4  
+Client 0 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 65 33 
+client 0 has 59 chunks 
+Chunk_Request 26 0  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 102 1 
+client 3 has 78 chunks 
+Chunk_Request 94 3  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 102 94 
+client 3 has 78 chunks 
+Chunk_Request 64 3  
+Client 1 recieved 76c8dff61ddde16d97cbad613f25725d for query 107 85 
+client 1 has 47 chunks 
+Chunk_Request 104 1  
+Client 1 recieved 76c8dff61ddde16d97cbad613f25725d for query 107 104 
+client 1 has 47 chunks 
+Chunk_Request 20 1  
+Client 4 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 23 79 
+client 4 has 49 chunks 
+Chunk_Request 51 4  
+Client 0 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 65 26 
+client 0 has 59 chunks 
+Chunk_Request 31 0  
+Client 2 recieved 412baa92fa780a43195045fed27b241eRetry58b1c5acee186ec7bb4e2549f73676ae for query 11 77 
+client 2 has 50 chunks 
+Chunk_Request 95 2  
+Client 2 recieved 412baa92fa780a43195045fed27b241eRetry58b1c5acee186ec7bb4e2549f73676ae for query 11 95 
+client 2 has 50 chunks 
+Chunk_Request 69 2  
+Client 4 recieved bc4de9c73a7c59fd25b78cdedf6583c0 for query 53 51 
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffa for query 10 69 
+client 4 has 50 chunks 
+Chunk_Request 12 4  
+client 2 has 51 chunks 
+Chunk_Request 12 2  
+Client 3 recieved e58fee2888199e3882757987ffe8c8de for query 5 64 
+client 3 has 79 chunks 
+Chunk_Request 61 3  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffa for query 10 12 
+client 2 has 51 chunks 
+Chunk_Request 23 2  
+Client 1 recieved 60cef7cad04f7567cf3182540b874a36 for query 0 20 
+client 1 has 48 chunks 
+Chunk_Request 1 1  
+Client 0 recieved c9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9 for query 65 31 
+client 0 has 59 chunks 
+Chunk_Request 75 0  
+Client 0 recieved 8d322215602a07aff7543c36b0828f02 for query 93 75 
+client 0 has 60 chunks 
+Chunk_Request 34 0  
+Client 2 recieved e28d72929585961d4e56ab9f55955145 for query 80 23 
+client 2 has 52 chunks 
+Chunk_Request 16 2  
+Client 4 recieved Retry for query 59 12 
+client 4 has 51 chunks 
+Chunk_Request 32 4  
+Client 3 recieved e58fee2888199e3882757987ffe8c8de for query 5 61 
+client 3 has 79 chunks 
+Chunk_Request 61 3  
+Client 2 recieved a8bb04eff0609cdb6d9736db02f5a6cf for query 35 16 
+client 2 has 53 chunks 
+Chunk_Request 111 2  
+Client 2 recieved a8bb04eff0609cdb6d9736db02f5a6cf for query 35 111 
+client 2 has 53 chunks 
+Chunk_Request 12 2  
+Client 4 recieved Retry for query 82 32 
+client 4 has 52 chunks 
+Chunk_Request 69 4  
+Client 4 recieved Retry for query 82 69 
+client 4 has 52 chunks 
+Chunk_Request 14 4  
+Client 0 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 41 34 
+client 0 has 61 chunks 
+Chunk_Request 70 0  
+Client 2 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 23 12 
+client 2 has 54 chunks 
+Chunk_Request 108 2  
+Client 0 recieved ed4b8159be2b86a8f138ff9e192a13f6 for query 84 70 
+client 0 has 61 chunks 
+Chunk_Request 55 0  
+Client 1 recieved Retry for query 70 1 
+client 1 has 49 chunks 
+Chunk_Request 4 1  
+Client 1 recieved Retry for query 70 4 
+client 1 has 49 chunks 
+Chunk_Request 6 1  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 49 55 
+client 0 has 62 chunks 
+Chunk_Request 55 0  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 49 55 
+client 0 has 62 chunks 
+Chunk_Request 29 0  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 68 6 
+client 1 has 50 chunks 
+Chunk_Request 6 1  
+Client 4 recieved Retry for query 77 14 
+client 4 has 53 chunks 
+Chunk_Request 58 4  
+Client 2 recieved e58fee2888199e3882757987ffe8c8de for query 42 108 
+client 2 has 55 chunks 
+Chunk_Request 43 2  
+Client 3 recieved Retry for query 1 61 
+client 3 has 80 chunks 
+Chunk_Request 94 3  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 68 6 
+client 1 has 50 chunks 
+Chunk_Request 99 1  
+Client 3 recieved Retry for query 1 94 
+client 3 has 80 chunks 
+Chunk_Request 22 3  
+Client 1 recieved efefb73c55476f269f91b2b024760f47 for query 51 99 
+client 1 has 51 chunks 
+Chunk_Request 80 1  
+Client 1 recieved 81292ba3a05c353bbbb08bdb7d6280a2 for query 97 80 
+client 1 has 52 chunks 
+Chunk_Request 17 1  
+Client 1 recieved 81292ba3a05c353bbbb08bdb7d6280a2 for query 97 17 
+client 1 has 52 chunks 
+Chunk_Request 99 1  
+Client 1 recieved 81292ba3a05c353bbbb08bdb7d6280a2 for query 97 99 
+client 1 has 52 chunks 
+Chunk_Request 83 1  
+Client 4 recieved 674ab49463bf45e2d554744133538ac3 for query 40 58 
+client 4 has 54 chunks 
+Chunk_Request 6 4  
+Client 4 recieved 674ab49463bf45e2d554744133538ac3 for query 40 6 
+client 4 has 54 chunks 
+Chunk_Request 76 4  
+Client 2 recieved 3c957577cfc05101c7901e761a1e255b for query 99 43 
+client 2 has 56 chunks 
+Chunk_Request 93 2  
+client 0 has 62 chunks 
+Chunk_Request 24 0  
+Client 0 recieved Retry for query 52 24 
+client 0 has 63 chunks 
+Chunk_Request 33 0  
+Client 2 recieved RetryNot_Present0bfe90c515546dd008d0e95d69e12bf1 for query 42 93 
+client 2 has 56 chunks 
+Chunk_Request 34 2  
+Client 3 recieved Retry for query 37 22 
+client 3 has 81 chunks 
+Chunk_Request 56 3  
+Client 3 recieved Retry for query 37 56 
+client 3 has 81 chunks 
+Chunk_Request 99 3  
+Client 1 recieved Retry for query 107 83 
+client 1 has 52 chunks 
+Chunk_Request 85 1  
+Client 3 recieved 268afae1ece4c9af4ab76fa7299677a7Not_Present for query 1 99 
+client 3 has 81 chunks 
+Chunk_Request 66 3  
+Client 2 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 102 34 
+client 2 has 57 chunks 
+Chunk_Request 90 2  
+Client 0 recieved Retry for query 52 33 
+client 0 has 63 chunks 
+Chunk_Request 73 0  
+Client 4 recieved e58fee2888199e3882757987ffe8c8deNot_Present for query 79 76 
+client 4 has 55 chunks 
+Chunk_Request 76 4  
+Client 3 recieved 268afae1ece4c9af4ab76fa7299677a7Not_Present for query 1 66 
+client 3 has 81 chunks 
+Chunk_Request 98 3  
+Client 0 recieved 2109525b566d4f40cea444e996cefa9b for query 73 73 
+client 0 has 64 chunks 
+Chunk_Request 105 0  
+Client 3 recieved 0625637adf4f30194bf27bddd839d16b for query 94 98 
+client 3 has 82 chunks 
+Chunk_Request 64 3  
+Client 0 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 68 105 
+client 0 has 65 chunks 
+Chunk_Request 109 0  
+Client 0 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 68 109 
+client 0 has 65 chunks 
+Chunk_Request 82 0  
+Client 0 recieved 6cb86850c95057bbd05ebca8a86903f1 for query 75 82 
+client 0 has 66 chunks 
+Chunk_Request 34 0  
+Client 2 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 95 90 
+client 2 has 58 chunks 
+Chunk_Request 16 2  
+Client 2 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 1 16 
+client 2 has 59 chunks 
+Chunk_Request 73 2  
+Client 0 recieved 9d9ec827980c629a33a81814efc3cf1e for query 67 34 
+client 0 has 67 chunks 
+Chunk_Request 42 0  
+Client 0 recieved 9d9ec827980c629a33a81814efc3cf1e for query 67 42 
+client 0 has 67 chunks 
+Chunk_Request 109 0  
+Client 3 recieved 18e850ebc701032f369e7c49d29beb89 for query 64 64 
+client 3 has 83 chunks 
+Chunk_Request 67 3  
+Client 3 recieved 18e850ebc701032f369e7c49d29beb89 for query 64 67 
+client 3 has 83 chunks 
+Chunk_Request 22 3  
+Client 3 recieved ac36d2bf39458752d569b6e25fd694dc for query 61 22 
+client 3 has 84 chunks 
+Chunk_Request 3 3  
+Client 0 recieved 9d9ec827980c629a33a81814efc3cf1e for query 70 109 
+client 0 has 68 chunks 
+Chunk_Request 48 0  
+Client 0 recieved 9d9ec827980c629a33a81814efc3cf1e for query 70 48 
+client 0 has 68 chunks 
+Chunk_Request 107 0  
+Client 0 recieved ac36d2bf39458752d569b6e25fd694dc for query 61 107 
+client 0 has 69 chunks 
+Chunk_Request 71 0  
+Client 0 recieved ac36d2bf39458752d569b6e25fd694dc for query 61 71 
+client 0 has 69 chunks 
+Chunk_Request 35 0  
+Client 1 recieved 902b82ba61ca49e4ebcd4b3a0b27d61a for query 85 85 
+client 1 has 53 chunks 
+Chunk_Request 55 1  
+Client 1 recieved Retry for query 85 55 
+client 1 has 53 chunks 
+Chunk_Request 78 1  
+Client 0 recieved Retry for query 69 35 
+client 0 has 70 chunks 
+Chunk_Request 42 0  
+Client 0 recieved Retry for query 69 42 
+client 0 has 70 chunks 
+Chunk_Request 94 0  
+Client 1 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 104 78 
+client 1 has 54 chunks 
+Chunk_Request 89 1  
+Client 1 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 104 89 
+client 1 has 54 chunks 
+Chunk_Request 21 1  
+Client 0 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 98 94 
+client 0 has 71 chunks 
+Chunk_Request 87 0  
+Client 1 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 104 21 
+client 1 has 54 chunks 
+Chunk_Request 101 1  
+Client 1 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 104 101 
+client 1 has 54 chunks 
+Chunk_Request 90 1  
+Client 1 recieved ea77f0ea9880feabadb055d50af58ffa for query 107 90 
+Client 0 recieved c9cf8c7ea19a7265cf362711e56941ed for query 80 87 
+client 0 has 72 chunks 
+Chunk_Request 99 0  
+client 1 has 54 chunks 
+Chunk_Request 16 1  
+Client 0 recieved c9cf8c7ea19a7265cf362711e56941ed for query 80 99 
+client 0 has 72 chunks 
+Chunk_Request 44 0  
+Client 4 recieved Retry for query 17 76 
+client 4 has 56 chunks 
+Chunk_Request 6 4  
+Client 2 recieved Retry for query 5 73 
+client 2 has 60 chunks 
+Chunk_Request 89 2  
+Client 2 recieved Retry for query 5 89 
+client 2 has 60 chunks 
+Chunk_Request 21 2  
+Client 3 recieved ac36d2bf39458752d569b6e25fd694dc for query 61 3 
+client 3 has 84 chunks 
+Chunk_Request 39 3  
+Client 0 recieved ac36d2bf39458752d569b6e25fd694dc for query 33 44 
+client 0 has 73 chunks 
+Chunk_Request 56 0  
+Client 1 recieved e58fee2888199e3882757987ffe8c8de for query 57 16 
+client 1 has 55 chunks 
+Chunk_Request 79 1  
+Client 1 recieved e58fee2888199e3882757987ffe8c8de for query 57 79 
+client 1 has 55 chunks 
+Chunk_Request 1 1  
+Client 4 recieved Retry for query 17 6 
+client 4 has 56 chunks 
+Chunk_Request 57 4  
+Client 3 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 61 39 
+client 3 has 84 chunks 
+Chunk_Request 67 3  
+Client 0 recieved ac36d2bf39458752d569b6e25fd694dc for query 33 56 
+client 0 has 73 chunks 
+Chunk_Request 110 0  
+Client 3 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 61 67 
+client 3 has 84 chunks 
+Chunk_Request 62 3  
+Client 0 recieved RetryNot_Present for query 26 110 
+Client 3 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 61 62 
+client 0 has 74 chunks 
+Chunk_Request 58 0  
+client 3 has 84 chunks 
+Chunk_Request 3 3  
+Client 0 recieved RetryNot_Present for query 26 58 
+client 0 has 74 chunks 
+Chunk_Request 87 0  
+Client 3 recieved e58fee2888199e3882757987ffe8c8de for query 94 3 
+client 3 has 84 chunks 
+Chunk_Request 110 3  
+Client 4 recieved Retry for query 17 57 
+client 4 has 56 chunks 
+Chunk_Request 16 4  
+Client 2 recieved 6cb86850c95057bbd05ebca8a86903f1 for query 23 21 
+client 2 has 60 chunks 
+Chunk_Request 78 2  
+Client 3 recieved 6e0a803c797b97b636c62fbc6dbdc670 for query 22 110 
+client 3 has 85 chunks 
+Chunk_Request 98 3  
+Client 1 recieved Retry for query 62 1 
+client 1 has 56 chunks 
+Chunk_Request 60 1  
+Client 1 recieved Retry for query 62 60 
+client 1 has 56 chunks 
+Chunk_Request 74 1  
+Client 4 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 12 16 
+client 4 has 57 chunks 
+Chunk_Request 14 4  
+Client 3 recieved 6e0a803c797b97b636c62fbc6dbdc670 for query 22 98 
+client 3 has 85 chunks 
+Chunk_Request 101 3  
+Client 0 recieved 8b367b0b5950dc473722cadb975b44f2Not_Present for query 31 87 
+client 0 has 75 chunks 
+Chunk_Request 59 0  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 28 14 
+client 4 has 58 chunks 
+Chunk_Request 51 4  
+Client 0 recieved 674ab49463bf45e2d554744133538ac3 for query 75 59 
+client 0 has 75 chunks 
+Chunk_Request 27 0  
+Client 3 recieved fb9f79347943c50597e278e1be6ae562 for query 56 101 
+client 3 has 86 chunks 
+Chunk_Request 67 3  
+Client 0 recieved 866912a07d1e44c131d209298f97a6ab for query 34 27 
+client 0 has 76 chunks 
+Chunk_Request 100 0  
+Client 3 recieved 414891f4e1b83a2a8fd1a580fad5958b for query 99 67 
+client 3 has 87 chunks 
+Chunk_Request 33 3  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 70 100 
+client 0 has 76 chunks 
+Chunk_Request 55 0  
+Client 2 recieved ac36d2bf39458752d569b6e25fd694dcbae3564c83cc9b11d87e42381f4b0f05bcfbaa07a0f3580c1e117458de0a4663 for query 23 78 
+client 2 has 60 chunks 
+Chunk_Request 38 2  
+Client 2 recieved Retry for query 90 38 
+client 2 has 61 chunks 
+Chunk_Request 2 2  
+Client 1 recieved 5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254 for query 77 74 
+client 1 has 57 chunks 
+Chunk_Request 99 1  
+Client 4 recieved 19b744dcb58217c2402e18cd517e3688 for query 32 51 
+client 4 has 59 chunks 
+Chunk_Request 58 4  
+Client 1 recieved 9b3e7ad1f0332971ee3b9b20b3a317fe for query 52 99 
+client 1 has 58 chunks 
+Chunk_Request 9 1  
+Client 1 recieved 9b3e7ad1f0332971ee3b9b20b3a317fe for query 52 9 
+client 1 has 58 chunks 
+Chunk_Request 101 1  
+Client 2 recieved Retry for query 90 2 
+client 2 has 61 chunks 
+Chunk_Request 43 2  
+Client 0 recieved Retry for query 55 55 
+client 0 has 77 chunks 
+Chunk_Request 95 0  
+Client 2 recieved Retry for query 90 43 
+client 2 has 61 chunks 
+Chunk_Request 30 2  
+Client 0 recieved Retry for query 55 95 
+client 0 has 77 chunks 
+Chunk_Request 106 0  
+Client 4 recieved Retry for query 48 58 
+client 4 has 60 chunks 
+Chunk_Request 63 4  
+Client 4 recieved Retry for query 48 63 
+client 4 has 60 chunks 
+Chunk_Request 19 4  
+Client 4 recieved Retry for query 48 19 
+client 4 has 60 chunks 
+Chunk_Request 88 4  
+Client 4 recieved 72319444be332681abb1ff4b6156cdfc for query 41 88 
+client 4 has 61 chunks 
+Chunk_Request 42 4  
+Client 2 recieved Retry for query 90 30 
+client 2 has 61 chunks 
+Chunk_Request 110 2  
+Client 1 recieved 72319444be332681abb1ff4b6156cdfcNot_Present for query 85 101 
+client 1 has 58 chunks 
+Chunk_Request 90 1  
+Client 1 recieved 72319444be332681abb1ff4b6156cdfcNot_Present for query 85 90 
+client 1 has 58 chunks 
+Chunk_Request 99 1  
+Client 0 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6c for query 29 106 
+client 0 has 78 chunks 
+Chunk_Request 109 0  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f058424b082bea9aac9a92c1425022e9116 for query 24 109 
+client 0 has 79 chunks 
+Chunk_Request 59 0  
+Client 2 recieved 60cef7cad04f7567cf3182540b874a36 for query 30 110 
+client 2 has 62 chunks 
+Chunk_Request 33 2  
+Client 1 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 104 99 
+client 1 has 58 chunks 
+Chunk_Request 79 1  
+Client 0 recieved 83981728fd7636cf30dbb12e23fb17a3 for query 33 59 
+client 0 has 79 chunks 
+Chunk_Request 103 0  
+Client 0 recieved 83981728fd7636cf30dbb12e23fb17a3 for query 33 103 
+client 0 has 79 chunks 
+Chunk_Request 86 0  
+Client 0 recieved Retry for query 73 86 
+client 0 has 79 chunks 
+Chunk_Request 63 0  
+Client 3 recieved Retry for query 66 33 
+client 3 has 88 chunks 
+Chunk_Request 110 3  
+Client 0 recieved 6cb86850c95057bbd05ebca8a86903f1 for query 105 63 
+client 0 has 80 chunks 
+Chunk_Request 82 0  
+Client 4 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 75 42 
+client 4 has 62 chunks 
+Chunk_Request 84 4  
+Client 4 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 75 84 
+client 4 has 62 chunks 
+Chunk_Request 22 4  
+Client 4 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 75 22 
+client 4 has 62 chunks 
+Chunk_Request 2 4  
+Client 4 recieved 242735909685039364c16660c4bfa1a9 for query 4 2 
+client 4 has 63 chunks 
+Chunk_Request 76 4  
+Client 0 recieved Retry for query 109 82 
+client 0 has 81 chunks 
+Chunk_Request 86 0  
+Client 4 recieved 242735909685039364c16660c4bfa1a9 for query 4 76 
+client 4 has 63 chunks 
+Chunk_Request 57 4  
+Client 4 recieved b9b2f5779c8a6cffa10388fc6fc62e97 for query 64 57 
+client 4 has 64 chunks 
+Chunk_Request 58 4  
+Client 2 recieved 60cef7cad04f7567cf3182540b874a36 for query 30 33 
+client 2 has 62 chunks 
+Chunk_Request 44 2  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 94 44 
+client 2 has 63 chunks 
+Chunk_Request 3 2  
+Client 0 recieved c9b52c95f66df0697292aeb6b313bda8 for query 82 86 
+client 0 has 82 chunks 
+Chunk_Request 56 0  
+Client 4 recieved Retry for query 86 58 
+client 4 has 65 chunks 
+Chunk_Request 44 4  
+Client 4 recieved Retry for query 53 44 
+client 4 has 65 chunks 
+Chunk_Request 27 4  
+Client 4 recieved RetryNot_Present for query 79 27 
+client 4 has 65 chunks 
+Chunk_Request 16 4  
+Client 4 recieved RetryNot_Present for query 79 16 
+client 4 has 65 chunks 
+Chunk_Request 35 4  
+Client 3 recieved 674ab49463bf45e2d554744133538ac3 for query 66 110 
+client 3 has 88 chunks 
+Chunk_Request 6 3  
+Client 3 recieved 414891f4e1b83a2a8fd1a580fad5958b for query 98 6 
+client 3 has 89 chunks 
+Chunk_Request 33 3  
+Client 4 recieved b9b2f5779c8a6cffa10388fc6fc62e97 for query 51 35 
+client 4 has 66 chunks 
+Chunk_Request 10 4  
+Client 1 recieved 412baa92fa780a43195045fed27b241e9b3e7ad1f0332971ee3b9b20b3a317feNot_Present for query 20 79 
+client 1 has 59 chunks 
+Chunk_Request 100 1  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 94 3 
+client 2 has 63 chunks 
+Chunk_Request 43 2  
+Client 0 recieved d2a23398c2df465e6ee00990b3c9ddee for query 34 56 
+client 0 has 82 chunks 
+Chunk_Request 79 0  
+Client 0 recieved bc4de9c73a7c59fd25b78cdedf6583c0 for query 42 79 
+client 0 has 83 chunks 
+Chunk_Request 87 0  
+Client 4 recieved RetryNot_Present for query 12 10 
+client 4 has 66 chunks 
+Chunk_Request 76 4  
+Client 4 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 32 76 
+client 4 has 66 chunks 
+Chunk_Request 87 4  
+Client 4 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 32 87 
+client 4 has 66 chunks 
+Chunk_Request 22 4  
+Client 0 recieved af386e70331a520287001602f2d18d95 for query 109 87 
+client 0 has 83 chunks 
+Chunk_Request 44 0  
+Client 3 recieved efefb73c55476f269f91b2b024760f47 for query 64 33 
+Client 1 recieved 412baa92fa780a43195045fed27b241e9b3e7ad1f0332971ee3b9b20b3a317feNot_Present for query 20 100 
+client 3 has 89 chunks 
+Chunk_Request 62 3  
+client 1 has 59 chunks 
+Chunk_Request 73 1  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 1 73 
+client 1 has 60 chunks 
+Chunk_Request 3 1  
+Client 0 recieved Retry for query 48 44 
+client 0 has 84 chunks 
+Chunk_Request 63 0  
+Client 0 recieved 866912a07d1e44c131d209298f97a6ab for query 107 63 
+client 0 has 85 chunks 
+Chunk_Request 100 0  
+Client 4 recieved ea77f0ea9880feabadb055d50af58ffa for query 69 22 
+client 4 has 67 chunks 
+Chunk_Request 27 4  
+Client 4 recieved 72319444be332681abb1ff4b6156cdfc for query 14 27 
+client 4 has 68 chunks 
+Chunk_Request 70 4  
+Client 4 recieved Retry for query 58 70 
+client 4 has 69 chunks 
+Chunk_Request 70 4  
+Client 4 recieved Retry for query 58 70 
+client 4 has 69 chunks 
+Chunk_Request 3 4  
+Client 2 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 108 43 
+client 2 has 64 chunks 
+Chunk_Request 77 2  
+Client 2 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 108 77 
+client 2 has 64 chunks 
+Chunk_Request 84 2  
+Client 2 recieved 6bd51da3a7a050044571b6a42d2c263c for query 39 84 
+client 2 has 65 chunks 
+Chunk_Request 25 2  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 1 3 
+client 1 has 60 chunks 
+Chunk_Request 86 1  
+Client 3 recieved 9b3e7ad1f0332971ee3b9b20b3a317fe for query 67 62 
+client 3 has 90 chunks 
+Chunk_Request 33 3  
+Client 4 recieved 9d9ec827980c629a33a81814efc3cf1e for query 6 3 
+client 4 has 70 chunks 
+Chunk_Request 10 4  
+Client 4 recieved 5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254 for query 76 10 
+client 4 has 71 chunks 
+Chunk_Request 47 4  
+Client 2 recieved 7de81776b97131ff731908c313e4c8fe for query 77 25 
+client 2 has 66 chunks 
+Chunk_Request 101 2  
+Client 4 recieved 5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254 for query 76 47 
+client 4 has 71 chunks 
+Chunk_Request 56 4  
+Client 2 recieved 7de81776b97131ff731908c313e4c8fe for query 77 101 
+client 2 has 66 chunks 
+Chunk_Request 24 2  
+Client 4 recieved 5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254 for query 76 56 
+client 4 has 71 chunks 
+Chunk_Request 22 4  
+Client 2 recieved 7de81776b97131ff731908c313e4c8fe for query 77 24 
+client 2 has 66 chunks 
+Chunk_Request 93 2  
+Client 4 recieved 5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254 for query 76 22 
+client 4 has 71 chunks 
+Chunk_Request 3 4  
+Client 4 recieved 5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254 for query 76 3 
+client 4 has 71 chunks 
+Chunk_Request 44 4  
+Client 4 recieved 5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254 for query 76 44 
+client 4 has 71 chunks 
+Chunk_Request 87 4  
+Client 4 recieved 9d9ec827980c629a33a81814efc3cf1e for query 6 87 
+client 4 has 71 chunks 
+Chunk_Request 73 4  
+Client 4 recieved 9d9ec827980c629a33a81814efc3cf1e for query 6 73 
+client 4 has 71 chunks 
+Chunk_Request 42 4  
+Client 1 recieved e88d189472751a42e748e004218964c8 for query 1 86 
+client 1 has 60 chunks 
+Chunk_Request 65 1  
+client 0 has 85 chunks 
+Chunk_Request 99 0  
+Client 4 recieved 38a07516ec977f4cdd6fbf4a2194487f for query 57 42 
+client 4 has 72 chunks 
+Chunk_Request 84 4  
+Client 4 recieved 38a07516ec977f4cdd6fbf4a2194487f for query 57 84 
+client 4 has 72 chunks 
+Chunk_Request 3 4  
+Client 0 recieved 0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present for query 71 99 
+client 0 has 86 chunks 
+Chunk_Request 44 0  
+Client 4 recieved d5abc2feb70b04da6b654ff0b24ac2eb for query 16 3 
+client 4 has 73 chunks 
+Chunk_Request 30 4  
+Client 1 recieved e58fee2888199e3882757987ffe8c8de for query 4 65 
+client 1 has 61 chunks 
+Chunk_Request 91 1  
+Client 4 recieved d5abc2feb70b04da6b654ff0b24ac2eb for query 16 30 
+client 4 has 73 chunks 
+Chunk_Request 89 4  
+Client 2 recieved 879020560c9f14dd113cceeace174df1Not_Present for query 95 93 
+client 2 has 66 chunks 
+Chunk_Request 93 2  
+Client 0 recieved RetryNot_Present for query 35 44 
+client 0 has 87 chunks 
+Chunk_Request 47 0  
+Client 0 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 42 47 
+client 0 has 87 chunks 
+Chunk_Request 58 0  
+Client 4 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 14 89 
+client 4 has 73 chunks 
+Chunk_Request 2 4  
+Client 3 recieved 178f445eee44c4fa65f855070e34fe1a for query 22 33 
+client 3 has 90 chunks 
+Chunk_Request 48 3  
+Client 2 recieved RetryNot_Present for query 69 93 
+client 2 has 67 chunks 
+Chunk_Request 44 2  
+Client 1 recieved 0625637adf4f30194bf27bddd839d16b for query 6 91 
+client 1 has 62 chunks 
+Chunk_Request 93 1  
+Client 4 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 51 2 
+client 4 has 73 chunks 
+Chunk_Request 63 4  
+Client 0 recieved 19b744dcb58217c2402e18cd517e3688 for query 94 58 
+client 0 has 88 chunks 
+Chunk_Request 79 0  
+Client 4 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 51 63 
+client 4 has 73 chunks 
+Chunk_Request 87 4  
+Client 4 recieved a2dea404f53f5089f53828ae4a674688 for query 58 87 
+client 4 has 73 chunks 
+Chunk_Request 88 4  
+Client 4 recieved a2dea404f53f5089f53828ae4a674688 for query 58 88 
+client 4 has 73 chunks 
+Chunk_Request 63 4  
+Client 4 recieved a2dea404f53f5089f53828ae4a674688 for query 58 63 
+client 4 has 73 chunks 
+Chunk_Request 71 4  
+Client 2 recieved efefb73c55476f269f91b2b024760f47 for query 12 44 
+client 2 has 68 chunks 
+Chunk_Request 101 2  
+Client 2 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 23 101 
+client 2 has 68 chunks 
+Chunk_Request 28 2  
+Client 4 recieved 38a07516ec977f4cdd6fbf4a2194487f for query 63 71 
+client 4 has 74 chunks 
+Chunk_Request 13 4  
+Client 0 recieved c9b52c95f66df0697292aeb6b313bda8 for query 87 79 
+client 0 has 89 chunks 
+Chunk_Request 57 0  
+Client 2 recieved Retry for query 16 28 
+client 2 has 69 chunks 
+Chunk_Request 85 2  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4Not_Present for query 6 93 
+client 1 has 62 chunks 
+Chunk_Request 47 1  
+Client 3 recieved a8bb04eff0609cdb6d9736db02f5a6cf for query 3 48 
+client 3 has 91 chunks 
+Chunk_Request 96 3  
+Client 4 recieved RetryNot_Present for query 19 13 
+client 4 has 75 chunks 
+Chunk_Request 27 4  
+Client 4 recieved 866912a07d1e44c131d209298f97a6ab for query 88 27 
+client 4 has 76 chunks 
+Chunk_Request 27 4  
+Client 0 recieved 7de81776b97131ff731908c313e4c8fe for query 99 57 
+client 0 has 90 chunks 
+Chunk_Request 44 0  
+Client 0 recieved 38a07516ec977f4cdd6fbf4a2194487f for query 44 44 
+client 0 has 91 chunks 
+Chunk_Request 79 0  
+Client 4 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 42 27 
+client 4 has 77 chunks 
+Chunk_Request 30 4  
+Client 4 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 84 30 
+client 4 has 78 chunks 
+Chunk_Request 56 4  
+Client 2 recieved ac36d2bf39458752d569b6e25fd694dc for query 111 85 
+client 2 has 70 chunks 
+Chunk_Request 26 2  
+Client 3 recieved e430b175827fcc014a3102d305f051f7 for query 3 96 
+client 3 has 91 chunks 
+Chunk_Request 6 3  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 6 47 
+client 1 has 62 chunks 
+Chunk_Request 83 1  
+Client 0 recieved 9d9ec827980c629a33a81814efc3cf1eNot_Present for query 56 79 
+client 0 has 92 chunks 
+Chunk_Request 63 0  
+Client 0 recieved 9d9ec827980c629a33a81814efc3cf1eNot_Present for query 56 63 
+client 0 has 92 chunks 
+Chunk_Request 63 0  
+Client 4 recieved a2dea404f53f5089f53828ae4a674688 for query 22 56 
+client 4 has 79 chunks 
+Chunk_Request 70 4  
+Client 2 recieved ac36d2bf39458752d569b6e25fd694dc for query 111 26 
+client 2 has 70 chunks 
+Chunk_Request 38 2  
+Client 0 recieved fb9f79347943c50597e278e1be6ae562 for query 110 63 
+client 0 has 93 chunks 
+Chunk_Request 101 0  
+Client 4 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6c for query 2 70 
+client 4 has 80 chunks 
+Chunk_Request 74 4  
+Client 3 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 39 6 
+client 3 has 92 chunks 
+Chunk_Request 57 3  
+Client 2 recieved Retry for query 12 38 
+client 2 has 70 chunks 
+Chunk_Request 101 2  
+Client 3 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 39 57 
+client 3 has 92 chunks 
+Chunk_Request 6 3  
+Client 0 recieved e430b175827fcc014a3102d305f051f7 for query 58 101 
+client 0 has 94 chunks 
+Chunk_Request 72 0  
+Client 4 recieved 38a07516ec977f4cdd6fbf4a2194487f37065b004931bfc16f0e947ac5d06542 for query 76 74 
+client 4 has 80 chunks 
+Chunk_Request 3 4  
+Client 4 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 57 3 
+client 4 has 80 chunks 
+Chunk_Request 72 4  
+Client 0 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 87 72 
+client 0 has 94 chunks 
+Chunk_Request 79 0  
+Client 4 recieved 6bd51da3a7a050044571b6a42d2c263c for query 58 72 
+client 4 has 80 chunks 
+Chunk_Request 27 4  
+Client 4 recieved 18e850ebc701032f369e7c49d29beb89 for query 44 27 
+client 4 has 81 chunks 
+Chunk_Request 74 4  
+Client 1 recieved Retry for query 99 83 
+client 1 has 63 chunks 
+Chunk_Request 55 1  
+Client 2 recieved ed4b8159be2b86a8f138ff9e192a13f6 for query 108 101 
+client 2 has 70 chunks 
+Chunk_Request 40 2  
+Client 3 recieved 19b744dcb58217c2402e18cd517e3688 for query 67 6 
+client 3 has 92 chunks 
+Chunk_Request 35 3  
+Client 4 recieved 879020560c9f14dd113cceeace174df17de81776b97131ff731908c313e4c8fe for query 27 74 
+client 4 has 82 chunks 
+Chunk_Request 43 4  
+Client 1 recieved acf0b819992e4f5669918e957bdc41b1 for query 80 55 
+client 1 has 64 chunks 
+Chunk_Request 96 1  
+Client 0 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 87 79 
+client 0 has 94 chunks 
+Chunk_Request 59 0  
+Client 0 recieved 866912a07d1e44c131d209298f97a6ab for query 87 59 
+client 0 has 94 chunks 
+Chunk_Request 79 0  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 108 40 
+client 2 has 70 chunks 
+Chunk_Request 6 2  
+Client 4 recieved 6bd51da3a7a050044571b6a42d2c263c for query 16 43 
+client 4 has 82 chunks 
+Chunk_Request 89 4  
+Client 1 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 17 96 
+client 1 has 65 chunks 
+Chunk_Request 47 1  
+Client 3 recieved e28d72929585961d4e56ab9f55955145 for query 62 35 
+client 3 has 93 chunks 
+Chunk_Request 18 3  
+Client 0 recieved abdb0780892382af07642a04cde7ae05 for query 59 79 
+client 0 has 95 chunks 
+Chunk_Request 103 0  
+Client 1 recieved acf0b819992e4f5669918e957bdc41b1 for query 99 47 
+client 1 has 65 chunks 
+Chunk_Request 79 1  
+Client 0 recieved 414891f4e1b83a2a8fd1a580fad5958b for query 27 103 
+client 0 has 96 chunks 
+Chunk_Request 77 0  
+Client 0 recieved 9d9ec827980c629a33a81814efc3cf1e for query 100 77 
+client 0 has 97 chunks 
+Chunk_Request 79 0  
+Client 3 recieved 18cf36bf4a8317695925916da1761922 for query 3 18 
+client 3 has 93 chunks 
+Chunk_Request 6 3  
+Client 2 recieved 75af94d2e5ad75e0987ab2f7705896fd for query 43 6 
+client 2 has 71 chunks 
+Chunk_Request 89 2  
+Client 4 recieved 38a07516ec977f4cdd6fbf4a2194487f for query 35 89 
+Client 1 recieved d5abc2feb70b04da6b654ff0b24ac2eb for query 83 79 
+client 1 has 66 chunks 
+Chunk_Request 10 1  
+client 4 has 83 chunks 
+Chunk_Request 0 4  
+Client 0 recieved e430b175827fcc014a3102d305f051f7 for query 55 79 
+client 0 has 97 chunks 
+Chunk_Request 101 0  
+Client 1 recieved d5abc2feb70b04da6b654ff0b24ac2eb for query 83 10 
+client 1 has 66 chunks 
+Chunk_Request 22 1  
+Client 2 recieved 75af94d2e5ad75e0987ab2f7705896fd for query 43 89 
+client 2 has 71 chunks 
+Chunk_Request 26 2  
+Client 4 recieved 0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d for query 10 0 
+client 4 has 84 chunks 
+Chunk_Request 30 4  
+Client 4 recieved a2dea404f53f5089f53828ae4a674688 for query 76 30 
+client 4 has 84 chunks 
+Chunk_Request 5 4  
+Client 4 recieved 0625637adf4f30194bf27bddd839d16b for query 87 5 
+client 4 has 85 chunks 
+Chunk_Request 3 4  
+Client 4 recieved 0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d for query 22 3 
+client 4 has 85 chunks 
+Chunk_Request 74 4  
+Client 4 recieved RetryNot_Present for query 27 74 
+client 4 has 85 chunks 
+Chunk_Request 29 4  
+Client 3 recieved 414891f4e1b83a2a8fd1a580fad5958bc9cf8c7ea19a7265cf362711e56941ed for query 110 6 
+Client 1 recieved d5abc2feb70b04da6b654ff0b24ac2eb for query 83 22 
+client 1 has 66 chunks 
+Chunk_Request 102 1  
+client 3 has 94 chunks 
+Chunk_Request 101 3  
+Client 0 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 95 101 
+client 0 has 98 chunks 
+Chunk_Request 77 0  
+Client 2 recieved 9d9ec827980c629a33a81814efc3cf1e for query 93 26 
+client 2 has 72 chunks 
+Chunk_Request 85 2  
+Client 4 recieved 60cef7cad04f7567cf3182540b874a36 for query 70 29 
+client 4 has 86 chunks 
+Chunk_Request 47 4  
+Client 3 recieved acf0b819992e4f5669918e957bdc41b1 for query 110 101 
+client 3 has 94 chunks 
+Chunk_Request 48 3  
+Client 4 recieved 60cef7cad04f7567cf3182540b874a36 for query 70 47 
+client 4 has 86 chunks 
+Chunk_Request 89 4  
+Client 0 recieved 7de81776b97131ff731908c313e4c8fe for query 106 77 
+client 0 has 99 chunks 
+Chunk_Request 77 0  
+Client 0 recieved fb9f79347943c50597e278e1be6ae562 for query 109 77 
+client 0 has 99 chunks 
+Chunk_Request 103 0  
+Client 4 recieved 8d322215602a07aff7543c36b0828f02 for query 3 89 
+client 4 has 87 chunks 
+Chunk_Request 72 4  
+Client 4 recieved 866912a07d1e44c131d209298f97a6ab for query 10 72 
+client 4 has 87 chunks 
+Chunk_Request 5 4  
+Client 2 recieved e430b175827fcc014a3102d305f051f78b367b0b5950dc473722cadb975b44f2 for query 93 85 
+client 2 has 72 chunks 
+Chunk_Request 86 2  
+Client 1 recieved Retry for query 85 102 
+client 1 has 66 chunks 
+Chunk_Request 47 1  
+Client 3 recieved 8d322215602a07aff7543c36b0828f02 for query 98 48 
+client 3 has 94 chunks 
+Chunk_Request 33 3  
+Client 1 recieved Retry for query 85 47 
+client 1 has 66 chunks 
+Chunk_Request 16 1  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffa for query 34 86 
+client 2 has 73 chunks 
+Chunk_Request 40 2  
+Client 4 recieved 19b744dcb58217c2402e18cd517e3688 for query 47 5 
+client 4 has 88 chunks 
+Chunk_Request 0 4  
+Client 4 recieved 414891f4e1b83a2a8fd1a580fad5958b for query 56 0 
+client 4 has 89 chunks 
+Chunk_Request 30 4  
+Client 4 recieved e28d72929585961d4e56ab9f55955145 for query 22 30 
+client 4 has 89 chunks 
+Chunk_Request 74 4  
+Client 3 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 101 33 
+client 3 has 95 chunks 
+Chunk_Request 105 3  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 59 103 
+client 0 has 99 chunks 
+Chunk_Request 57 0  
+Client 4 recieved fb9f79347943c50597e278e1be6ae562 for query 3 74 
+client 4 has 89 chunks 
+Chunk_Request 30 4  
+Client 1 recieved Retry for query 85 16 
+client 1 has 66 chunks 
+Chunk_Request 16 1  
+Client 1 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 55 16 
+client 1 has 67 chunks 
+Chunk_Request 13 1  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffa for query 34 40 
+client 2 has 73 chunks 
+Chunk_Request 31 2  
+Client 3 recieved 8d322215602a07aff7543c36b0828f02 for query 67 105 
+client 3 has 95 chunks 
+Chunk_Request 30 3  
+Client 4 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 44 30 
+client 4 has 89 chunks 
+Chunk_Request 78 4  
+Client 3 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 33 30 
+client 3 has 96 chunks 
+Chunk_Request 38 3  
+Client 0 recieved 6cb86850c95057bbd05ebca8a86903f1 for query 103 57 
+client 0 has 100 chunks 
+Chunk_Request 79 0  
+Client 4 recieved 8d322215602a07aff7543c36b0828f02 for query 87 78 
+client 4 has 89 chunks 
+Chunk_Request 11 4  
+Client 4 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 73 11 
+client 4 has 90 chunks 
+Chunk_Request 71 4  
+Client 1 recieved 72319444be332681abb1ff4b6156cdfc for query 78 13 
+client 1 has 68 chunks 
+Chunk_Request 100 1  
+Client 2 recieved 18e850ebc701032f369e7c49d29beb89 for query 90 31 
+client 2 has 73 chunks 
+Chunk_Request 28 2  
+Client 3 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 33 38 
+client 3 has 96 chunks 
+Chunk_Request 31 3  
+Client 3 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 33 31 
+client 3 has 96 chunks 
+Chunk_Request 23 3  
+Client 0 recieved e430b175827fcc014a3102d305f051f7 for query 86 79 
+client 0 has 101 chunks 
+Chunk_Request 47 0  
+Client 0 recieved 2109525b566d4f40cea444e996cefa9b for query 63 47 
+client 0 has 102 chunks 
+Chunk_Request 79 0  
+Client 2 recieved Retry for query 90 28 
+client 2 has 73 chunks 
+Chunk_Request 8 2  
+Client 4 recieved 9d9ec827980c629a33a81814efc3cf1eNot_Present for query 42 71 
+Client 1 recieved cf2e001fc76c9357b168373c469a9cd4 for query 89 100 
+client 1 has 69 chunks 
+Chunk_Request 18 1  
+client 4 has 90 chunks 
+Chunk_Request 30 4  
+Client 3 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 33 23 
+client 3 has 96 chunks 
+Chunk_Request 30 3  
+Client 0 recieved 19b744dcb58217c2402e18cd517e3688 for query 82 79 
+client 0 has 102 chunks 
+Chunk_Request 57 0  
+Client 1 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 21 18 
+client 1 has 70 chunks 
+Chunk_Request 105 1  
+Client 4 recieved e430b175827fcc014a3102d305f051f79d9ec827980c629a33a81814efc3cf1e for query 84 30 
+client 4 has 90 chunks 
+Chunk_Request 74 4  
+Client 0 recieved e430b175827fcc014a3102d305f051f7 for query 86 57 
+client 0 has 102 chunks 
+Chunk_Request 50 0  
+Client 4 recieved 3a2ea164331e78703402d25a0557ce49 for query 3 74 
+client 4 has 90 chunks 
+Chunk_Request 5 4  
+Client 4 recieved 83981728fd7636cf30dbb12e23fb17a3 for query 30 5 
+Client 0 recieved 8424b082bea9aac9a92c1425022e9116 for query 56 50 
+client 4 has 91 chunks 
+Chunk_Request 29 4  
+client 0 has 102 chunks 
+Chunk_Request 47 0  
+Client 0 recieved 866912a07d1e44c131d209298f97a6ab for query 79 47 
+client 0 has 103 chunks 
+Chunk_Request 57 0  
+Client 4 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 89 29 
+client 4 has 92 chunks 
+Chunk_Request 13 4  
+Client 0 recieved Retry for query 87 57 
+client 0 has 103 chunks 
+Chunk_Request 47 0  
+Client 0 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 44 47 
+client 0 has 103 chunks 
+Chunk_Request 108 0  
+Client 4 recieved 83d6758cfb6e98dfe9fcb90b3b8efc86 for query 2 13 
+client 4 has 92 chunks 
+Chunk_Request 0 4  
+Client 0 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 63 108 
+client 0 has 103 chunks 
+Chunk_Request 101 0  
+Client 4 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 63 0 
+client 4 has 92 chunks 
+Chunk_Request 38 4  
+Client 4 recieved Retry for query 87 38 
+client 4 has 92 chunks 
+Chunk_Request 1 4  
+Client 4 recieved 8424b082bea9aac9a92c1425022e9116 for query 88 1 
+client 4 has 92 chunks 
+Chunk_Request 52 4  
+Client 4 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 63 52 
+client 4 has 92 chunks 
+Chunk_Request 78 4  
+Client 0 recieved a2dea404f53f5089f53828ae4a674688 for query 100 101 
+client 0 has 103 chunks 
+Chunk_Request 28 0  
+Client 3 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 110 30 
+client 3 has 96 chunks 
+Chunk_Request 50 3  
+Client 2 recieved 38a07516ec977f4cdd6fbf4a2194487f for query 16 8 
+client 2 has 73 chunks 
+Chunk_Request 28 2  
+Client 0 recieved bc4de9c73a7c59fd25b78cdedf6583c0 for query 99 28 
+client 0 has 103 chunks 
+Chunk_Request 72 0  
+Client 0 recieved ed4b8159be2b86a8f138ff9e192a13f6 for query 44 72 
+client 0 has 103 chunks 
+Chunk_Request 72 0  
+Client 0 recieved ed4b8159be2b86a8f138ff9e192a13f6 for query 44 72 
+client 0 has 103 chunks 
+Chunk_Request 72 0  
+Client 0 recieved fb9f79347943c50597e278e1be6ae562 for query 47 72 
+client 0 has 104 chunks 
+Chunk_Request 54 0  
+Client 2 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 73 28 
+client 2 has 74 chunks 
+Chunk_Request 88 2  
+Client 3 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 110 50 
+client 3 has 96 chunks 
+Chunk_Request 105 3  
+Client 4 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 71 78 
+client 4 has 93 chunks 
+Chunk_Request 13 4  
+Client 4 recieved acf0b819992e4f5669918e957bdc41b1 for query 13 13 
+client 4 has 94 chunks 
+Chunk_Request 0 4  
+Client 4 recieved 242735909685039364c16660c4bfa1a9 for query 27 0 
+client 4 has 94 chunks 
+Chunk_Request 72 4  
+Client 4 recieved 242735909685039364c16660c4bfa1a9 for query 27 72 
+client 4 has 94 chunks 
+Chunk_Request 11 4  
+Client 4 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 30 11 
+client 4 has 94 chunks 
+Chunk_Request 78 4  
+Client 1 recieved 296144971ad86b500b808d37560efd6cNot_Present for query 101 105 
+client 1 has 71 chunks 
+Chunk_Request 111 1  
+Client 2 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 73 88 
+client 2 has 74 chunks 
+Chunk_Request 9 2  
+Client 4 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 56 78 
+client 4 has 94 chunks 
+Chunk_Request 11 4  
+Client 0 recieved f6a335f1695bddb643d123e75f5758c8 for query 58 54 
+client 0 has 104 chunks 
+Chunk_Request 72 0  
+Client 4 recieved acf0b819992e4f5669918e957bdc41b1 for query 70 11 
+client 4 has 94 chunks 
+Chunk_Request 26 4  
+Client 4 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 74 26 
+client 4 has 95 chunks 
+Chunk_Request 1 4  
+Client 2 recieved fb9f79347943c50597e278e1be6ae562 for query 89 9 
+client 2 has 75 chunks 
+Chunk_Request 79 2  
+Client 3 recieved Retry for query 6 105 
+client 3 has 97 chunks 
+Chunk_Request 50 3  
+Client 1 recieved Retry for query 90 111 
+client 1 has 72 chunks 
+Chunk_Request 82 1  
+Client 0 recieved f6a335f1695bddb643d123e75f5758c8 for query 58 72 
+client 0 has 104 chunks 
+Chunk_Request 108 0  
+Client 0 recieved abdb0780892382af07642a04cde7ae0537065b004931bfc16f0e947ac5d06542 for query 79 108 
+client 0 has 104 chunks 
+Chunk_Request 101 0  
+client 4 has 95 chunks 
+Chunk_Request 26 4  
+Client 4 recieved 0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present for query 3 26 
+client 4 has 95 chunks 
+Chunk_Request 46 4  
+Client 2 recieved fb9f79347943c50597e278e1be6ae562 for query 21 79 
+client 2 has 76 chunks 
+Chunk_Request 86 2  
+Client 0 recieved abdb0780892382af07642a04cde7ae0537065b004931bfc16f0e947ac5d06542 for query 79 101 
+client 0 has 104 chunks 
+Chunk_Request 72 0  
+Client 3 recieved Retry for query 33 50 
+client 3 has 97 chunks 
+Chunk_Request 18 3  
+Client 1 recieved 9d9ec827980c629a33a81814efc3cf1e for query 16 82 
+client 1 has 73 chunks 
+Chunk_Request 66 1  
+Client 4 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 72 46 
+client 4 has 96 chunks 
+Chunk_Request 38 4  
+Client 2 recieved fb9f79347943c50597e278e1be6ae562 for query 21 86 
+client 2 has 76 chunks 
+Chunk_Request 24 2  
+Client 3 recieved Retry for query 33 18 
+client 3 has 97 chunks 
+Chunk_Request 18 3  
+Client 0 recieved 38a07516ec977f4cdd6fbf4a2194487f for query 57 72 
+client 0 has 105 chunks 
+Chunk_Request 101 0  
+Client 1 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 79 66 
+client 1 has 74 chunks 
+Chunk_Request 71 1  
+Client 0 recieved 38a07516ec977f4cdd6fbf4a2194487f for query 57 101 
+client 0 has 105 chunks 
+Chunk_Request 50 0  
+Client 1 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 1 71 
+client 1 has 74 chunks 
+Chunk_Request 65 1  
+Client 0 recieved dc5f78ec0790562826b14c8eabe7a7c8414891f4e1b83a2a8fd1a580fad5958b for query 44 50 
+client 0 has 105 chunks 
+Chunk_Request 50 0  
+Client 0 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 79 50 
+client 0 has 105 chunks 
+Chunk_Request 72 0  
+Client 0 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 79 72 
+client 0 has 105 chunks 
+Chunk_Request 101 0  
+Client 0 recieved 242735909685039364c16660c4bfa1a9 for query 63 101 
+client 0 has 105 chunks 
+Chunk_Request 28 0  
+Client 0 recieved 242735909685039364c16660c4bfa1a9 for query 63 28 
+client 0 has 105 chunks 
+Chunk_Request 72 0  
+Client 2 recieved Retry for query 21 24 
+client 2 has 76 chunks 
+Chunk_Request 41 2  
+Client 3 recieved 8424b082bea9aac9a92c1425022e9116 for query 62 18 
+client 3 has 97 chunks 
+Chunk_Request 30 3  
+Client 2 recieved 296144971ad86b500b808d37560efd6cNot_Present for query 78 41 
+client 2 has 77 chunks 
+Chunk_Request 88 2  
+Client 0 recieved 8424b082bea9aac9a92c1425022e9116 for query 101 72 
+client 0 has 106 chunks 
+Chunk_Request 108 0  
+Client 0 recieved 8424b082bea9aac9a92c1425022e9116 for query 101 108 
+client 0 has 106 chunks 
+Chunk_Request 108 0  
+Client 0 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 72 108 
+client 0 has 107 chunks 
+Chunk_Request 54 0  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 79 54 
+client 0 has 107 chunks 
+Chunk_Request 108 0  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 79 108 
+client 0 has 107 chunks 
+Chunk_Request 28 0  
+Client 0 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 59 28 
+client 0 has 107 chunks 
+Chunk_Request 28 0  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 79 28 
+client 0 has 107 chunks 
+Chunk_Request 54 0  
+Client 0 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 79 54 
+client 0 has 107 chunks 
+Chunk_Request 28 0  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 27 38 
+client 4 has 96 chunks 
+Chunk_Request 7 4  
+Client 1 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 1 65 
+client 1 has 74 chunks 
+Chunk_Request 10 1  
+Client 1 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 1 10 
+client 1 has 74 chunks 
+Chunk_Request 82 1  
+Client 1 recieved e28d72929585961d4e56ab9f55955145 for query 60 82 
+client 1 has 75 chunks 
+Chunk_Request 18 1  
+Client 1 recieved Retry for query 74 18 
+client 1 has 76 chunks 
+Chunk_Request 15 1  
+Client 1 recieved Retry for query 74 15 
+client 1 has 76 chunks 
+Chunk_Request 66 1  
+Client 1 recieved Retry for query 74 66 
+client 1 has 76 chunks 
+Chunk_Request 65 1  
+Client 3 recieved 8424b082bea9aac9a92c1425022e9116 for query 62 30 
+client 3 has 97 chunks 
+Chunk_Request 57 3  
+Client 2 recieved 296144971ad86b500b808d37560efd6cNot_Present for query 78 88 
+client 2 has 77 chunks 
+Chunk_Request 24 2  
+Client 4 recieved Retry for query 74 7 
+client 4 has 96 chunks 
+Chunk_Request 78 4  
+Client 0 recieved e430b175827fcc014a3102d305f051f7 for query 103 28 
+client 0 has 107 chunks 
+Chunk_Request 28 0  
+Client 3 recieved 72319444be332681abb1ff4b6156cdfc for query 33 57 
+client 3 has 97 chunks 
+Chunk_Request 51 3  
+Client 3 recieved 72319444be332681abb1ff4b6156cdfc for query 33 51 
+client 3 has 97 chunks 
+Chunk_Request 51 3  
+Client 3 recieved 72319444be332681abb1ff4b6156cdfc for query 33 51 
+client 3 has 97 chunks 
+Chunk_Request 50 3  
+Client 1 recieved 72319444be332681abb1ff4b6156cdfc for query 99 65 
+client 1 has 76 chunks 
+Chunk_Request 9 1  
+Client 3 recieved 72319444be332681abb1ff4b6156cdfc for query 33 50 
+client 3 has 97 chunks 
+Chunk_Request 108 3  
+Client 0 recieved bc4de9c73a7c59fd25b78cdedf6583c083981728fd7636cf30dbb12e23fb17a3 for query 77 28 
+client 0 has 108 chunks 
+Chunk_Request 108 0  
+Client 4 recieved 5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254 for query 43 78 
+client 4 has 97 chunks 
+Chunk_Request 38 4  
+Client 0 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 79 108 
+client 0 has 108 chunks 
+Chunk_Request 50 0  
+Client 3 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 48 108 
+client 3 has 98 chunks 
+Chunk_Request 109 3  
+Client 3 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 48 109 
+client 3 has 98 chunks 
+Chunk_Request 108 3  
+Client 3 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 48 108 
+client 3 has 98 chunks 
+Chunk_Request 109 3  
+Client 2 recieved a2dea404f53f5089f53828ae4a674688 for query 78 24 
+client 2 has 77 chunks 
+Chunk_Request 84 2  
+Client 0 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 79 50 
+client 0 has 108 chunks 
+Chunk_Request 54 0  
+Client 4 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 89 38 
+client 4 has 97 chunks 
+Chunk_Request 61 4  
+Client 2 recieved cf2e001fc76c9357b168373c469a9cd4 for query 38 84 
+client 2 has 78 chunks 
+Chunk_Request 19 2  
+Client 0 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 101 54 
+client 0 has 108 chunks 
+Chunk_Request 50 0  
+Client 1 recieved Retry for query 9 9 
+client 1 has 77 chunks 
+Chunk_Request 75 1  
+Client 3 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 96 109 
+client 3 has 99 chunks 
+Chunk_Request 31 3  
+Client 0 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 101 50 
+client 0 has 108 chunks 
+Chunk_Request 54 0  
+Client 2 recieved 296144971ad86b500b808d37560efd6cNot_Present for query 2 19 
+client 2 has 79 chunks 
+Chunk_Request 8 2  
+Client 1 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 101 75 
+client 1 has 77 chunks 
+Chunk_Request 71 1  
+Client 0 recieved 3a2ea164331e78703402d25a0557ce49 for query 77 54 
+client 0 has 108 chunks 
+Chunk_Request 54 0  
+Client 4 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 0 61 
+client 4 has 98 chunks 
+Chunk_Request 11 4  
+Client 3 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 96 31 
+client 3 has 99 chunks 
+Chunk_Request 31 3  
+Client 2 recieved 296144971ad86b500b808d37560efd6cNot_Present for query 2 8 
+client 2 has 79 chunks 
+Chunk_Request 25 2  
+Client 1 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 101 71 
+client 1 has 77 chunks 
+Chunk_Request 10 1  
+Client 0 recieved 3a2ea164331e78703402d25a0557ce49 for query 77 54 
+Client 1 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 101 10 
+client 0 has 108 chunks 
+Chunk_Request 28 0  
+client 1 has 77 chunks 
+Chunk_Request 47 1  
+Client 0 recieved 3a2ea164331e78703402d25a0557ce49 for query 77 28 
+client 0 has 108 chunks 
+Chunk_Request 50 0  
+Client 4 recieved 60cef7cad04f7567cf3182540b874a365fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254 for query 30 11 
+client 4 has 98 chunks 
+Chunk_Request 9 4  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 90 47 
+client 1 has 77 chunks 
+Chunk_Request 71 1  
+Client 3 recieved 7cb097416361518a3af40b7fe7a2a8b7d1009e329a05c4da360bef7ba3e8cc33c81b59f1f5f8983cb7022a2eb948d38c for query 6 31 
+client 3 has 99 chunks 
+Chunk_Request 23 3  
+Client 0 recieved bc4de9c73a7c59fd25b78cdedf6583c0 for query 103 50 
+client 0 has 108 chunks 
+Chunk_Request 50 0  
+Client 0 recieved bc4de9c73a7c59fd25b78cdedf6583c0 for query 103 50 
+client 0 has 108 chunks 
+Chunk_Request 54 0  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 5 9 
+Client 0 recieved 83981728fd7636cf30dbb12e23fb17a3 for query 57 54 
+client 4 has 99 chunks 
+Chunk_Request 45 4  
+client 0 has 108 chunks 
+Chunk_Request 50 0  
+Client 1 recieved 72319444be332681abb1ff4b6156cdfc for query 99 71 
+client 1 has 77 chunks 
+Chunk_Request 3 1  
+Client 3 recieved 7cb097416361518a3af40b7fe7a2a8b7d1009e329a05c4da360bef7ba3e8cc33c81b59f1f5f8983cb7022a2eb948d38c for query 6 23 
+client 3 has 99 chunks 
+Chunk_Request 35 3  
+Client 3 recieved 7cb097416361518a3af40b7fe7a2a8b7d1009e329a05c4da360bef7ba3e8cc33c81b59f1f5f8983cb7022a2eb948d38c for query 6 35 
+client 3 has 99 chunks 
+Chunk_Request 108 3  
+Client 3 recieved 83981728fd7636cf30dbb12e23fb17a3 for query 57 108 
+client 3 has 100 chunks 
+Chunk_Request 30 3  
+Client 0 recieved 83981728fd7636cf30dbb12e23fb17a3 for query 57 50 
+client 0 has 108 chunks 
+Chunk_Request 108 0  
+Client 3 recieved 7cb097416361518a3af40b7fe7a2a8b7d1009e329a05c4da360bef7ba3e8cc33c81b59f1f5f8983cb7022a2eb948d38c for query 6 30 
+client 3 has 100 chunks 
+Chunk_Request 108 3  
+Client 1 recieved 18cf36bf4a8317695925916da1761922 for query 79 3 
+client 1 has 77 chunks 
+Chunk_Request 66 1  
+Client 2 recieved 3a2ea164331e78703402d25a0557ce490766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d for query 43 25 
+client 2 has 79 chunks 
+Chunk_Request 26 2  
+Client 4 recieved Retry for query 3 45 
+client 4 has 99 chunks 
+Chunk_Request 7 4  
+Client 4 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 74 7 
+client 4 has 99 chunks 
+Chunk_Request 9 4  
+Client 4 recieved 18cf36bf4a8317695925916da1761922 for query 29 9 
+client 4 has 100 chunks 
+Chunk_Request 61 4  
+Client 4 recieved Retry for query 47 61 
+client 4 has 100 chunks 
+Chunk_Request 7 4  
+Client 3 recieved 7cb097416361518a3af40b7fe7a2a8b7d1009e329a05c4da360bef7ba3e8cc33c81b59f1f5f8983cb7022a2eb948d38c for query 6 108 
+client 3 has 100 chunks 
+Chunk_Request 38 3  
+Client 0 recieved cf2e001fc76c9357b168373c469a9cd4 for query 79 108 
+client 0 has 108 chunks 
+Chunk_Request 28 0  
+Client 1 recieved cf2e001fc76c9357b168373c469a9cd4 for query 79 66 
+client 1 has 77 chunks 
+Chunk_Request 47 1  
+Client 0 recieved cf2e001fc76c9357b168373c469a9cd4 for query 79 28 
+client 0 has 108 chunks 
+Chunk_Request 28 0  
+Client 1 recieved cf2e001fc76c9357b168373c469a9cd4 for query 79 47 
+client 1 has 77 chunks 
+Chunk_Request 47 1  
+Client 4 recieved 83d6758cfb6e98dfe9fcb90b3b8efc86 for query 89 7 
+client 4 has 100 chunks 
+Chunk_Request 1 4  
+Client 2 recieved RetryRetry for query 30 26 
+client 2 has 79 chunks 
+Chunk_Request 28 2  
+Client 3 recieved 242735909685039364c16660c4bfa1a9 for query 35 38 
+client 3 has 101 chunks 
+Chunk_Request 109 3  
+Client 3 recieved 242735909685039364c16660c4bfa1a9 for query 35 109 
+client 3 has 101 chunks 
+Chunk_Request 31 3  
+Client 0 recieved Retry for query 47 28 
+client 0 has 108 chunks 
+Chunk_Request 28 0  
+Client 0 recieved abdb0780892382af07642a04cde7ae05 for query 79 28 
+client 0 has 108 chunks 
+Chunk_Request 28 0  
+Client 2 recieved RetryRetry for query 30 28 
+client 2 has 79 chunks 
+Chunk_Request 31 2  
+Client 3 recieved cf2e001fc76c9357b168373c469a9cd4 for query 18 31 
+client 3 has 102 chunks 
+Chunk_Request 50 3  
+Client 4 recieved 242735909685039364c16660c4bfa1a9 for query 72 1 
+client 4 has 100 chunks 
+Chunk_Request 45 4  
+Client 1 recieved d5abc2feb70b04da6b654ff0b24ac2eb for query 100 47 
+client 1 has 78 chunks 
+Chunk_Request 22 1  
+Client 0 recieved abdb0780892382af07642a04cde7ae05 for query 79 28 
+client 0 has 108 chunks 
+Chunk_Request 108 0  
+Client 3 recieved Retry for query 6 50 
+client 3 has 102 chunks 
+Chunk_Request 109 3  
+Client 1 recieved ac36d2bf39458752d569b6e25fd694dc for query 100 22 
+client 1 has 78 chunks 
+Chunk_Request 49 1  
+Client 1 recieved e58fee2888199e3882757987ffe8c8de for query 73 49 
+client 1 has 79 chunks 
+Chunk_Request 12 1  
+Client 2 recieved 38a07516ec977f4cdd6fbf4a2194487f0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d for query 110 31 
+client 2 has 80 chunks 
+Chunk_Request 44 2  
+Client 3 recieved Retry for query 6 109 
+client 3 has 102 chunks 
+Chunk_Request 105 3  
+Client 4 recieved 8424b082bea9aac9a92c1425022e9116 for query 5 45 
+client 4 has 100 chunks 
+Chunk_Request 1 4  
+Client 0 recieved c9cf8c7ea19a7265cf362711e56941ed for query 57 108 
+client 0 has 108 chunks 
+Chunk_Request 50 0  
+Client 3 recieved Retry for query 6 105 
+client 3 has 102 chunks 
+Chunk_Request 105 3  
+Client 2 recieved abdb0780892382af07642a04cde7ae05 for query 33 44 
+client 2 has 81 chunks 
+Chunk_Request 86 2  
+Client 2 recieved abdb0780892382af07642a04cde7ae05 for query 33 86 
+client 2 has 81 chunks 
+Chunk_Request 107 2  
+Client 0 recieved bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f7 for query 50 50 
+client 0 has 109 chunks 
+Chunk_Request 108 0  
+Client 4 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 0 1 
+client 4 has 100 chunks 
+Chunk_Request 38 4  
+Client 2 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 44 107 
+client 2 has 82 chunks 
+Chunk_Request 31 2  
+Client 0 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6c for query 47 108 
+client 0 has 109 chunks 
+Chunk_Request 108 0  
+Client 3 recieved 242735909685039364c16660c4bfa1a97cb097416361518a3af40b7fe7a2a8b7 for query 101 105 
+client 3 has 102 chunks 
+Chunk_Request 23 3  
+Client 1 recieved Retry38a07516ec977f4cdd6fbf4a2194487fNot_Present for query 3 12 
+client 1 has 80 chunks 
+Chunk_Request 10 1  
+Client 3 recieved e58fee2888199e3882757987ffe8c8de for query 48 23 
+client 3 has 102 chunks 
+Chunk_Request 50 3  
+Client 3 recieved e58fee2888199e3882757987ffe8c8de for query 48 50 
+client 3 has 102 chunks 
+Chunk_Request 51 3  
+Client 3 recieved e58fee2888199e3882757987ffe8c8de for query 48 51 
+client 3 has 102 chunks 
+Chunk_Request 51 3  
+Client 2 recieved 83d6758cfb6e98dfe9fcb90b3b8efc86 for query 3 31 
+client 2 has 83 chunks 
+Chunk_Request 88 2  
+Client 4 recieved Retry for query 30 38 
+client 4 has 100 chunks 
+Chunk_Request 38 4  
+Client 0 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 57 108 
+client 0 has 109 chunks 
+Chunk_Request 108 0  
+Client 1 recieved 18cf36bf4a8317695925916da1761922 for query 86 10 
+client 1 has 81 chunks 
+Chunk_Request 10 1  
+Client 2 recieved Retry38a07516ec977f4cdd6fbf4a2194487fNot_Present for query 3 88 
+client 2 has 83 chunks 
+Chunk_Request 24 2  
+Client 1 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 65 10 
+client 1 has 82 chunks 
+Chunk_Request 14 1  
+Client 4 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 74 38 
+client 4 has 100 chunks 
+Chunk_Request 7 4  
+Client 4 recieved Retry for query 30 7 
+client 4 has 100 chunks 
+Chunk_Request 26 4  
+Client 0 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6c for query 47 108 
+client 0 has 109 chunks 
+Chunk_Request 28 0  
+Client 4 recieved 6bd51da3a7a050044571b6a42d2c263c for query 78 26 
+client 4 has 101 chunks 
+Chunk_Request 11 4  
+Client 3 recieved RetryNot_Presenta2dea404f53f5089f53828ae4a674688 for query 33 51 
+client 3 has 102 chunks 
+Chunk_Request 100 3  
+Client 1 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 65 14 
+client 1 has 82 chunks 
+Chunk_Request 22 1  
+Client 0 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 108 28 
+client 0 has 110 chunks 
+Chunk_Request 54 0  
+Client 0 recieved fb9f79347943c50597e278e1be6ae56238a07516ec977f4cdd6fbf4a2194487f for query 101 54 
+client 0 has 110 chunks 
+Chunk_Request 28 0  
+Client 3 recieved 18cf36bf4a8317695925916da1761922 for query 105 100 
+Client 0 recieved a2dea404f53f5089f53828ae4a674688 for query 28 28 
+client 0 has 111 chunks 
+Chunk_Request 54 0  
+client 3 has 103 chunks 
+Chunk_Request 31 3  
+Client 1 recieved 60de79bd0b8c4e43e17b811c1ec55d06 for query 91 22 
+client 1 has 83 chunks 
+Chunk_Request 111 1  
+Client 3 recieved Retry for query 30 31 
+client 3 has 104 chunks 
+Chunk_Request 23 3  
+Client 1 recieved 60de79bd0b8c4e43e17b811c1ec55d06 for query 91 111 
+client 1 has 83 chunks 
+Chunk_Request 54 1  
+Client 0 recieved Retry for query 72 54 
+Client 4 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 11 11 
+client 0 has 111 chunks Client 2 recieved c9cf8c7ea19a7265cf362711e56941ed for query 43 24 
+client 4 has 102 chunks 
+Chunk_Request 7 4  
+
+Chunk_Request 54 0  
+client 2 has 83 chunks 
+Chunk_Request 6 2  
+Client 0 recieved Retry for query 72 54 
+client 0 has 111 chunks 
+Chunk_Request 54 0  
+Client 3 recieved e430b175827fcc014a3102d305f051f783981728fd7636cf30dbb12e23fb17a3 for query 38 23 
+client 3 has 105 chunks 
+Chunk_Request 108 3  
+Client 2 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 43 6 
+client 2 has 83 chunks 
+Chunk_Request 98 2  
+Client 0 recieved 242735909685039364c16660c4bfa1a9 for query 54 54 
+Client 0 has recieved all data
+{0: '242735909685039364c16660c4bfa1a9', 1: 'd1009e329a05c4da360bef7ba3e8cc33', 2: 'abdb0780892382af07642a04cde7ae05', 3: 'e430b175827fcc014a3102d305f051f7', 4: 'c9b52c95f66df0697292aeb6b313bda8', 5: 'c9cf8c7ea19a7265cf362711e56941ed', 6: '38a07516ec977f4cdd6fbf4a2194487f', 7: '37065b004931bfc16f0e947ac5d06542', 8: '4595102f4ea9da9e07a4c31dd54c5c99', 9: 'cf2e001fc76c9357b168373c469a9cd4', 10: '8d322215602a07aff7543c36b0828f02', 11: '3a2ea164331e78703402d25a0557ce49', 12: '866912a07d1e44c131d209298f97a6ab', 13: 'dc5f78ec0790562826b14c8eabe7a7c8', 14: '7de81776b97131ff731908c313e4c8fe', 15: '87a8f35add15075d6fe9df9e283dc1fd', 16: 'a2dea404f53f5089f53828ae4a674688', 17: '9d9ec827980c629a33a81814efc3cf1e', 18: 'bcfbaa07a0f3580c1e117458de0a4663', 19: '7cb097416361518a3af40b7fe7a2a8b7', 20: 'b9b2f5779c8a6cffa10388fc6fc62e97', 21: 'bc4de9c73a7c59fd25b78cdedf6583c0', 22: '19b744dcb58217c2402e18cd517e3688', 81: 'c9cf8c7ea19a7265cf362711e56941ed', 36: '3a2ea164331e78703402d25a0557ce49', 23: 'bae3564c83cc9b11d87e42381f4b0f05', 66: 'bae3564c83cc9b11d87e42381f4b0f05', 43: '0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d', 39: '879020560c9f14dd113cceeace174df1', 76: 'bae3564c83cc9b11d87e42381f4b0f05', 83: '8b367b0b5950dc473722cadb975b44f2', 111: 'Retry', 37: '0bfe90c515546dd008d0e95d69e12bf1', 104: 'Retry', 92: 'Retry', 38: 'Retry', 51: 'RetryNot_Present', 62: 'bcfbaa07a0f3580c1e117458de0a4663', 46: '8424b082bea9aac9a92c1425022e9116', 40: '3c957577cfc05101c7901e761a1e255b', 88: '37065b004931bfc16f0e947ac5d06542', 45: 'Retry', 64: 'Retry', 85: '6cb86850c95057bbd05ebca8a86903f1', 90: '8424b082bea9aac9a92c1425022e9116', 97: 'e58fee2888199e3882757987ffe8c8deNot_Present', 78: '3a2ea164331e78703402d25a0557ce49', 30: '242735909685039364c16660c4bfa1a9', 89: '87a8f35add15075d6fe9df9e283dc1fd', 60: 'c81b59f1f5f8983cb7022a2eb948d38c', 91: 'e28d72929585961d4e56ab9f55955145', 96: 'Retry', 84: 'ed4b8159be2b86a8f138ff9e192a13f6', 25: 'dc5f78ec0790562826b14c8eabe7a7c8', 53: 'bc4de9c73a7c59fd25b78cdedf6583c0', 102: 'bcfbaa07a0f3580c1e117458de0a4663', 32: '72319444be332681abb1ff4b6156cdfc', 74: '7cb097416361518a3af40b7fe7a2a8b7', 65: 'c9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9', 93: '8d322215602a07aff7543c36b0828f02', 41: 'e28d72929585961d4e56ab9f55955145Not_Present', 49: 'bae3564c83cc9b11d87e42381f4b0f05', 52: 'Retry', 73: 'Retry', 68: 'd1009e329a05c4da360bef7ba3e8cc33', 75: '674ab49463bf45e2d554744133538ac3', 67: '9d9ec827980c629a33a81814efc3cf1e', 70: 'bae3564c83cc9b11d87e42381f4b0f05', 61: 'ac36d2bf39458752d569b6e25fd694dc', 69: 'Retry', 98: 'd1009e329a05c4da360bef7ba3e8cc33', 80: 'c9cf8c7ea19a7265cf362711e56941ed', 33: '83981728fd7636cf30dbb12e23fb17a3', 26: 'RetryNot_Present', 31: '8b367b0b5950dc473722cadb975b44f2Not_Present', 34: 'd2a23398c2df465e6ee00990b3c9ddee', 55: 'e430b175827fcc014a3102d305f051f7', 29: 'df3cf7bc0b99fe1f68c0ba1a78ce3a6c', 24: 'bae3564c83cc9b11d87e42381f4b0f058424b082bea9aac9a92c1425022e9116', 105: '6cb86850c95057bbd05ebca8a86903f1', 109: 'fb9f79347943c50597e278e1be6ae562', 82: '19b744dcb58217c2402e18cd517e3688', 42: 'd1009e329a05c4da360bef7ba3e8cc33', 48: 'Retry', 107: '866912a07d1e44c131d209298f97a6ab', 71: '0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present', 35: 'RetryNot_Present', 94: '19b744dcb58217c2402e18cd517e3688', 87: 'Retry', 99: 'bc4de9c73a7c59fd25b78cdedf6583c0', 44: 'dc5f78ec0790562826b14c8eabe7a7c8414891f4e1b83a2a8fd1a580fad5958b', 56: '8424b082bea9aac9a92c1425022e9116', 110: 'fb9f79347943c50597e278e1be6ae562', 58: 'f6a335f1695bddb643d123e75f5758c8', 59: '7cb097416361518a3af40b7fe7a2a8b7', 27: '414891f4e1b83a2a8fd1a580fad5958b', 100: 'a2dea404f53f5089f53828ae4a674688', 95: 'bcfbaa07a0f3580c1e117458de0a4663', 106: '7de81776b97131ff731908c313e4c8fe', 103: 'bc4de9c73a7c59fd25b78cdedf6583c0', 86: 'e430b175827fcc014a3102d305f051f7', 63: '242735909685039364c16660c4bfa1a9', 79: 'abdb0780892382af07642a04cde7ae05', 47: 'df3cf7bc0b99fe1f68c0ba1a78ce3a6c', 57: '87a8f35add15075d6fe9df9e283dc1fd', 101: 'fb9f79347943c50597e278e1be6ae56238a07516ec977f4cdd6fbf4a2194487f', 72: 'Retry', 77: '3a2ea164331e78703402d25a0557ce49', 50: 'bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f7', 108: 'bcfbaa07a0f3580c1e117458de0a4663', 28: 'a2dea404f53f5089f53828ae4a674688', 54: '242735909685039364c16660c4bfa1a9'}
+Client 4 recieved fb9f79347943c50597e278e1be6ae56238a07516ec977f4cdd6fbf4a2194487f for query 71 7 
+client 4 has 102 chunks 
+Chunk_Request 1 4  
+Client 2 recieved dc5f78ec0790562826b14c8eabe7a7c8414891f4e1b83a2a8fd1a580fad5958b for query 77 98 
+client 2 has 83 chunks 
+Chunk_Request 28 2  
+Client 1 recieved Retry for query 93 54 
+client 1 has 84 chunks 
+Chunk_Request 63 1  
+Client 3 recieved e430b175827fcc014a3102d305f051f783981728fd7636cf30dbb12e23fb17a3 for query 38 108 
+client 3 has 105 chunks 
+Chunk_Request 50 3  
+Client 4 recieved 5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254 for query 30 1 
+client 4 has 102 chunks 
+Chunk_Request 9 4  
+Client 1 recieved Retry for query 93 63 
+client 1 has 84 chunks 
+Chunk_Request 14 1  
+Client 1 recieved Retry for query 93 14 
+client 1 has 84 chunks 
+Chunk_Request 8 1  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 47 8 
+client 1 has 85 chunks 
+Chunk_Request 63 1  
+Client 3 recieved 242735909685039364c16660c4bfa1a9e430b175827fcc014a3102d305f051f7 for query 31 50 
+client 3 has 106 chunks 
+Chunk_Request 108 3  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 47 63 
+client 1 has 85 chunks 
+Chunk_Request 7 1  
+Client 2 recieved Retry for query 84 28 
+client 2 has 84 chunks 
+Chunk_Request 19 2  
+Client 4 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 74 9 
+client 4 has 102 chunks 
+Chunk_Request 7 4  
+Client 3 recieved e430b175827fcc014a3102d305f051f7 for query 23 108 
+client 3 has 107 chunks 
+Chunk_Request 50 3  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 5 7 
+client 4 has 102 chunks 
+Chunk_Request 1 4  
+Client 3 recieved e430b175827fcc014a3102d305f051f7 for query 23 50 
+client 3 has 107 chunks 
+Chunk_Request 100 3  
+Client 1 recieved Retry for query 83 7 
+client 1 has 85 chunks 
+Chunk_Request 105 1  
+Client 3 recieved af386e70331a520287001602f2d18d95 for query 30 100 
+client 3 has 107 chunks 
+Chunk_Request 108 3  
+Client 2 recieved 83981728fd7636cf30dbb12e23fb17a3 for query 25 19 
+client 2 has 85 chunks 
+Chunk_Request 19 2  
+Client 2 recieved 83981728fd7636cf30dbb12e23fb17a3 for query 25 19 
+client 2 has 85 chunks 
+Chunk_Request 79 2  
+Client 1 recieved Retry for query 83 105 
+client 1 has 85 chunks 
+Chunk_Request 75 1  
+Client 3 recieved af386e70331a520287001602f2d18d95 for query 30 108 
+client 3 has 107 chunks 
+Chunk_Request 50 3  
+Client 1 recieved Retry for query 83 75 
+client 1 has 85 chunks 
+Chunk_Request 13 1  
+Client 4 recieved 7cb097416361518a3af40b7fe7a2a8b7c9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9 for query 29 1 
+client 4 has 102 chunks 
+Chunk_Request 1 4  
+Client 2 recieved 72319444be332681abb1ff4b6156cdfc for query 101 79 
+client 2 has 86 chunks 
+Chunk_Request 41 2  
+Client 2 recieved 0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d242735909685039364c16660c4bfa1a9 for query 24 41 
+client 2 has 87 chunks 
+Chunk_Request 6 2  
+Client 1 recieved Retry for query 83 13 
+client 1 has 85 chunks 
+Chunk_Request 49 1  
+Client 4 recieved 60cef7cad04f7567cf3182540b874a36 for query 13 1 
+client 4 has 102 chunks 
+Chunk_Request 7 4  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 50 50 
+client 3 has 108 chunks 
+Chunk_Request 108 3  
+Client 4 recieved Retry for query 0 7 
+client 4 has 102 chunks 
+Chunk_Request 7 4  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 50 108 
+client 3 has 108 chunks 
+Chunk_Request 109 3  
+Client 2 recieved 3a2ea164331e78703402d25a0557ce496cb86850c95057bbd05ebca8a86903f1 for query 93 6 
+client 2 has 87 chunks 
+Chunk_Request 79 2  
+Client 1 recieved Retry for query 55 49 
+client 1 has 85 chunks 
+Chunk_Request 75 1  
+Client 3 recieved Retry for query 105 109 
+client 3 has 108 chunks 
+Chunk_Request 51 3  
+Client 1 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 96 75 
+client 1 has 86 chunks 
+Chunk_Request 75 1  
+Client 1 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 96 75 
+client 1 has 86 chunks 
+Chunk_Request 2 1  
+Client 1 recieved 72319444be332681abb1ff4b6156cdfc for query 47 2 
+client 1 has 86 chunks 
+Chunk_Request 75 1  
+Client 2 recieved 3a2ea164331e78703402d25a0557ce496cb86850c95057bbd05ebca8a86903f1 for query 93 79 
+client 2 has 87 chunks 
+Chunk_Request 72 2  
+Client 4 recieved e28d72929585961d4e56ab9f55955145242735909685039364c16660c4bfa1a9 for query 38 7 
+client 4 has 103 chunks 
+Chunk_Request 52 4  
+Client 3 recieved Retry for query 105 51 
+client 3 has 108 chunks 
+Chunk_Request 108 3  
+Client 4 recieved Retry for query 1 52 
+client 4 has 104 chunks 
+Chunk_Request 65 4  
+Client 2 recieved 8d322215602a07aff7543c36b0828f020766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present for query 93 72 
+client 2 has 87 chunks 
+Chunk_Request 40 2  
+Client 2 recieved 8d322215602a07aff7543c36b0828f020766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present for query 93 40 
+client 2 has 87 chunks 
+Chunk_Request 71 2  
+Client 3 recieved Retry for query 105 108 
+client 3 has 108 chunks 
+Chunk_Request 100 3  
+Client 1 recieved Retry for query 79 75 
+client 1 has 86 chunks 
+Chunk_Request 111 1  
+Client 2 recieved 9b3e7ad1f0332971ee3b9b20b3a317fe for query 44 71 
+client 2 has 87 chunks 
+Chunk_Request 85 2  
+Client 4 recieved 0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d3a2ea164331e78703402d25a0557ce49 for query 52 65 
+client 4 has 105 chunks 
+Chunk_Request 7 4  
+Client 2 recieved 9b3e7ad1f0332971ee3b9b20b3a317fe for query 44 85 
+client 2 has 87 chunks 
+Chunk_Request 88 2  
+Client 2 recieved 9b3e7ad1f0332971ee3b9b20b3a317fe for query 44 88 
+client 2 has 87 chunks 
+Chunk_Request 79 2  
+Client 3 recieved 242735909685039364c16660c4bfa1a9 for query 50 100 
+client 3 has 108 chunks 
+Chunk_Request 108 3  
+Client 4 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 78 7 
+client 4 has 105 chunks 
+Chunk_Request 65 4  
+Client 2 recieved ed4b8159be2b86a8f138ff9e192a13f6 for query 101 79 
+client 2 has 87 chunks 
+Chunk_Request 40 2  
+Client 1 recieved c37d74ed88f69569cb57ec91384feea0 for query 10 111 
+client 1 has 87 chunks 
+Chunk_Request 8 1  
+Client 3 recieved 242735909685039364c16660c4bfa1a9 for query 50 108 
+client 3 has 108 chunks 
+Chunk_Request 108 3  
+Client 1 recieved c37d74ed88f69569cb57ec91384feea0 for query 10 8 
+client 1 has 87 chunks 
+Chunk_Request 66 1  
+Client 3 recieved 60de79bd0b8c4e43e17b811c1ec55d06 for query 18 108 
+client 3 has 108 chunks 
+Chunk_Request 108 3  
+Client 2 recieved 8b367b0b5950dc473722cadb975b44f2Not_Present7cb097416361518a3af40b7fe7a2a8b7 for query 28 40 
+client 2 has 88 chunks 
+Chunk_Request 17 2  
+Client 3 recieved 60de79bd0b8c4e43e17b811c1ec55d06 for query 18 108 
+client 3 has 108 chunks 
+Chunk_Request 51 3  
+Client 3 recieved 60de79bd0b8c4e43e17b811c1ec55d06 for query 18 51 
+client 3 has 108 chunks 
+Chunk_Request 108 3  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 85 17 
+client 2 has 89 chunks 
+Chunk_Request 98 2  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f05 for query 85 98 
+client 2 has 89 chunks 
+Chunk_Request 88 2  
+Client 3 recieved Retry for query 30 108 
+client 3 has 108 chunks 
+Chunk_Request 100 3  
+Client 3 recieved Retry for query 30 100 
+client 3 has 108 chunks 
+Chunk_Request 100 3  
+Client 4 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6c for query 13 65 
+client 4 has 105 chunks 
+Chunk_Request 26 4  
+Client 3 recieved 8b367b0b5950dc473722cadb975b44f2dc5f78ec0790562826b14c8eabe7a7c8 for query 57 100 
+client 3 has 108 chunks 
+Chunk_Request 51 3  
+Client 3 recieved 8b367b0b5950dc473722cadb975b44f2dc5f78ec0790562826b14c8eabe7a7c8 for query 57 51 
+client 3 has 108 chunks 
+Chunk_Request 100 3  
+Client 2 recieved e58fee2888199e3882757987ffe8c8de for query 26 88 
+client 2 has 90 chunks 
+Chunk_Request 79 2  
+Client 4 recieved c9cf8c7ea19a7265cf362711e56941eddf3cf7bc0b99fe1f68c0ba1a78ce3a6c for query 0 26 
+client 4 has 105 chunks 
+Chunk_Request 45 4  
+Client 2 recieved e58fee2888199e3882757987ffe8c8de for query 26 79 
+client 2 has 90 chunks 
+Chunk_Request 92 2  
+Client 3 recieved 242735909685039364c16660c4bfa1a9 for query 51 100 
+client 3 has 109 chunks 
+Chunk_Request 109 3  
+Client 1 recieved cfea6454143445615f625364c51b4cf2Not_Present for query 22 66 
+client 1 has 88 chunks 
+Chunk_Request 54 1  
+Client 2 recieved efefb73c55476f269f91b2b024760f47 for query 38 92 
+client 2 has 90 chunks 
+Chunk_Request 107 2  
+Client 3 recieved 242735909685039364c16660c4bfa1a9 for query 51 109 
+client 3 has 109 chunks 
+Chunk_Request 108 3  
+Client 4 recieved 60cef7cad04f7567cf3182540b874a36 for query 72 45 
+client 4 has 105 chunks 
+Chunk_Request 61 4  
+Client 2 recieved efefb73c55476f269f91b2b024760f47 for query 38 107 
+client 2 has 90 chunks 
+Chunk_Request 40 2  
+Client 3 recieved fb9f79347943c50597e278e1be6ae56238a07516ec977f4cdd6fbf4a2194487fdc5f78ec0790562826b14c8eabe7a7c8bae3564c83cc9b11d87e42381f4b0f058424b082bea9aac9a92c1425022e9116 for query 50 108 
+client 3 has 109 chunks 
+Chunk_Request 109 3  
+Client 3 recieved 76c8dff61ddde16d97cbad613f25725d for query 108 109 
+client 3 has 110 chunks 
+Chunk_Request 100 3  
+Client 4 recieved bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f7 for query 11 61 
+client 4 has 105 chunks 
+Chunk_Request 26 4  
+Client 2 recieved 8d322215602a07aff7543c36b0828f02 for query 101 40 
+client 2 has 90 chunks 
+Chunk_Request 71 2  
+Client 1 recieved 178f445eee44c4fa65f855070e34fe1a for query 22 54 
+client 1 has 88 chunks 
+Chunk_Request 58 1  
+Client 1 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 102 58 
+client 1 has 89 chunks 
+Chunk_Request 49 1  
+Client 1 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 102 49 
+client 1 has 89 chunks 
+Chunk_Request 76 1  
+Client 1 recieved 414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0 for query 102 76 
+client 1 has 89 chunks 
+Chunk_Request 109 1  
+Client 2 recieved 8d322215602a07aff7543c36b0828f02 for query 101 71 
+client 2 has 90 chunks 
+Chunk_Request 71 2  
+Client 2 recieved 72319444be332681abb1ff4b6156cdfc for query 40 71 
+client 2 has 91 chunks 
+Chunk_Request 92 2  
+Client 2 recieved 72319444be332681abb1ff4b6156cdfc for query 40 92 
+client 2 has 91 chunks 
+Chunk_Request 72 2  
+Client 3 recieved e430b175827fcc014a3102d305f051f7 for query 109 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 4 recieved 242735909685039364c16660c4bfa1a9 for query 78 26 
+client 4 has 105 chunks 
+Chunk_Request 26 4  
+Client 2 recieved Retry6cb86850c95057bbd05ebca8a86903f1 for query 6 72 
+client 2 has 92 chunks 
+Chunk_Request 68 2  
+Client 4 recieved fb9f79347943c50597e278e1be6ae562 for query 11 26 
+client 4 has 105 chunks 
+Chunk_Request 65 4  
+Client 1 recieved e28d72929585961d4e56ab9f55955145 for query 47 109 
+client 1 has 89 chunks 
+Chunk_Request 50 1  
+Client 3 recieved Retry for query 108 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 1 recieved 6bd51da3a7a050044571b6a42d2c263c for query 16 50 
+client 1 has 89 chunks 
+Chunk_Request 75 1  
+Client 2 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6c for query 89 68 
+Client 1 recieved 6bd51da3a7a050044571b6a42d2c263c for query 16 75 
+client 1 has 89 chunks 
+Chunk_Request 13 1  
+client 2 has 92 chunks 
+Chunk_Request 22 2  
+Client 1 recieved 6bd51da3a7a050044571b6a42d2c263c for query 16 13 
+client 1 has 89 chunks 
+Chunk_Request 66 1  
+Client 2 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6c for query 89 22 
+client 2 has 92 chunks 
+Chunk_Request 19 2  
+Client 4 recieved abdb0780892382af07642a04cde7ae05 for query 26 65 
+client 4 has 106 chunks 
+Chunk_Request 65 4  
+Client 2 recieved 6e0a803c797b97b636c62fbc6dbdc670 for query 26 19 
+client 2 has 92 chunks 
+Chunk_Request 27 2  
+Client 4 recieved d1009e329a05c4da360bef7ba3e8cc33 for query 1 65 
+client 4 has 106 chunks 
+Chunk_Request 7 4  
+Client 4 recieved 6e0a803c797b97b636c62fbc6dbdc670 for query 26 7 
+client 4 has 106 chunks 
+Chunk_Request 9 4  
+Client 4 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 46 9 
+client 4 has 107 chunks 
+Chunk_Request 61 4  
+Client 1 recieved cf2e001fc76c9357b168373c469a9cd4 for query 13 66 
+client 1 has 90 chunks 
+Chunk_Request 15 1  
+Client 2 recieved 6e0a803c797b97b636c62fbc6dbdc670 for query 26 27 
+client 2 has 92 chunks 
+Chunk_Request 79 2  
+Client 3 recieved 8d322215602a07aff7543c36b0828f02 for query 109 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 3 recieved 8d322215602a07aff7543c36b0828f02 for query 109 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 4 recieved Retrydc5f78ec0790562826b14c8eabe7a7c8414891f4e1b83a2a8fd1a580fad5958b for query 38 61 
+client 4 has 107 chunks 
+Chunk_Request 9 4  
+Client 4 recieved Retrydc5f78ec0790562826b14c8eabe7a7c8414891f4e1b83a2a8fd1a580fad5958b for query 38 9 
+client 4 has 107 chunks 
+Chunk_Request 61 4  
+Client 1 recieved cf2e001fc76c9357b168373c469a9cd4 for query 13 15 
+client 1 has 90 chunks 
+Chunk_Request 7 1  
+Client 2 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 85 79 
+client 2 has 92 chunks 
+Chunk_Request 8 2  
+Client 4 recieved bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f78d322215602a07aff7543c36b0828f02 for query 7 61 
+client 4 has 108 chunks 
+Chunk_Request 9 4  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 31 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 1 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 100 7 
+client 1 has 90 chunks 
+Chunk_Request 49 1  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 18 49 
+client 1 has 91 chunks 
+Chunk_Request 105 1  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 18 105 
+client 1 has 91 chunks 
+Chunk_Request 54 1  
+Client 2 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 85 8 
+client 2 has 92 chunks 
+Chunk_Request 8 2  
+Client 2 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 85 8 
+client 2 has 92 chunks 
+Chunk_Request 37 2  
+Client 4 recieved bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f78d322215602a07aff7543c36b0828f02 for query 7 9 
+client 4 has 108 chunks 
+Chunk_Request 65 4  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 31 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 31 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 31 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 2 recieved fb9f79347943c50597e278e1be6ae56238a07516ec977f4cdd6fbf4a2194487fdc5f78ec0790562826b14c8eabe7a7c8a2dea404f53f5089f53828ae4a674688 for query 86 37 
+client 2 has 93 chunks 
+Chunk_Request 98 2  
+Client 4 recieved 18cf36bf4a8317695925916da1761922 for query 78 65 
+client 4 has 108 chunks 
+Chunk_Request 45 4  
+Client 4 recieved 18cf36bf4a8317695925916da1761922 for query 78 45 
+client 4 has 108 chunks 
+Chunk_Request 9 4  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 38 9 
+client 4 has 108 chunks 
+Chunk_Request 9 4  
+Client 3 recieved bcfbaa07a0f3580c1e117458de0a466319b744dcb58217c2402e18cd517e3688 for query 23 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 1 recieved Retry for query 105 54 
+client 1 has 92 chunks 
+Chunk_Request 71 1  
+Client 2 recieved 6cb86850c95057bbd05ebca8a86903f1 for query 40 98 
+client 2 has 93 chunks 
+Chunk_Request 88 2  
+Client 1 recieved Retry for query 105 71 
+client 1 has 92 chunks 
+Chunk_Request 71 1  
+Client 1 recieved Retry for query 105 71 
+client 1 has 92 chunks 
+Chunk_Request 7 1  
+Client 1 recieved Retry for query 105 7 
+client 1 has 92 chunks 
+Chunk_Request 7 1  
+Client 1 recieved efefb73c55476f269f91b2b024760f47 for query 111 7 
+client 1 has 93 chunks 
+Chunk_Request 54 1  
+Client 1 recieved efefb73c55476f269f91b2b024760f47 for query 111 54 
+client 1 has 93 chunks 
+Chunk_Request 82 1  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 38 9 
+client 4 has 108 chunks 
+Chunk_Request 45 4  
+Client 3 recieved bcfbaa07a0f3580c1e117458de0a466319b744dcb58217c2402e18cd517e3688 for query 23 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 2 recieved 6cb86850c95057bbd05ebca8a86903f1 for query 40 88 
+client 2 has 93 chunks 
+Chunk_Request 98 2  
+Client 1 recieved Retry for query 82 82 
+client 1 has 94 chunks 
+Chunk_Request 75 1  
+Client 1 recieved Retry for query 82 75 
+client 1 has 94 chunks 
+Chunk_Request 76 1  
+Client 2 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 31 98 
+client 2 has 94 chunks 
+Chunk_Request 68 2  
+Client 3 recieved 242735909685039364c16660c4bfa1a9 for query 35 100 
+Client 2 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 31 68 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+client 2 has 94 chunks 
+Chunk_Request 19 2  
+Client 3 recieved d5abc2feb70b04da6b654ff0b24ac2eb for query 108 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 2 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 28 19 
+client 2 has 94 chunks 
+Chunk_Request 8 2  
+Client 4 recieved 242735909685039364c16660c4bfa1a9RetryNot_Present for query 61 45 
+client 4 has 109 chunks 
+Chunk_Request 45 4  
+Client 2 recieved RetryNot_PresentRetry for query 8 8 
+client 2 has 95 chunks 
+Chunk_Request 41 2  
+Client 1 recieved 4f08eae8e376d81a02f5790eeb121162 for query 66 76 
+client 1 has 95 chunks 
+Chunk_Request 50 1  
+Client 3 recieved Retry for query 30 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 1 recieved 4f08eae8e376d81a02f5790eeb121162 for query 66 50 
+client 1 has 95 chunks 
+Chunk_Request 58 1  
+Client 4 recieved 242735909685039364c16660c4bfa1a9RetryNot_Present for query 61 45 
+client 4 has 109 chunks 
+Chunk_Request 45 4  
+Client 2 recieved RetryNot_PresentRetry for query 8 41 
+client 2 has 95 chunks 
+Chunk_Request 98 2  
+Client 1 recieved 83d6758cfb6e98dfe9fcb90b3b8efc86 for query 71 58 
+client 1 has 96 chunks 
+Chunk_Request 14 1  
+Client 4 recieved 19b744dcb58217c2402e18cd517e3688bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f7 for query 11 45 
+client 4 has 109 chunks 
+Chunk_Request 45 4  
+Client 4 recieved 19b744dcb58217c2402e18cd517e3688bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f7 for query 11 45 
+client 4 has 109 chunks 
+Chunk_Request 9 4  
+Client 2 recieved RetryNot_PresentRetry for query 8 98 
+client 2 has 95 chunks 
+Chunk_Request 72 2  
+Client 1 recieved 674ab49463bf45e2d554744133538ac3 for query 65 14 
+client 1 has 96 chunks 
+Chunk_Request 15 1  
+Client 1 recieved 674ab49463bf45e2d554744133538ac3 for query 65 15 
+client 1 has 96 chunks 
+Chunk_Request 50 1  
+Client 4 recieved 3a2ea164331e78703402d25a0557ce49fb9f79347943c50597e278e1be6ae56238a07516ec977f4cdd6fbf4a2194487f for query 9 9 
+Client 3 recieved 76c8dff61ddde16d97cbad613f25725d for query 108 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+client 4 has 110 chunks 
+Chunk_Request 45 4  
+Client 2 recieved Retry for query 28 72 
+client 2 has 95 chunks 
+Chunk_Request 71 2  
+Client 2 recieved bcfbaa07a0f3580c1e117458de0a4663fb9f79347943c50597e278e1be6ae562 for query 88 71 
+client 2 has 96 chunks 
+Chunk_Request 72 2  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 38 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 3 recieved 3a2ea164331e78703402d25a0557ce49 for query 38 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 2 recieved bcfbaa07a0f3580c1e117458de0a4663fb9f79347943c50597e278e1be6ae562 for query 88 72 
+client 2 has 96 chunks 
+Chunk_Request 107 2  
+Client 4 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 45 45 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 45 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved ac36d2bf39458752d569b6e25fd694dc18e850ebc701032f369e7c49d29beb89 for query 7 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 1 recieved Retry0766dfbd9865eadeebf3c456952cac3b0acbdd79a021220384e019379a5ded3eea77f0ea9880feabadb055d50af58ffa for query 10 50 
+client 1 has 96 chunks 
+Chunk_Request 2 1  
+Client 3 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 109 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 2 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6c3c957577cfc05101c7901e761a1e255b38a07516ec977f4cdd6fbf4a2194487f for query 9 107 
+client 2 has 97 chunks 
+Chunk_Request 19 2  
+Client 2 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6c3c957577cfc05101c7901e761a1e255b38a07516ec977f4cdd6fbf4a2194487f for query 9 19 
+client 2 has 97 chunks 
+Chunk_Request 22 2  
+Client 3 recieved Retry for query 31 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 4 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 9 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 1 recieved Retry for query 82 2 
+client 1 has 96 chunks 
+Chunk_Request 12 1  
+Client 1 recieved Retry for query 18 12 
+client 1 has 96 chunks 
+Chunk_Request 7 1  
+Client 4 recieved RetryNot_Present for query 61 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 3 recieved a2dea404f53f5089f53828ae4a674688 for query 50 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 3 recieved a2dea404f53f5089f53828ae4a674688 for query 50 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 1 recieved 8d322215602a07aff7543c36b0828f02 for query 15 7 
+client 1 has 97 chunks 
+Chunk_Request 8 1  
+Client 3 recieved fb9f79347943c50597e278e1be6ae562 for query 109 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 3 recieved fb9f79347943c50597e278e1be6ae562 for query 109 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 2 recieved 3a2ea164331e78703402d25a0557ce4987a8f35add15075d6fe9df9e283dc1fd for query 79 22 
+client 2 has 98 chunks 
+Chunk_Request 37 2  
+Client 4 recieved RetryNot_Present for query 7 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved RetryNot_Present for query 7 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 3 recieved dc5f78ec0790562826b14c8eabe7a7c8d1009e329a05c4da360bef7ba3e8cc33 for query 105 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 4 recieved Retry for query 1 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 3 recieved dc5f78ec0790562826b14c8eabe7a7c8d1009e329a05c4da360bef7ba3e8cc33 for query 105 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 4 recieved Retry for query 1 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 3 recieved dc5f78ec0790562826b14c8eabe7a7c8d1009e329a05c4da360bef7ba3e8cc33 for query 105 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 3 recieved dc5f78ec0790562826b14c8eabe7a7c8d1009e329a05c4da360bef7ba3e8cc33 for query 105 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 2 recieved 8424b082bea9aac9a92c1425022e9116 for query 79 37 
+client 2 has 98 chunks 
+Chunk_Request 92 2  
+Client 4 recieved Retry for query 45 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved Retry for query 45 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved Retry for query 45 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved Retry for query 1 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved Retry for query 1 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 1 recieved 866912a07d1e44c131d209298f97a6ab for query 66 8 
+client 1 has 97 chunks 
+Chunk_Request 75 1  
+Client 3 recieved Retry for query 23 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 2 recieved 6cb86850c95057bbd05ebca8a86903f1 for query 86 92 
+client 2 has 98 chunks 
+Chunk_Request 19 2  
+Client 3 recieved 18cf36bf4a8317695925916da1761922 for query 50 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 1 recieved 674ab49463bf45e2d554744133538ac3 for query 65 75 
+client 1 has 97 chunks 
+Chunk_Request 76 1  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 38 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 38 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 2 recieved 6cb86850c95057bbd05ebca8a86903f1 for query 86 19 
+client 2 has 98 chunks 
+Chunk_Request 19 2  
+Client 3 recieved 8b367b0b5950dc473722cadb975b44f2Not_Present37065b004931bfc16f0e947ac5d06542 for query 51 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 3 recieved 8b367b0b5950dc473722cadb975b44f2Not_Present37065b004931bfc16f0e947ac5d06542 for query 51 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 3 recieved 8b367b0b5950dc473722cadb975b44f2Not_Present37065b004931bfc16f0e947ac5d06542 for query 51 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 3 recieved 8b367b0b5950dc473722cadb975b44f2Not_Present37065b004931bfc16f0e947ac5d06542 for query 51 100 
+client 3 has 111 chunks 
+Chunk_Request 100 3  
+Client 1 recieved 674ab49463bf45e2d554744133538ac3 for query 65 76 
+client 1 has 97 chunks 
+Chunk_Request 50 1  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 38 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 38 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 2 recieved efefb73c55476f269f91b2b024760f47 for query 24 19 
+client 2 has 98 chunks 
+Chunk_Request 72 2  
+Client 3 recieved a2dea404f53f5089f53828ae4a674688bcfbaa07a0f3580c1e117458de0a4663 for query 100 100 
+Client 3 has recieved all data
+{68: '0625637adf4f30194bf27bddd839d16b', 69: '913cac22dbdbd89f622a2a7d4a09916a', 70: 'ed4b8159be2b86a8f138ff9e192a13f6', 71: 'e88d189472751a42e748e004218964c8', 72: '3c957577cfc05101c7901e761a1e255b', 73: '2d1197a23f9db6e7660dc34bf1f133ee', 74: '8b367b0b5950dc473722cadb975b44f2', 75: '8424b082bea9aac9a92c1425022e9116', 76: '7315a4e9818bcf282108b3b861d44fd5', 77: '674ab49463bf45e2d554744133538ac3', 78: '780c6f843629408178625855cb41e837', 79: 'c37d74ed88f69569cb57ec91384feea0', 80: 'd295e75b4d0a116ca8ae8562fd517b74', 81: '6cb86850c95057bbd05ebca8a86903f1', 82: '9713920329c0c1120c6f7db94b00e799', 83: 'b75f2dbf46a8d665104a03c0480ea65e', 84: 'cfbeeb27d542f8ed5f7dfb464a017ef8', 85: '2109525b566d4f40cea444e996cefa9b', 86: '26cea9fe2184e58bb4994245cfa2f7ca', 87: '9b754f5cddea997ebe331b628641dd00', 88: 'd2a23398c2df465e6ee00990b3c9ddee', 89: '34983851517245c12680decf78234d53', 11: 'aac8f5cbc031e52011708cd0939569e7', 92: 'Retry', 91: 'Retry', 2: 'abdb0780892382af07642a04cde7ae05', 52: 'Retry', 44: 'b75f2dbf46a8d665104a03c0480ea65eNot_Present', 43: '0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d', 46: 'Retry', 107: '268afae1ece4c9af4ab76fa7299677a7Not_Present', 29: '83981728fd7636cf30dbb12e23fb17a3', 63: '81292ba3a05c353bbbb08bdb7d6280a2', 17: '9d9ec827980c629a33a81814efc3cf1e', 97: 'fb9f79347943c50597e278e1be6ae562', 93: 'Retry', 40: 'c9b52c95f66df0697292aeb6b313bda84595102f4ea9da9e07a4c31dd54c5c99', 12: '866912a07d1e44c131d209298f97a6ab', 19: 'Retry', 9: '7cb097416361518a3af40b7fe7a2a8b7', 90: 'cf2e001fc76c9357b168373c469a9cd4', 58: 'Retry', 15: '87a8f35add15075d6fe9df9e283dc1fd', 111: 'Retry', 26: 'efefb73c55476f269f91b2b024760f47', 28: '2109525b566d4f40cea444e996cefa9b', 21: '268afae1ece4c9af4ab76fa7299677a7Not_Present', 47: 'c7f16ff078af3f74a214901ba7efa3b5', 45: 'Retry', 20: 'b9b2f5779c8a6cffa10388fc6fc62e97', 25: 'c7f16ff078af3f74a214901ba7efa3b5', 27: 'Retry', 60: '72319444be332681abb1ff4b6156cdfc', 49: 'Retry', 34: 'af386e70331a520287001602f2d18d95', 104: 'c9cf8c7ea19a7265cf362711e56941ed', 54: 'Retry', 42: 'fb9f79347943c50597e278e1be6ae562', 8: '8c2a22862bb4f5592f2b0ffac9075e69', 4: 'Retry', 0: 'Retry', 53: 'Retry', 41: 'Retry', 95: '48287adca124f6fe4a6bc73ba794e658Not_Present', 55: '72319444be332681abb1ff4b6156cdfc', 65: '412baa92fa780a43195045fed27b241e0acbdd79a021220384e019379a5ded3e', 7: '37065b004931bfc16f0e947ac5d06542', 14: '7de81776b97131ff731908c313e4c8fe', 10: '8d322215602a07aff7543c36b0828f02', 36: '3a2ea164331e78703402d25a0557ce49', 106: 'aac8f5cbc031e52011708cd0939569e7', 103: 'Retry', 59: 'aac8f5cbc031e52011708cd0939569e7Not_Present', 13: 'eda3b0392e34506685ff5138d9a1ebd4', 24: 'ea77f0ea9880feabadb055d50af58ffa', 16: 'Retry', 32: '72319444be332681abb1ff4b6156cdfc', 102: '3a2ea164331e78703402d25a0557ce49', 5: 'e58fee2888199e3882757987ffe8c8de', 1: '268afae1ece4c9af4ab76fa7299677a7Not_Present', 37: 'Retry', 94: 'e58fee2888199e3882757987ffe8c8de', 64: 'efefb73c55476f269f91b2b024760f47', 61: 'c7f16ff078af3f74a214901ba7efa3b5', 22: '178f445eee44c4fa65f855070e34fe1a', 56: 'fb9f79347943c50597e278e1be6ae562', 99: '414891f4e1b83a2a8fd1a580fad5958b', 66: '674ab49463bf45e2d554744133538ac3', 98: '8d322215602a07aff7543c36b0828f02', 67: '8d322215602a07aff7543c36b0828f02', 3: '18cf36bf4a8317695925916da1761922', 39: '7cb097416361518a3af40b7fe7a2a8b7', 62: '8424b082bea9aac9a92c1425022e9116', 110: 'de129fd4603b6f761c68b6bfcf2fa42f', 101: '242735909685039364c16660c4bfa1a97cb097416361518a3af40b7fe7a2a8b7', 33: 'RetryNot_Presenta2dea404f53f5089f53828ae4a674688', 6: 'Retry', 48: 'e58fee2888199e3882757987ffe8c8de', 96: 'bcfbaa07a0f3580c1e117458de0a4663', 57: '8b367b0b5950dc473722cadb975b44f2dc5f78ec0790562826b14c8eabe7a7c8', 35: '242735909685039364c16660c4bfa1a9', 18: '60de79bd0b8c4e43e17b811c1ec55d06', 105: 'dc5f78ec0790562826b14c8eabe7a7c8d1009e329a05c4da360bef7ba3e8cc33', 30: 'Retry', 38: '3a2ea164331e78703402d25a0557ce49', 31: 'Retry', 23: 'Retry', 50: '18cf36bf4a8317695925916da1761922', 51: '8b367b0b5950dc473722cadb975b44f2Not_Present37065b004931bfc16f0e947ac5d06542', 108: '76c8dff61ddde16d97cbad613f25725d', 109: 'fb9f79347943c50597e278e1be6ae562', 100: 'a2dea404f53f5089f53828ae4a674688bcfbaa07a0f3580c1e117458de0a4663'}
+Client 4 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 7 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 2 recieved 6cb86850c95057bbd05ebca8a86903f1 for query 41 72 
+client 2 has 99 chunks 
+Chunk_Request 14 2  
+Client 4 recieved a8bb04eff0609cdb6d9736db02f5a6cf for query 26 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 2 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 88 14 
+client 2 has 99 chunks 
+Chunk_Request 17 2  
+Client 2 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 88 17 
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 11 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+client 2 has 99 chunks 
+Chunk_Request 19 2  
+Client 1 recieved 13018a28b3fd510d378ec6dc642d8d8e0766dfbd9865eadeebf3c456952cac3b0acbdd79a021220384e019379a5ded3edf3cf7bc0b99fe1f68c0ba1a78ce3a6c3c957577cfc05101c7901e761a1e255b38a07516ec977f4cdd6fbf4a2194487f for query 9 50 
+client 1 has 97 chunks 
+Chunk_Request 110 1  
+Client 1 recieved 13018a28b3fd510d378ec6dc642d8d8e0766dfbd9865eadeebf3c456952cac3b0acbdd79a021220384e019379a5ded3edf3cf7bc0b99fe1f68c0ba1a78ce3a6c3c957577cfc05101c7901e761a1e255b38a07516ec977f4cdd6fbf4a2194487f for query 9 110 
+client 1 has 97 chunks 
+Chunk_Request 8 1  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 11 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved e58fee2888199e3882757987ffe8c8de for query 11 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 1 recieved 60cef7cad04f7567cf3182540b874a36 for query 75 8 
+client 1 has 98 chunks 
+Chunk_Request 63 1  
+Client 2 recieved RetryRetry for query 24 19 
+client 2 has 99 chunks 
+Chunk_Request 22 2  
+Client 1 recieved 60cef7cad04f7567cf3182540b874a36 for query 75 63 
+client 1 has 98 chunks 
+Chunk_Request 61 1  
+Client 2 recieved RetryRetry for query 24 22 
+client 2 has 99 chunks 
+Chunk_Request 107 2  
+Client 2 recieved RetryRetry for query 24 107 
+Client 4 recieved 19b744dcb58217c2402e18cd517e3688ac36d2bf39458752d569b6e25fd694dcRetryNot_Present for query 7 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+client 2 has 99 chunks 
+Chunk_Request 92 2  
+Client 1 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 71 61 
+client 1 has 98 chunks 
+Chunk_Request 7 1  
+Client 1 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 71 7 
+client 1 has 98 chunks 
+Chunk_Request 12 1  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 10 12 
+client 1 has 98 chunks 
+Chunk_Request 8 1  
+Client 2 recieved 8b367b0b5950dc473722cadb975b44f2Not_Presentbae3564c83cc9b11d87e42381f4b0f05 for query 84 92 
+client 2 has 99 chunks 
+Chunk_Request 17 2  
+Client 4 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 1 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 1 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 47 8 
+client 1 has 98 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 71 61 
+client 1 has 98 chunks 
+Chunk_Request 7 1  
+Client 4 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 1 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 1 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 71 7 
+client 1 has 98 chunks 
+Chunk_Request 61 1  
+Client 2 recieved a2dea404f53f5089f53828ae4a674688242735909685039364c16660c4bfa1a9 for query 19 17 
+client 2 has 100 chunks 
+Chunk_Request 107 2  
+Client 2 recieved a2dea404f53f5089f53828ae4a674688242735909685039364c16660c4bfa1a9 for query 19 107 
+client 2 has 100 chunks 
+Chunk_Request 37 2  
+Client 2 recieved 13018a28b3fd510d378ec6dc642d8d8e0766dfbd9865eadeebf3c456952cac3b0acbdd79a021220384e019379a5ded3edf3cf7bc0b99fe1f68c0ba1a78ce3a6c3c957577cfc05101c7901e761a1e255b38a07516ec977f4cdd6fbf4a2194487f for query 8 37 
+client 2 has 100 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 13018a28b3fd510d378ec6dc642d8d8e0766dfbd9865eadeebf3c456952cac3b0acbdd79a021220384e019379a5ded3edf3cf7bc0b99fe1f68c0ba1a78ce3a6c3c957577cfc05101c7901e761a1e255b38a07516ec977f4cdd6fbf4a2194487f for query 8 76 
+client 2 has 100 chunks 
+Chunk_Request 68 2  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 3 61 
+client 1 has 98 chunks 
+Chunk_Request 8 1  
+Client 4 recieved 4595102f4ea9da9e07a4c31dd54c5c99bcfbaa07a0f3580c1e117458de0a4663 for query 9 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved af386e70331a520287001602f2d18d95 for query 7 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 2 recieved 0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present3a2ea164331e78703402d25a0557ce49 for query 25 68 
+client 2 has 100 chunks 
+Chunk_Request 71 2  
+Client 2 recieved 0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present3a2ea164331e78703402d25a0557ce49 for query 25 71 
+client 2 has 100 chunks 
+Chunk_Request 92 2  
+Client 1 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 66 8 
+client 1 has 98 chunks 
+Chunk_Request 49 1  
+Client 4 recieved c9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9cf2e001fc76c9357b168373c469a9cd4a2dea404f53f5089f53828ae4a674688 for query 1 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 2 recieved c7f16ff078af3f74a214901ba7efa3b5 for query 26 92 
+client 2 has 100 chunks 
+Chunk_Request 98 2  
+Client 4 recieved c9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9cf2e001fc76c9357b168373c469a9cd4a2dea404f53f5089f53828ae4a674688 for query 1 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved c9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9cf2e001fc76c9357b168373c469a9cd4a2dea404f53f5089f53828ae4a674688 for query 1 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved c9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9cf2e001fc76c9357b168373c469a9cd4a2dea404f53f5089f53828ae4a674688 for query 1 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved af386e70331a520287001602f2d18d95 for query 7 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved af386e70331a520287001602f2d18d95 for query 7 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved af386e70331a520287001602f2d18d95 for query 7 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 4 recieved af386e70331a520287001602f2d18d95 for query 7 65 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+Client 1 recieved bcfbaa07a0f3580c1e117458de0a4663 for query 66 49 
+client 1 has 98 chunks 
+Chunk_Request 2 1  
+Client 2 recieved 8d322215602a07aff7543c36b0828f02Retry for query 28 98 
+client 2 has 100 chunks 
+Chunk_Request 17 2  
+Client 2 recieved 8d322215602a07aff7543c36b0828f02Retry for query 28 17 
+client 2 has 100 chunks 
+Chunk_Request 71 2  
+Client 4 recieved 37065b004931bfc16f0e947ac5d06542 for query 52 65 
+Client 2 recieved 9b3e7ad1f0332971ee3b9b20b3a317fe for query 31 71 
+client 4 has 111 chunks 
+Chunk_Request 65 4  
+client 2 has 100 chunks 
+Chunk_Request 76 2  
+Client 1 recieved 60de79bd0b8c4e43e17b811c1ec55d06 for query 47 2 
+client 1 has 98 chunks 
+Chunk_Request 49 1  
+Client 2 recieved 9b3e7ad1f0332971ee3b9b20b3a317fe for query 31 76 
+client 2 has 100 chunks 
+Chunk_Request 68 2  
+Client 1 recieved 60de79bd0b8c4e43e17b811c1ec55d06 for query 47 49 
+client 1 has 98 chunks 
+Chunk_Request 50 1  
+Client 2 recieved 9b3e7ad1f0332971ee3b9b20b3a317fe for query 31 68 
+client 2 has 100 chunks 
+Chunk_Request 107 2  
+Client 2 recieved Retryfb9f79347943c50597e278e1be6ae562 for query 44 107 
+client 2 has 100 chunks 
+Chunk_Request 98 2  
+Client 1 recieved 60de79bd0b8c4e43e17b811c1ec55d06 for query 47 50 
+client 1 has 98 chunks 
+Chunk_Request 58 1  
+Client 4 recieved cf2e001fc76c9357b168373c469a9cd4 for query 65 65 
+Client 4 has recieved all data
+{90: 'f6c6b2c42e0e58fd4d8f46be75b43fa1', 91: 'bae3564c83cc9b11d87e42381f4b0f05', 92: 'ac36d2bf39458752d569b6e25fd694dc', 93: '0ae8d86474e0aca39e145d4580ba1fc6', 94: 'd97d14994606d57eb22c10c237fa547f', 95: 'c81b59f1f5f8983cb7022a2eb948d38c', 96: '38ec1a137e7cf76e885e7301c52aac55', 97: '6bd51da3a7a050044571b6a42d2c263c', 98: '13018a28b3fd510d378ec6dc642d8d8e', 99: '75af94d2e5ad75e0987ab2f7705896fd', 100: 'cadc1d3eb4a3fda23f839b9de6fc59a9', 101: 'f6a335f1695bddb643d123e75f5758c8', 102: 'eafee94ffef7919ae6aa61fc98954f50', 103: '5fa9a92b7ff0ec79a0aaddf8affaf887', 104: '76c8dff61ddde16d97cbad613f25725d', 105: '4f08eae8e376d81a02f5790eeb121162', 106: '7336270e1b8d5b7d66d7ae5d8fcea2a7', 107: '902b82ba61ca49e4ebcd4b3a0b27d61a', 108: '875724bb9d1ccdecc9dafb7d1d0430c0', 109: '879020560c9f14dd113cceeace174df1', 110: '3b1b00bea30891d6646ce3a77ffeec73', 111: '0bfe90c515546dd008d0e95d69e12bf1', 25: 'c9cf8c7ea19a7265cf362711e56941ed', 83: 'Retry', 18: 'bcfbaa07a0f3580c1e117458de0a4663', 66: 'df3cf7bc0b99fe1f68c0ba1a78ce3a6c', 15: '87a8f35add15075d6fe9df9e283dc1fd', 37: 'Retry', 67: '81292ba3a05c353bbbb08bdb7d6280a2', 31: 'Retry', 20: 'd2a23398c2df465e6ee00990b3c9ddee', 8: '0ae8d86474e0aca39e145d4580ba1fc6', 85: 'Retry', 33: 'Retry', 34: 'acf0b819992e4f5669918e957bdc41b1', 49: 'Retry', 36: 'c9b52c95f66df0697292aeb6b313bda8', 39: '83d6758cfb6e98dfe9fcb90b3b8efc86', 24: 'Retry', 81: 'c9cf8c7ea19a7265cf362711e56941ed', 60: 'c81b59f1f5f8983cb7022a2eb948d38c', 50: 'af386e70331a520287001602f2d18d95', 68: 'bae3564c83cc9b11d87e42381f4b0f05', 80: 'c9cf8c7ea19a7265cf362711e56941edNot_Present', 21: 'b75f2dbf46a8d665104a03c0480ea65e', 62: '8b367b0b5950dc473722cadb975b44f2Not_Present', 55: 'Retry', 54: 'aac8f5cbc031e52011708cd0939569e7', 23: 'bae3564c83cc9b11d87e42381f4b0f05', 53: 'Retry', 59: 'Retry', 82: 'Retry', 77: 'Retry', 40: '674ab49463bf45e2d554744133538ac3', 79: 'RetryNot_Present', 17: 'Retry', 12: 'RetryNot_Present', 28: 'e58fee2888199e3882757987ffe8c8de', 32: 'd1009e329a05c4da360bef7ba3e8cc33', 48: 'Retry', 41: '72319444be332681abb1ff4b6156cdfc', 75: 'e28d72929585961d4e56ab9f55955145Not_Present', 4: '242735909685039364c16660c4bfa1a9', 64: 'b9b2f5779c8a6cffa10388fc6fc62e97', 86: 'Retry', 51: 'bae3564c83cc9b11d87e42381f4b0f05', 69: 'ea77f0ea9880feabadb055d50af58ffa', 14: '8c2a22862bb4f5592f2b0ffac9075e69', 58: '6bd51da3a7a050044571b6a42d2c263c', 6: '9d9ec827980c629a33a81814efc3cf1e', 76: 'a2dea404f53f5089f53828ae4a674688', 57: 'de129fd4603b6f761c68b6bfcf2fa42f', 16: '6bd51da3a7a050044571b6a42d2c263c', 63: '87a8f35add15075d6fe9df9e283dc1fd', 19: 'RetryNot_Present', 88: '8424b082bea9aac9a92c1425022e9116', 42: '9d9ec827980c629a33a81814efc3cf1eNot_Present', 84: 'e430b175827fcc014a3102d305f051f79d9ec827980c629a33a81814efc3cf1e', 22: 'e28d72929585961d4e56ab9f55955145', 2: '83d6758cfb6e98dfe9fcb90b3b8efc86', 44: 'd1009e329a05c4da360bef7ba3e8cc33', 27: 'e58fee2888199e3882757987ffe8c8de', 35: '38a07516ec977f4cdd6fbf4a2194487f', 10: '866912a07d1e44c131d209298f97a6ab', 87: 'Retry', 70: 'acf0b819992e4f5669918e957bdc41b1', 3: 'Retry', 47: 'Retry', 56: '87a8f35add15075d6fe9df9e283dc1fd', 73: 'de129fd4603b6f761c68b6bfcf2fa42f', 30: '5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254', 89: '83d6758cfb6e98dfe9fcb90b3b8efc86', 71: 'fb9f79347943c50597e278e1be6ae56238a07516ec977f4cdd6fbf4a2194487f', 13: 'df3cf7bc0b99fe1f68c0ba1a78ce3a6c', 74: 'eda3b0392e34506685ff5138d9a1ebd4', 72: '60cef7cad04f7567cf3182540b874a36', 43: '5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254', 0: 'c9cf8c7ea19a7265cf362711e56941eddf3cf7bc0b99fe1f68c0ba1a78ce3a6c', 5: 'e58fee2888199e3882757987ffe8c8de', 29: '7cb097416361518a3af40b7fe7a2a8b7c9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9', 78: '18cf36bf4a8317695925916da1761922', 11: 'e58fee2888199e3882757987ffe8c8de', 38: 'e58fee2888199e3882757987ffe8c8de', 1: 'c9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9cf2e001fc76c9357b168373c469a9cd4a2dea404f53f5089f53828ae4a674688', 52: '37065b004931bfc16f0e947ac5d06542', 26: 'a8bb04eff0609cdb6d9736db02f5a6cf', 46: 'c7f16ff078af3f74a214901ba7efa3b5', 7: 'af386e70331a520287001602f2d18d95', 61: 'RetryNot_Present', 9: '4595102f4ea9da9e07a4c31dd54c5c99bcfbaa07a0f3580c1e117458de0a4663', 45: 'Retry', 65: 'cf2e001fc76c9357b168373c469a9cd4'}
+Client 2 recieved 674ab49463bf45e2d554744133538ac3 for query 86 98 
+Client 1 recieved 0464d8c7aeaeee34ef9cd80d18f7d44e for query 22 58 
+client 1 has 98 chunks 
+Chunk_Request 50 1  
+client 2 has 100 chunks 
+Chunk_Request 22 2  
+client 2 has 100 chunks 
+Chunk_Request 107 2  
+Client 2 recieved 19b744dcb58217c2402e18cd517e3688 for query 107 107 
+client 2 has 101 chunks 
+Chunk_Request 71 2  
+Client 2 recieved 19b744dcb58217c2402e18cd517e3688 for query 107 71 
+client 2 has 101 chunks 
+Chunk_Request 98 2  
+Client 2 recieved 8b367b0b5950dc473722cadb975b44f2Not_Presentabdb0780892382af07642a04cde7ae05 for query 31 98 
+client 2 has 101 chunks 
+Chunk_Request 17 2  
+Client 2 recieved 8b367b0b5950dc473722cadb975b44f2Not_Presentabdb0780892382af07642a04cde7ae05 for query 31 17 
+client 2 has 101 chunks 
+Chunk_Request 68 2  
+Client 1 recieved 674ab49463bf45e2d554744133538ac3 for query 49 50 
+client 1 has 99 chunks 
+Chunk_Request 54 1  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 12 54 
+client 1 has 100 chunks 
+Chunk_Request 110 1  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 12 110 
+client 1 has 100 chunks 
+Chunk_Request 2 1  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 12 2 
+client 1 has 100 chunks 
+Chunk_Request 58 1  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 12 58 
+client 1 has 100 chunks 
+Chunk_Request 76 1  
+Client 2 recieved ac36d2bf39458752d569b6e25fd694dc for query 88 68 
+client 2 has 101 chunks 
+Chunk_Request 27 2  
+Client 1 recieved ac36d2bf39458752d569b6e25fd694dc for query 10 76 
+client 1 has 100 chunks 
+Chunk_Request 58 1  
+Client 2 recieved ac36d2bf39458752d569b6e25fd694dc for query 88 27 
+client 2 has 101 chunks 
+Chunk_Request 72 2  
+Client 1 recieved ac36d2bf39458752d569b6e25fd694dc for query 10 58 
+client 1 has 100 chunks 
+Chunk_Request 109 1  
+Client 2 recieved bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f7bcfbaa07a0f3580c1e117458de0a466387a8f35add15075d6fe9df9e283dc1fd for query 24 72 
+client 2 has 101 chunks 
+Chunk_Request 37 2  
+Client 1 recieved ac36d2bf39458752d569b6e25fd694dc for query 10 109 
+client 1 has 100 chunks 
+Chunk_Request 8 1  
+Client 2 recieved bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f7bcfbaa07a0f3580c1e117458de0a466387a8f35add15075d6fe9df9e283dc1fd for query 24 37 
+client 2 has 101 chunks 
+Chunk_Request 27 2  
+Client 1 recieved 60cef7cad04f7567cf3182540b874a36 for query 14 8 
+client 1 has 101 chunks 
+Chunk_Request 8 1  
+Client 1 recieved 60cef7cad04f7567cf3182540b874a36 for query 14 8 
+client 1 has 101 chunks 
+Chunk_Request 50 1  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542bae3564c83cc9b11d87e42381f4b0f05fb9f79347943c50597e278e1be6ae562 for query 6 27 
+client 2 has 101 chunks 
+Chunk_Request 71 2  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 22 50 
+client 1 has 101 chunks 
+Chunk_Request 110 1  
+Client 2 recieved 6cb86850c95057bbd05ebca8a86903f1abdb0780892382af07642a04cde7ae05 for query 98 71 
+client 2 has 102 chunks 
+Chunk_Request 14 2  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffa for query 28 14 
+client 2 has 102 chunks 
+Chunk_Request 92 2  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffa for query 28 92 
+client 2 has 102 chunks 
+Chunk_Request 22 2  
+Client 2 recieved d1009e329a05c4da360bef7ba3e8cc33Retry for query 19 22 
+client 2 has 102 chunks 
+Chunk_Request 14 2  
+Client 2 recieved d1009e329a05c4da360bef7ba3e8cc33Retry for query 19 14 
+client 2 has 102 chunks 
+Chunk_Request 76 2  
+Client 2 recieved d1009e329a05c4da360bef7ba3e8cc33Retry for query 19 76 
+client 2 has 102 chunks 
+Chunk_Request 22 2  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f05e430b175827fcc014a3102d305f051f7 for query 79 22 
+client 2 has 102 chunks 
+Chunk_Request 72 2  
+Client 2 recieved fb9f79347943c50597e278e1be6ae562Retry for query 41 72 
+client 2 has 102 chunks 
+Chunk_Request 92 2  
+Client 2 recieved fb9f79347943c50597e278e1be6ae562Retry for query 41 92 
+client 2 has 102 chunks 
+Chunk_Request 71 2  
+Client 2 recieved Retryc9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9 for query 6 71 
+client 2 has 102 chunks 
+Chunk_Request 76 2  
+Client 2 recieved Retryc9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9 for query 6 76 
+client 2 has 102 chunks 
+Chunk_Request 68 2  
+Client 2 recieved Retryc9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9 for query 6 68 
+client 2 has 102 chunks 
+Chunk_Request 76 2  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f05e430b175827fcc014a3102d305f051f7 for query 79 76 
+client 2 has 102 chunks 
+Chunk_Request 37 2  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f05e430b175827fcc014a3102d305f051f7 for query 79 37 
+client 2 has 102 chunks 
+Chunk_Request 27 2  
+Client 1 recieved Retry for query 111 110 
+client 1 has 101 chunks 
+Chunk_Request 61 1  
+Client 2 recieved bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f7RetryNot_Present for query 72 27 
+client 2 has 103 chunks 
+Chunk_Request 37 2  
+Client 2 recieved bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f7RetryNot_Present for query 72 37 
+client 2 has 103 chunks 
+Chunk_Request 37 2  
+Client 2 recieved Retry for query 40 37 
+client 2 has 103 chunks 
+Chunk_Request 27 2  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 54 61 
+client 1 has 102 chunks 
+Chunk_Request 50 1  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 54 50 
+client 1 has 102 chunks 
+Chunk_Request 110 1  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 54 110 
+client 1 has 102 chunks 
+Chunk_Request 8 1  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f058424b082bea9aac9a92c1425022e9116a2dea404f53f5089f53828ae4a674688 for query 71 27 
+client 2 has 104 chunks 
+Chunk_Request 37 2  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f058424b082bea9aac9a92c1425022e9116a2dea404f53f5089f53828ae4a674688 for query 71 37 
+Client 1 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 63 8 
+client 2 has 104 chunks 
+Chunk_Request 68 2  
+client 1 has 103 chunks 
+Chunk_Request 7 1  
+Client 1 recieved 7cb097416361518a3af40b7fe7a2a8b7 for query 63 7 
+client 1 has 103 chunks 
+Chunk_Request 109 1  
+Client 2 recieved cf2e001fc76c9357b168373c469a9cd437065b004931bfc16f0e947ac5d06542 for query 85 68 
+Client 1 recieved Retry for query 14 109 
+client 2 has 104 chunks 
+Chunk_Request 76 2  
+client 1 has 103 chunks 
+Chunk_Request 2 1  
+Client 2 recieved Retry for query 88 76 
+client 2 has 104 chunks 
+Chunk_Request 27 2  
+Client 2 recieved e28d72929585961d4e56ab9f55955145Not_Present8b367b0b5950dc473722cadb975b44f2Not_Present for query 79 27 
+client 2 has 104 chunks 
+Chunk_Request 14 2  
+Client 1 recieved 0bfe90c515546dd008d0e95d69e12bf1 for query 8 2 
+client 1 has 104 chunks 
+Chunk_Request 58 1  
+Client 2 recieved RetryNot_Presentbae3564c83cc9b11d87e42381f4b0f05 for query 40 14 
+client 2 has 104 chunks 
+Chunk_Request 37 2  
+Client 2 recieved RetryNot_Presentbae3564c83cc9b11d87e42381f4b0f05 for query 40 37 
+client 2 has 104 chunks 
+Chunk_Request 22 2  
+Client 2 recieved Retryefefb73c55476f269f91b2b024760f47 for query 17 22 
+client 2 has 105 chunks 
+Chunk_Request 76 2  
+Client 2 recieved Retryefefb73c55476f269f91b2b024760f47 for query 17 76 
+client 2 has 105 chunks 
+Chunk_Request 92 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d065423a2ea164331e78703402d25a0557ce49 for query 98 92 
+client 2 has 105 chunks 
+Chunk_Request 37 2  
+Client 1 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 63 58 
+client 1 has 104 chunks 
+Chunk_Request 7 1  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffa for query 88 37 
+client 2 has 105 chunks 
+Chunk_Request 92 2  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffa for query 88 92 
+client 2 has 105 chunks 
+Chunk_Request 14 2  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffa for query 88 14 
+client 2 has 105 chunks 
+Chunk_Request 68 2  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f058424b082bea9aac9a92c1425022e9116674ab49463bf45e2d554744133538ac3 for query 79 68 
+client 2 has 105 chunks 
+Chunk_Request 14 2  
+Client 1 recieved Retry for query 7 7 
+client 1 has 105 chunks 
+Chunk_Request 109 1  
+Client 1 recieved Retry for query 7 109 
+client 1 has 105 chunks 
+Chunk_Request 76 1  
+Client 2 recieved 37065b004931bfc16f0e947ac5d065420766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present for query 92 14 
+client 2 has 106 chunks 
+Chunk_Request 22 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d065420766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present for query 92 22 
+Client 1 recieved efefb73c55476f269f91b2b024760f47 for query 105 76 
+client 2 has 106 chunks 
+Chunk_Request 68 2  
+client 1 has 105 chunks 
+Chunk_Request 110 1  
+Client 1 recieved efefb73c55476f269f91b2b024760f47 for query 105 110 
+client 1 has 105 chunks 
+Chunk_Request 76 1  
+Client 2 recieved ed4b8159be2b86a8f138ff9e192a13f6d1009e329a05c4da360bef7ba3e8cc33 for query 107 68 
+client 2 has 106 chunks 
+Chunk_Request 27 2  
+Client 2 recieved ed4b8159be2b86a8f138ff9e192a13f6d1009e329a05c4da360bef7ba3e8cc33 for query 107 27 
+client 2 has 106 chunks 
+Chunk_Request 68 2  
+Client 2 recieved 8d322215602a07aff7543c36b0828f02df3cf7bc0b99fe1f68c0ba1a78ce3a6c for query 40 68 
+client 2 has 106 chunks 
+Chunk_Request 14 2  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffaefefb73c55476f269f91b2b024760f47 for query 71 14 
+client 2 has 106 chunks 
+Chunk_Request 76 2  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffaefefb73c55476f269f91b2b024760f47 for query 71 76 
+client 2 has 106 chunks 
+Chunk_Request 68 2  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffaefefb73c55476f269f91b2b024760f47 for query 71 68 
+client 2 has 106 chunks 
+Chunk_Request 22 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d065420766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present for query 92 22 
+client 2 has 106 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 7cb097416361518a3af40b7fe7a2a8b7cf2e001fc76c9357b168373c469a9cd4 for query 72 76 
+client 2 has 106 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 7cb097416361518a3af40b7fe7a2a8b7cf2e001fc76c9357b168373c469a9cd4 for query 72 76 
+client 2 has 106 chunks 
+Chunk_Request 22 2  
+Client 1 recieved Retry for query 75 76 
+client 1 has 105 chunks 
+Chunk_Request 110 1  
+Client 1 recieved Retry for query 13 110 
+client 1 has 105 chunks 
+Chunk_Request 76 1  
+Client 1 recieved Retry for query 13 76 
+client 1 has 105 chunks 
+Chunk_Request 76 1  
+Client 1 recieved 8424b082bea9aac9a92c1425022e9116 for query 49 76 
+client 1 has 105 chunks 
+Chunk_Request 109 1  
+Client 1 recieved 8424b082bea9aac9a92c1425022e9116 for query 49 109 
+client 1 has 105 chunks 
+Chunk_Request 58 1  
+Client 1 recieved 8424b082bea9aac9a92c1425022e9116 for query 49 58 
+client 1 has 105 chunks 
+Chunk_Request 58 1  
+Client 1 recieved Retry for query 75 58 
+client 1 has 105 chunks 
+Chunk_Request 109 1  
+client 2 has 106 chunks 
+Chunk_Request 22 2  
+Client 1 recieved Retry for query 75 109 
+client 1 has 105 chunks 
+Chunk_Request 2 1  
+Client 2 recieved e430b175827fcc014a3102d305f051f74595102f4ea9da9e07a4c31dd54c5c99dc5f78ec0790562826b14c8eabe7a7c8 for query 68 22 
+client 2 has 107 chunks 
+Chunk_Request 37 2  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 2 2 
+Client 2 recieved e430b175827fcc014a3102d305f051f74595102f4ea9da9e07a4c31dd54c5c99dc5f78ec0790562826b14c8eabe7a7c8 for query 68 37 
+client 1 has 106 chunks 
+Chunk_Request 50 1  
+client 2 has 107 chunks 
+Chunk_Request 76 2  
+Client 1 recieved Retry for query 75 50 
+client 1 has 106 chunks 
+Chunk_Request 76 1  
+Client 1 recieved Retry for query 75 76 
+client 1 has 106 chunks 
+Chunk_Request 61 1  
+Client 1 recieved Retry for query 75 61 
+client 1 has 106 chunks 
+Chunk_Request 109 1  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f0537065b004931bfc16f0e947ac5d06542 for query 22 76 
+client 2 has 108 chunks 
+Chunk_Request 37 2  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 111 109 
+client 1 has 106 chunks 
+Chunk_Request 58 1  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 111 58 
+client 1 has 106 chunks 
+Chunk_Request 109 1  
+Client 2 recieved d1009e329a05c4da360bef7ba3e8cc33RetryNot_Presenta2dea404f53f5089f53828ae4a674688 for query 19 37 
+client 2 has 108 chunks 
+Chunk_Request 14 2  
+Client 1 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 8 109 
+client 1 has 106 chunks 
+Chunk_Request 61 1  
+Client 1 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 8 61 
+client 1 has 106 chunks 
+Chunk_Request 61 1  
+Client 2 recieved fb9f79347943c50597e278e1be6ae562 for query 27 14 
+client 2 has 109 chunks 
+Chunk_Request 14 2  
+Client 2 recieved fb9f79347943c50597e278e1be6ae562 for query 27 14 
+client 2 has 109 chunks 
+Chunk_Request 14 2  
+Client 1 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 66 61 
+client 1 has 106 chunks 
+Chunk_Request 50 1  
+Client 2 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6cRetry8b367b0b5950dc473722cadb975b44f2Not_Presentc9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9 for query 79 14 
+client 2 has 109 chunks 
+Chunk_Request 14 2  
+Client 2 recieved df3cf7bc0b99fe1f68c0ba1a78ce3a6cRetry8b367b0b5950dc473722cadb975b44f2Not_Presentc9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9 for query 79 14 
+client 2 has 109 chunks 
+Chunk_Request 76 2  
+Client 1 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 66 50 
+Client 2 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 8 76 
+client 1 has 106 chunks 
+Chunk_Request 50 1  
+client 2 has 109 chunks 
+Chunk_Request 37 2  
+Client 1 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 66 50 
+client 1 has 106 chunks 
+Chunk_Request 50 1  
+Client 1 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 66 50 
+client 1 has 106 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 8c2a22862bb4f5592f2b0ffac9075e69 for query 66 61 
+client 1 has 106 chunks 
+Chunk_Request 50 1  
+Client 1 recieved Retry for query 54 50 
+client 1 has 106 chunks 
+Chunk_Request 76 1  
+Client 2 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 8 37 
+client 2 has 109 chunks 
+Chunk_Request 76 2  
+Client 2 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 8 76 
+client 2 has 109 chunks 
+Chunk_Request 37 2  
+Client 1 recieved Retry for query 54 76 
+client 1 has 106 chunks 
+Chunk_Request 109 1  
+Client 2 recieved dc5f78ec0790562826b14c8eabe7a7c8414891f4e1b83a2a8fd1a580fad5958b19b744dcb58217c2402e18cd517e3688e430b175827fcc014a3102d305f051f7 for query 37 37 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 1 recieved Retry for query 54 109 
+client 1 has 106 chunks 
+Chunk_Request 76 1  
+Client 1 recieved 81292ba3a05c353bbbb08bdb7d6280a2 for query 58 76 
+client 1 has 107 chunks 
+Chunk_Request 50 1  
+Client 2 recieved dc5f78ec0790562826b14c8eabe7a7c8414891f4e1b83a2a8fd1a580fad5958b19b744dcb58217c2402e18cd517e3688e430b175827fcc014a3102d305f051f7 for query 37 14 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542bae3564c83cc9b11d87e42381f4b0f05866912a07d1e44c131d209298f97a6ab for query 98 76 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 1 recieved 66e9e1debb36785f726de806e548f25013018a28b3fd510d378ec6dc642d8d8e0766dfbd9865eadeebf3c456952cac3b0acbdd79a021220384e019379a5ded3edf3cf7bc0b99fe1f68c0ba1a78ce3a6c3c957577cfc05101c7901e761a1e255b38a07516ec977f4cdd6fbf4a2194487f0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250 for query 49 50 
+client 1 has 107 chunks 
+Chunk_Request 109 1  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542bae3564c83cc9b11d87e42381f4b0f05866912a07d1e44c131d209298f97a6ab for query 98 76 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 8b367b0b5950dc473722cadb975b44f2Not_Present37065b004931bfc16f0e947ac5d06542866912a07d1e44c131d209298f97a6ab8d322215602a07aff7543c36b0828f02 for query 88 76 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 1 recieved ea77f0ea9880feabadb055d50af58ffa for query 76 109 
+client 1 has 108 chunks 
+Chunk_Request 110 1  
+Client 2 recieved 8b367b0b5950dc473722cadb975b44f2Not_Present37065b004931bfc16f0e947ac5d06542866912a07d1e44c131d209298f97a6ab8d322215602a07aff7543c36b0828f02 for query 88 76 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 1 recieved ac36d2bf39458752d569b6e25fd694dc for query 109 110 
+client 1 has 109 chunks 
+Chunk_Request 61 1  
+Client 1 recieved ac36d2bf39458752d569b6e25fd694dc for query 109 61 
+client 1 has 109 chunks 
+Chunk_Request 61 1  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542bae3564c83cc9b11d87e42381f4b0f05866912a07d1e44c131d209298f97a6ab for query 98 14 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 1 recieved ac36d2bf39458752d569b6e25fd694dc for query 109 61 
+client 1 has 109 chunks 
+Chunk_Request 50 1  
+Client 2 recieved bae3564c83cc9b11d87e42381f4b0f058424b082bea9aac9a92c1425022e91167de81776b97131ff731908c313e4c8fe for query 68 76 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 1 recieved eda3b0392e34506685ff5138d9a1ebd4 for query 50 50 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 75 110 
+Client 2 recieved 38a07516ec977f4cdd6fbf4a2194487f19b744dcb58217c2402e18cd517e3688 for query 19 76 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 2 recieved d1009e329a05c4da360bef7ba3e8cc33Retry for query 8 14 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 1 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 13 110 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 2 recieved d1009e329a05c4da360bef7ba3e8cc33Retry for query 8 14 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 1 recieved Retry for query 66 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved Retry for query 66 61 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 2 recieved a2dea404f53f5089f53828ae4a6746887cb097416361518a3af40b7fe7a2a8b7abdb0780892382af07642a04cde7ae05 for query 41 76 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 2 recieved a2dea404f53f5089f53828ae4a6746887cb097416361518a3af40b7fe7a2a8b7abdb0780892382af07642a04cde7ae05 for query 41 14 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 2 recieved a8bb04eff0609cdb6d9736db02f5a6cf for query 98 14 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 2 recieved a8bb04eff0609cdb6d9736db02f5a6cf for query 98 14 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 1 recieved Retry for query 15 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved Retry for query 15 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 2 recieved e28d72929585961d4e56ab9f55955145Not_Present38a07516ec977f4cdd6fbf4a2194487fRetry for query 72 14 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 2 recieved Retry for query 71 14 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved Retry for query 71 76 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved e28d72929585961d4e56ab9f55955145Not_Present38a07516ec977f4cdd6fbf4a2194487fRetry for query 72 76 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved e28d72929585961d4e56ab9f55955145Not_Present38a07516ec977f4cdd6fbf4a2194487fRetry for query 72 76 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 1 recieved 87a8f35add15075d6fe9df9e283dc1fd for query 7 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 2 recieved 242735909685039364c16660c4bfa1a93c957577cfc05101c7901e761a1e255b0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present for query 107 14 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 242735909685039364c16660c4bfa1a93c957577cfc05101c7901e761a1e255b0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present for query 107 76 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved ea77f0ea9880feabadb055d50af58ffa for query 19 76 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 242735909685039364c16660c4bfa1a96cb86850c95057bbd05ebca8a86903f1 for query 22 76 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 2 recieved 242735909685039364c16660c4bfa1a96cb86850c95057bbd05ebca8a86903f1 for query 22 14 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 2 recieved 242735909685039364c16660c4bfa1a96cb86850c95057bbd05ebca8a86903f1 for query 22 14 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved fb9f79347943c50597e278e1be6ae562 for query 37 76 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved fb9f79347943c50597e278e1be6ae562 for query 37 76 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 1 recieved 0766dfbd9865eadeebf3c456952cac3b13018a28b3fd510d378ec6dc642d8d8eac36d2bf39458752d569b6e25fd694dc66e9e1debb36785f726de806e548f250 for query 49 110 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 2 recieved 7de81776b97131ff731908c313e4c8fe4595102f4ea9da9e07a4c31dd54c5c99 for query 92 14 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 1 recieved efefb73c55476f269f91b2b024760f47 for query 105 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 2 recieved 7de81776b97131ff731908c313e4c8fe4595102f4ea9da9e07a4c31dd54c5c99 for query 92 76 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 1 recieved Retry for query 54 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved Retry for query 54 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved Retry for query 54 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved Retry for query 54 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae053c957577cfc05101c7901e761a1e255b for query 19 14 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae053c957577cfc05101c7901e761a1e255b for query 19 76 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 1 recieved fb9f79347943c50597e278e1be6ae562 for query 71 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae053c957577cfc05101c7901e761a1e255b for query 19 14 
+client 2 has 110 chunks 
+Chunk_Request 14 2  
+Client 2 recieved 242735909685039364c16660c4bfa1a99d9ec827980c629a33a81814efc3cf1e for query 72 14 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 242735909685039364c16660c4bfa1a99d9ec827980c629a33a81814efc3cf1e for query 72 76 
+client 2 has 110 chunks 
+Chunk_Request 76 2  
+Client 2 recieved Retry for query 14 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved Retry for query 14 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved Retry for query 7 61 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved Retry for query 7 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 2 recieved d1009e329a05c4da360bef7ba3e8cc3337065b004931bfc16f0e947ac5d06542 for query 17 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae053c957577cfc05101c7901e761a1e255b for query 19 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae053c957577cfc05101c7901e761a1e255b for query 19 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae053c957577cfc05101c7901e761a1e255b for query 19 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 22 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 22 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae05 for query 107 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae05 for query 107 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 1 recieved ea77f0ea9880feabadb055d50af58ffa for query 54 110 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 2 recieved Retry6cb86850c95057bbd05ebca8a86903f1 for query 92 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 1 recieved efefb73c55476f269f91b2b024760f47 for query 82 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 2 recieved Retry6cb86850c95057bbd05ebca8a86903f1 for query 92 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 1 recieved efefb73c55476f269f91b2b024760f47 for query 82 61 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 2 recieved Retry6cb86850c95057bbd05ebca8a86903f1 for query 92 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 866912a07d1e44c131d209298f97a6ab674ab49463bf45e2d554744133538ac3 for query 17 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 1 recieved de129fd4603b6f761c68b6bfcf2fa42f for query 75 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 2 recieved 866912a07d1e44c131d209298f97a6ab674ab49463bf45e2d554744133538ac3 for query 17 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 866912a07d1e44c131d209298f97a6ab674ab49463bf45e2d554744133538ac3 for query 17 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae05 for query 107 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 1 recieved 37065b004931bfc16f0e947ac5d06542 for query 76 110 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 2 recieved 3c957577cfc05101c7901e761a1e255b0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present for query 37 76 
+client 2 has 111 chunks 
+Chunk_Request 76 2  
+Client 2 recieved 37065b004931bfc16f0e947ac5d06542 for query 76 76 
+Client 2 has recieved all data
+{46: '268afae1ece4c9af4ab76fa7299677a7', 47: 'cfea6454143445615f625364c51b4cf2', 48: '9b3e7ad1f0332971ee3b9b20b3a317fe', 49: '66e9e1debb36785f726de806e548f250', 50: '2db3a95aa8edd525f09472c86db8d304', 51: '178f445eee44c4fa65f855070e34fe1a', 52: '8ba3269b8dc5e197b35627bf56f73b5d', 53: 'ea77f0ea9880feabadb055d50af58ffa', 54: '58b1c5acee186ec7bb4e2549f73676ae', 55: '412baa92fa780a43195045fed27b241e', 56: '1ba1f94253e5d994bb2771f933cea87e', 57: '13dc44a700927c3bb016b0f5cc494f4f', 58: 'a6d80fd65ca19f00f324491f347ced3a', 59: 'e28d72929585961d4e56ab9f55955145', 60: '48287adca124f6fe4a6bc73ba794e658', 61: 'dd3aaef06aad2b476d92dea533cd7da3', 62: '22affeb85c718f46555533722dfd4254', 63: '296144971ad86b500b808d37560efd6c', 64: '83981728fd7636cf30dbb12e23fb17a3', 65: '0acbdd79a021220384e019379a5ded3e', 66: '0766dfbd9865eadeebf3c456952cac3b', 67: '660092738ff04cf5bd659b0cc63a6d77', 97: 'e58fee2888199e3882757987ffe8c8de', 91: 'Retry', 36: '3a2ea164331e78703402d25a0557ce49', 103: 'aac8f5cbc031e52011708cd0939569e7', 45: '18cf36bf4a8317695925916da1761922', 109: 'Retry', 74: 'Retry', 32: 'Retry', 4: 'b9b2f5779c8a6cffa10388fc6fc62e97', 20: 'efefb73c55476f269f91b2b024760f47', 18: 'Retry', 13: 'dc5f78ec0790562826b14c8eabe7a7c8', 75: 'a6d80fd65ca19f00f324491f347ced3a', 106: 'Retry', 7: 'ac36d2bf39458752d569b6e25fd694dc', 82: 'Retry', 29: '66e9e1debb36785f726de806e548f250', 81: 'e28d72929585961d4e56ab9f55955145', 100: 'aac8f5cbc031e52011708cd0939569e7', 15: '13018a28b3fd510d378ec6dc642d8d8e', 70: '5fa9a92b7ff0ec79a0aaddf8affaf887', 0: '60cef7cad04f7567cf3182540b874a36', 105: '242735909685039364c16660c4bfa1a9', 83: 'bae3564c83cc9b11d87e42381f4b0f05', 87: 'd97d14994606d57eb22c10c237fa547f', 104: 'Retry', 96: 'Retry', 11: '412baa92fa780a43195045fed27b241eRetry58b1c5acee186ec7bb4e2549f73676ae', 10: 'ea77f0ea9880feabadb055d50af58ffa', 80: 'e28d72929585961d4e56ab9f55955145', 35: 'a8bb04eff0609cdb6d9736db02f5a6cf', 23: 'de129fd4603b6f761c68b6bfcf2fa42f', 42: 'RetryNot_Present0bfe90c515546dd008d0e95d69e12bf1', 99: '3c957577cfc05101c7901e761a1e255b', 102: '8c2a22862bb4f5592f2b0ffac9075e69', 95: '879020560c9f14dd113cceeace174df1Not_Present', 1: 'eda3b0392e34506685ff5138d9a1ebd4', 5: 'Retry', 90: 'Retry', 30: 'RetryRetry', 94: 'bae3564c83cc9b11d87e42381f4b0f05', 108: 'bae3564c83cc9b11d87e42381f4b0f05', 39: '6bd51da3a7a050044571b6a42d2c263c', 77: 'dc5f78ec0790562826b14c8eabe7a7c8414891f4e1b83a2a8fd1a580fad5958b', 69: 'RetryNot_Present', 12: 'Retry', 16: '38a07516ec977f4cdd6fbf4a2194487f', 111: 'ac36d2bf39458752d569b6e25fd694dc', 43: 'de129fd4603b6f761c68b6bfcf2fa42f', 93: '8d322215602a07aff7543c36b0828f020766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present', 34: 'ea77f0ea9880feabadb055d50af58ffa', 73: '0464d8c7aeaeee34ef9cd80d18f7d44e', 89: 'df3cf7bc0b99fe1f68c0ba1a78ce3a6c', 21: 'Retry', 78: 'a2dea404f53f5089f53828ae4a674688', 38: 'efefb73c55476f269f91b2b024760f47', 2: '296144971ad86b500b808d37560efd6cNot_Present', 110: '38a07516ec977f4cdd6fbf4a2194487f0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d', 33: 'abdb0780892382af07642a04cde7ae05', 44: 'Retryfb9f79347943c50597e278e1be6ae562', 3: 'Retry38a07516ec977f4cdd6fbf4a2194487fNot_Present', 84: '8b367b0b5950dc473722cadb975b44f2Not_Presentbae3564c83cc9b11d87e42381f4b0f05', 25: '0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present3a2ea164331e78703402d25a0557ce49', 101: '8d322215602a07aff7543c36b0828f02', 24: 'bc4de9c73a7c59fd25b78cdedf6583c0e430b175827fcc014a3102d305f051f7bcfbaa07a0f3580c1e117458de0a466387a8f35add15075d6fe9df9e283dc1fd', 28: 'ea77f0ea9880feabadb055d50af58ffa', 85: 'cf2e001fc76c9357b168373c469a9cd437065b004931bfc16f0e947ac5d06542', 26: 'c7f16ff078af3f74a214901ba7efa3b5', 40: '8d322215602a07aff7543c36b0828f02df3cf7bc0b99fe1f68c0ba1a78ce3a6c', 6: 'Retryc9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9', 86: '674ab49463bf45e2d554744133538ac3', 31: '8b367b0b5950dc473722cadb975b44f2Not_Presentabdb0780892382af07642a04cde7ae05', 8: 'd1009e329a05c4da360bef7ba3e8cc33Retry', 88: '8b367b0b5950dc473722cadb975b44f2Not_Present37065b004931bfc16f0e947ac5d06542866912a07d1e44c131d209298f97a6ab8d322215602a07aff7543c36b0828f02', 9: 'df3cf7bc0b99fe1f68c0ba1a78ce3a6c3c957577cfc05101c7901e761a1e255b38a07516ec977f4cdd6fbf4a2194487f', 79: 'df3cf7bc0b99fe1f68c0ba1a78ce3a6cRetry8b367b0b5950dc473722cadb975b44f2Not_Presentc9cf8c7ea19a7265cf362711e56941ed242735909685039364c16660c4bfa1a9', 41: 'a2dea404f53f5089f53828ae4a6746887cb097416361518a3af40b7fe7a2a8b7abdb0780892382af07642a04cde7ae05', 19: '37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae053c957577cfc05101c7901e761a1e255b', 107: '37065b004931bfc16f0e947ac5d06542abdb0780892382af07642a04cde7ae05', 98: 'a8bb04eff0609cdb6d9736db02f5a6cf', 72: '242735909685039364c16660c4bfa1a99d9ec827980c629a33a81814efc3cf1e', 71: 'Retry', 17: '866912a07d1e44c131d209298f97a6ab674ab49463bf45e2d554744133538ac3', 92: 'Retry6cb86850c95057bbd05ebca8a86903f1', 68: 'bae3564c83cc9b11d87e42381f4b0f058424b082bea9aac9a92c1425022e91167de81776b97131ff731908c313e4c8fe', 22: 'de129fd4603b6f761c68b6bfcf2fa42f', 27: 'fb9f79347943c50597e278e1be6ae562', 37: '3c957577cfc05101c7901e761a1e255b0766dfbd9865eadeebf3c456952cac3b66e9e1debb36785f726de806e548f250Not_Present', 14: 'Retry', 76: '37065b004931bfc16f0e947ac5d06542'}
+Client 1 recieved 37065b004931bfc16f0e947ac5d06542 for query 76 110 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved 37065b004931bfc16f0e947ac5d06542 for query 76 110 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved 58b1c5acee186ec7bb4e2549f73676aeac36d2bf39458752d569b6e25fd694dcNot_Present for query 50 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 18cf36bf4a8317695925916da1761922 for query 58 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved 18cf36bf4a8317695925916da1761922 for query 58 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved af386e70331a520287001602f2d18d95 for query 14 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved af386e70331a520287001602f2d18d95 for query 14 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 7de81776b97131ff731908c313e4c8fe for query 15 61 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 58b1c5acee186ec7bb4e2549f73676aeac36d2bf39458752d569b6e25fd694dcNot_Present for query 50 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved 58b1c5acee186ec7bb4e2549f73676aeac36d2bf39458752d569b6e25fd694dcNot_Present for query 50 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 58b1c5acee186ec7bb4e2549f73676aeac36d2bf39458752d569b6e25fd694dcNot_Present for query 50 61 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved a6d80fd65ca19f00f324491f347ced3aRetry13018a28b3fd510d378ec6dc642d8d8e296144971ad86b500b808d37560efd6cNot_Present for query 2 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved a6d80fd65ca19f00f324491f347ced3aRetry13018a28b3fd510d378ec6dc642d8d8e296144971ad86b500b808d37560efd6cNot_Present for query 2 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved a6d80fd65ca19f00f324491f347ced3aRetry13018a28b3fd510d378ec6dc642d8d8e296144971ad86b500b808d37560efd6cNot_Present for query 2 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved abdb0780892382af07642a04cde7ae05 for query 12 110 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved 83d6758cfb6e98dfe9fcb90b3b8efc86 for query 7 110 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved 37065b004931bfc16f0e947ac5d06542 for query 8 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 37065b004931bfc16f0e947ac5d06542 for query 8 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved 37065b004931bfc16f0e947ac5d06542 for query 8 110 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved Retryac36d2bf39458752d569b6e25fd694dcd1009e329a05c4da360bef7ba3e8cc33Retrya6d80fd65ca19f00f324491f347ced3a for query 75 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved Retryac36d2bf39458752d569b6e25fd694dcd1009e329a05c4da360bef7ba3e8cc33Retrya6d80fd65ca19f00f324491f347ced3a for query 75 61 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 8424b082bea9aac9a92c1425022e9116 for query 76 61 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 8424b082bea9aac9a92c1425022e9116 for query 76 61 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 50 61 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 50 110 
+client 1 has 110 chunks 
+Chunk_Request 110 1  
+Client 1 recieved e28d72929585961d4e56ab9f55955145Not_Present for query 50 110 
+client 1 has 110 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 18cf36bf4a8317695925916da1761922 for query 110 61 
+client 1 has 111 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 37065b004931bfc16f0e947ac5d06542 for query 8 61 
+client 1 has 111 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 37065b004931bfc16f0e947ac5d06542 for query 8 61 
+client 1 has 111 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 37065b004931bfc16f0e947ac5d065422db3a95aa8edd525f09472c86db8d30438a07516ec977f4cdd6fbf4a2194487f0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d296144971ad86b500b808d37560efd6c for query 63 61 
+client 1 has 111 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 37065b004931bfc16f0e947ac5d065422db3a95aa8edd525f09472c86db8d30438a07516ec977f4cdd6fbf4a2194487f0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d296144971ad86b500b808d37560efd6c for query 63 61 
+client 1 has 111 chunks 
+Chunk_Request 61 1  
+Client 1 recieved 81292ba3a05c353bbbb08bdb7d6280a2 for query 61 61 
+Client 1 has recieved all data
+{23: 'e58fee2888199e3882757987ffe8c8de', 24: '60cef7cad04f7567cf3182540b874a36', 25: 'af386e70331a520287001602f2d18d95', 26: '6e0a803c797b97b636c62fbc6dbdc670', 27: 'acf0b819992e4f5669918e957bdc41b1', 28: '60de79bd0b8c4e43e17b811c1ec55d06', 29: '72319444be332681abb1ff4b6156cdfc', 30: '83d6758cfb6e98dfe9fcb90b3b8efc86', 31: 'eda3b0392e34506685ff5138d9a1ebd4', 32: 'fb9f79347943c50597e278e1be6ae562', 33: 'c7f16ff078af3f74a214901ba7efa3b5', 34: '414891f4e1b83a2a8fd1a580fad5958b', 35: 'd5abc2feb70b04da6b654ff0b24ac2eb', 36: 'aac8f5cbc031e52011708cd0939569e7', 37: '81292ba3a05c353bbbb08bdb7d6280a2', 38: 'de129fd4603b6f761c68b6bfcf2fa42f', 39: 'df3cf7bc0b99fe1f68c0ba1a78ce3a6c', 40: 'efefb73c55476f269f91b2b024760f47', 41: 'a8bb04eff0609cdb6d9736db02f5a6cf', 42: '8c2a22862bb4f5592f2b0ffac9075e69', 43: '18cf36bf4a8317695925916da1761922', 44: '0464d8c7aeaeee34ef9cd80d18f7d44e', 45: '18e850ebc701032f369e7c49d29beb89', 5: 'ac36d2bf39458752d569b6e25fd694dc', 81: 'af386e70331a520287001602f2d18d95', 53: 'ea77f0ea9880feabadb055d50af58ffa', 69: '0464d8c7aeaeee34ef9cd80d18f7d44e', 59: 'e28d72929585961d4e56ab9f55955145', 64: 'Retry', 103: '72319444be332681abb1ff4b6156cdfc', 11: '76c8dff61ddde16d97cbad613f25725d', 84: 'eda3b0392e34506685ff5138d9a1ebd4', 88: 'ac36d2bf39458752d569b6e25fd694dc', 87: 'de129fd4603b6f761c68b6bfcf2fa42f', 92: 'efefb73c55476f269f91b2b024760f47', 72: 'Retry', 67: '18e850ebc701032f369e7c49d29beb89', 48: '9b3e7ad1f0332971ee3b9b20b3a317fe', 46: '268afae1ece4c9af4ab76fa7299677a766e9e1debb36785f726de806e548f250', 108: '6bd51da3a7a050044571b6a42d2c263c', 98: 'ea77f0ea9880feabadb055d50af58ffa', 106: '60cef7cad04f7567cf3182540b874a36', 95: '0625637adf4f30194bf27bddd839d16b', 94: 'RetryNot_Present', 56: 'de129fd4603b6f761c68b6bfcf2fa42f', 19: 'fb9f79347943c50597e278e1be6ae562', 107: 'ea77f0ea9880feabadb055d50af58ffa', 0: '60cef7cad04f7567cf3182540b874a36', 70: 'Retry', 68: 'eda3b0392e34506685ff5138d9a1ebd4', 51: 'efefb73c55476f269f91b2b024760f47', 97: '81292ba3a05c353bbbb08bdb7d6280a2', 85: 'Retry', 104: 'c7f16ff078af3f74a214901ba7efa3b5', 57: 'e58fee2888199e3882757987ffe8c8de', 62: 'Retry', 77: '5fa9a92b7ff0ec79a0aaddf8affaf88713dc44a700927c3bb016b0f5cc494f4f22affeb85c718f46555533722dfd4254', 52: '9b3e7ad1f0332971ee3b9b20b3a317fe', 20: '412baa92fa780a43195045fed27b241e9b3e7ad1f0332971ee3b9b20b3a317feNot_Present', 1: 'c7f16ff078af3f74a214901ba7efa3b5', 4: 'e58fee2888199e3882757987ffe8c8de', 6: 'fb9f79347943c50597e278e1be6ae562', 99: '72319444be332681abb1ff4b6156cdfc', 80: 'acf0b819992e4f5669918e957bdc41b1', 17: 'de129fd4603b6f761c68b6bfcf2fa42f', 83: 'Retry', 55: 'Retry', 78: '72319444be332681abb1ff4b6156cdfc', 89: 'cf2e001fc76c9357b168373c469a9cd4', 21: '8c2a22862bb4f5592f2b0ffac9075e69', 101: '414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0', 90: 'fb9f79347943c50597e278e1be6ae562', 16: '6bd51da3a7a050044571b6a42d2c263c', 79: 'Retry', 60: 'e28d72929585961d4e56ab9f55955145', 74: 'Retry', 9: '13018a28b3fd510d378ec6dc642d8d8e0766dfbd9865eadeebf3c456952cac3b0acbdd79a021220384e019379a5ded3edf3cf7bc0b99fe1f68c0ba1a78ce3a6c3c957577cfc05101c7901e761a1e255b38a07516ec977f4cdd6fbf4a2194487f', 100: 'c7f16ff078af3f74a214901ba7efa3b5', 73: 'e58fee2888199e3882757987ffe8c8de', 3: 'fb9f79347943c50597e278e1be6ae562', 86: '18cf36bf4a8317695925916da1761922', 65: '674ab49463bf45e2d554744133538ac3', 91: '60de79bd0b8c4e43e17b811c1ec55d06', 93: 'Retry', 47: '60de79bd0b8c4e43e17b811c1ec55d06', 96: 'de129fd4603b6f761c68b6bfcf2fa42f', 10: 'ac36d2bf39458752d569b6e25fd694dc', 22: 'fb9f79347943c50597e278e1be6ae562', 102: '414891f4e1b83a2a8fd1a580fad5958bbc4de9c73a7c59fd25b78cdedf6583c0', 13: 'e28d72929585961d4e56ab9f55955145Not_Present', 18: 'Retry', 105: 'efefb73c55476f269f91b2b024760f47', 111: 'fb9f79347943c50597e278e1be6ae562', 82: 'efefb73c55476f269f91b2b024760f47', 66: 'Retry', 71: 'fb9f79347943c50597e278e1be6ae562', 15: '7de81776b97131ff731908c313e4c8fe', 75: 'Retryac36d2bf39458752d569b6e25fd694dcd1009e329a05c4da360bef7ba3e8cc33Retrya6d80fd65ca19f00f324491f347ced3a', 49: '0766dfbd9865eadeebf3c456952cac3b13018a28b3fd510d378ec6dc642d8d8eac36d2bf39458752d569b6e25fd694dc66e9e1debb36785f726de806e548f250', 12: 'abdb0780892382af07642a04cde7ae05', 14: 'af386e70331a520287001602f2d18d95', 54: 'ea77f0ea9880feabadb055d50af58ffa', 63: '37065b004931bfc16f0e947ac5d065422db3a95aa8edd525f09472c86db8d30438a07516ec977f4cdd6fbf4a2194487f0766dfbd9865eadeebf3c456952cac3b8ba3269b8dc5e197b35627bf56f73b5d296144971ad86b500b808d37560efd6c', 8: '37065b004931bfc16f0e947ac5d06542', 7: '83d6758cfb6e98dfe9fcb90b3b8efc86', 2: 'a6d80fd65ca19f00f324491f347ced3aRetry13018a28b3fd510d378ec6dc642d8d8e296144971ad86b500b808d37560efd6cNot_Present', 58: '18cf36bf4a8317695925916da1761922', 76: '8424b082bea9aac9a92c1425022e9116', 109: 'ac36d2bf39458752d569b6e25fd694dc', 50: 'e28d72929585961d4e56ab9f55955145Not_Present', 110: '18cf36bf4a8317695925916da1761922', 61: '81292ba3a05c353bbbb08bdb7d6280a2'}
