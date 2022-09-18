@@ -2,13 +2,24 @@ import hashlib
 import random
 import threading
 
-n=5
-for i in range(n):
-  print(i)
-  if i%2 == 0: 
-    i=i-2
-    print(f" {i} cxedc")
-    continue
+# n=5
+# for i in range(n):
+#   print(i)
+#   if i%2 == 0: 
+#     i=i-2
+#     print(f" {i} cxedc")
+#     continue
+
+import concurrent.futures
+
+def foo(bar):
+    print('hello {}'.format(bar))
+    return 'foo'
+
+with concurrent.futures.ThreadPoolExecutor() as executor:
+    future = executor.submit(foo, 'world!')
+    return_value = future.result()
+    print(return_value)
 
 #This code was contributed by Sachin Negi
 

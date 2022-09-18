@@ -1,11 +1,10 @@
-from email import message
-from email.errors import MessageError
 import socket
 import string 
 import threading
 import hashlib
 import random
 import time
+import concurrent.futures
 from collections import OrderedDict
 
 n = 5
@@ -174,10 +173,23 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
     data_to_send = cache.get(int(request[1]))
     # if not in cache brodcast request to all clients
     # and update cache
-    if(data_to_send == "-1"):
-        # while busy == True:
-        #     _ = 1
-        data_to_send = handle_request(int(request[2]), int(temp[1]), UDPServerSocket_2)
+
+
+
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        future = executor.submit(handle_request, int(request[2]), int(temp[1]), UDPServerSocket_2)
+        data_to_send = future.result()
+        print(data_to_send)
+
+
+
+    # if(data_to_send == "-1"):
+        # data_to_send = handle_request(int(request[2]), int(temp[1]), UDPServerSocket_2)
+
+
+
+
+
 
     print(f" {temp} {request[1]} ")
 

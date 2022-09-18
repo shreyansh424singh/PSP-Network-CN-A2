@@ -80,6 +80,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
             if(temp[0] != "Retry" or temp[1] != "Retry"): 
                 client_data[index][int(temp[0])] = temp[1] 
                 print(f"Client {index} recieved {temp[1]} for query {temp[0]} {x} ")
+                if(x != int(temp[0])): print("##########################################")
         except:
             _ = 0
 
