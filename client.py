@@ -130,9 +130,10 @@ def ans_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
     temp = (msgFromServer.decode()).split()
 
     if(temp[0] == "Close"):
+        time.sleep(10)
         print("hey")
-        tcp_socket.close()
-        udp_socket.close()
+        # tcp_socket.close()
+        # udp_socket.close()
         return
 
     if(temp[0] != "Chunk_Request_S"): 

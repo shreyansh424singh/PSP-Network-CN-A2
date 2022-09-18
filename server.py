@@ -5,7 +5,6 @@ import threading
 import hashlib
 import random
 import time
-import concurrent.futures
 from collections import OrderedDict
 
 n = 5
@@ -150,7 +149,7 @@ def handle_request(client_id: int, packet_id: int, UDPServerSocket_2: socket.soc
 
 # handles queries from client, brodcast to all clients then send back to client
 def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_2: socket.socket, UDPServerSocket_1: socket.socket, UDPServerSocket_2: socket.socket):
-    global data, total_recieved
+    global data, total_recieved, socket_list_tcp
 
     # listen query from clients
     client_req, _ = UDPServerSocket_1.recvfrom(1024)
@@ -201,7 +200,7 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
 
     print(f" {temp} {request[1]} ")
 
-    data_to_send = data[int(temp[1])]
+    data_to_send = socket_list_tcp[int(temp[1])]
     cache.put(int(temp[1]), data_to_send)
     data_to_send = "#" + data_to_send + "#"
     data_to_send = request[1] + data_to_send
@@ -245,11 +244,12 @@ def send_chunks(port1, port2):
     print(f"TCP server up with port no {port1} and {localIP}")
 
     connectionSocket, _ = TCPServerSocket.accept()
-    socket_list_tcp.append(connectionSocket)
+    # socket_list_tcp.append(connectionSocket)
 
 
     TCPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
     TCPServerSocket_2.bind((localIP, port2))
+    socket_list_tcp = data
     TCPServerSocket_2.listen(n)
     connectionSocket_2, _ = TCPServerSocket_2.accept()
     socket_list_tcp_2.append(connectionSocket_2)
@@ -272,6 +272,8 @@ def send_chunks(port1, port2):
     while True:
         msg = connectionSocket.recv(1024).decode()
         if msg == "done": break
+
+    # delete data
 
     # handles queries from client, brodcast to all clients then send back to client
     handle_client(client_id, connectionSocket, connectionSocket_2, UDPServerSocket, UDPServerSocket_2)
