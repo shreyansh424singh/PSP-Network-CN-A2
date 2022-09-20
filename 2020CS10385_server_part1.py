@@ -32,6 +32,7 @@ class Cache_LRU:
         self.cache = OrderedDict()
         self.capacity = capacity
 
+    # retrive data from cache if exist else retun "-1"
     def get(self, k: int) -> string:
         lock.acquire()
         if k not in self.cache:
@@ -42,6 +43,7 @@ class Cache_LRU:
             lock.release()
             return self.cache[k]
 
+    # put data in cache. If cache gets full remove LRU data
     def put(self, k: int, v: string) -> None:
         lock.acquire()
         self.cache[k] = v
@@ -57,6 +59,7 @@ def read_file(f):
             break
         yield data
 
+# read file as 1024 sized chunks and store in list data
 def split_file(file_name, chunk_size):
     c = 0
     with open(file_name) as f:
@@ -94,6 +97,7 @@ def initial_send():
         message = connectionSocket.recv(bufferSize).decode()
         message = int(message)
         
+        # close the initial socket
         if message == -1:
             connectionSocket.close()
             TCPServerSocket.close()
@@ -105,6 +109,7 @@ def handle_request(client_id: int, packet_id: int, UDPServerSocket_2: socket.soc
 
     UDPServerSocket_2.settimeout(1)
 
+    # broadcast the request to all clients
     for i in range(n):
 
         if(i == client_id): continue
@@ -137,7 +142,6 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
     global data, total_recieved, socket_list_tcp
 
     # listen query from clients
-    time.sleep(0.005*n)
     client_req, _ = UDPServerSocket_1.recvfrom(1024)
     request = client_req.decode().split()
     
@@ -176,6 +180,7 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
         return
 
     try:
+        time.sleep(0.005*n)
         ack =  TCPServerSocket_1.recv(1024)
     except:
         TCPServerSocket_1.send(data_to_send.encode('utf-8', 'ignore'))
@@ -184,6 +189,7 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
     handle_client(index, TCPServerSocket_1, TCPServerSocket_2, UDPServerSocket_1, UDPServerSocket_2)
 
 
+# sends initial chunks to clients and initiate the sockets
 def send_chunks(port1, port2):
     global c, data, socket_list_tcp, socket_list_tcp_2, socket_list_udp, socket_list_udp_2
 

@@ -136,6 +136,7 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
     global data, total_recieved, socket_list_tcp
 
     # listen query from clients
+    time.sleep(0.005*n)
     client_req = TCPServerSocket_1.recv(1024)
     request = client_req.decode().split()
     

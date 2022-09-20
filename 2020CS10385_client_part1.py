@@ -36,6 +36,7 @@ def initial_rec():
     n = int(ports_data[0])
     data_size = int(ports_data[1])
 
+    # store the server and client ports
     for i in range(2*n):
         if(i<n): server_ports.append((int(ports_data[2*i+2]), int(ports_data[2*i+3])))
         else:    client_ports.append((int(ports_data[2*i+2]), int(ports_data[2*i+3])))
@@ -51,6 +52,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
     x = 0
     y = 0
 
+    # till client has all chunks
     while (len(client_data[index]) < data_size):
         x = random.randint(0, data_size-1)
 
@@ -62,6 +64,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
 
         msgFromServer = ()
 
+        # to know RTT of a particular chunk
         RTT_start_time = time.time()
 
         def try_reuest():
@@ -93,6 +96,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
 
         RTT_end_time = time.time()
 
+        # store RTT of each chunk for a client
         RTT[index][int(temp[0])] = RTT_end_time - RTT_start_time
         total_RTT += RTT_end_time - RTT_start_time
 
@@ -108,7 +112,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
         complete_data += client_data[index][i]
 
     print(f"md5 hash of client {index} {hashlib.md5(complete_data.encode()).hexdigest()}")
-    print(f"Time Taken by client {index} {time.time() - start_time} ")
+    # print(f"Time Taken by client {index} {time.time() - start_time} ")
 
     f = open(filename, "w")
     f.write(complete_data)
@@ -161,7 +165,7 @@ def ans_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
     ans_query(udp_socket, tcp_socket, index)
 
 
-
+# recieve initial chunks and initiate sockets 
 def handle(p1, p2, index):
     global client_data
     (port1, port2) = p1
