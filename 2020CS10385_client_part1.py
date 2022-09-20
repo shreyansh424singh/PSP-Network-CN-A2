@@ -108,7 +108,7 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
         complete_data += client_data[index][i]
 
     print(f"md5 hash of client {index} {hashlib.md5(complete_data.encode()).hexdigest()}")
-    # print(f"Time Taken {time.time() - start_time} ")
+    print(f"Time Taken by client {index} {time.time() - start_time} ")
 
     f = open(filename, "w")
     f.write(complete_data)
