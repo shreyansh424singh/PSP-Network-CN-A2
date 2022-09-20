@@ -2,6 +2,34 @@ import hashlib
 import random
 import threading
 
+5:  0.4466888904571533
+10: 1.2979216575622559 1.4529056549072266
+15: 1.236565113067627  1.5947792530059814
+20: 1.792374610900879
+30: 1.8806986808776855
+40: 2.4385862350463867
+50: 2.851842164993286
+
+# port_num = int(3000)
+#     for i in range(n):
+#         # temp1 = str(random.randint(1024, 49000))
+#         # temp2 = str(random.randint(1024, 49000))
+#         temp1 = port_num
+#         port_num += 1
+#         temp2 = port_num
+#         port_num += 1
+#         server_ports.append((temp1, temp2))
+#         t += " " + str(temp1) + " " + str(temp2)
+#     for i in range(n):
+#         # temp1 = str(random.randint(1024, 49000))
+#         # temp2 = str(random.randint(1024, 49000))
+#         temp1 = port_num
+#         port_num += 1
+#         temp2 = port_num
+#         port_num += 1
+#         client_ports.append((temp1, temp2))
+#         t += " " + str(temp1) + " " + str(temp2)
+
 # n=5
 # for i in range(n):
 #   print(i)

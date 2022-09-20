@@ -32,6 +32,10 @@ def initial_rec():
 
     client.send(str(-1).encode())
     client.close()
+    print("client ports")
+    print(client_ports)
+    print("server ports")
+    print(server_ports)
 
 # ask missing chunks from server
 def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
@@ -47,50 +51,64 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
         # if data is present with client
         if client_data[index].get(x) != None: continue  
 
+        print(f"client {index} has {len(client_data[index])} chunks ")
+
         # when data is not present, select a port at random to request
         temp = "Chunk_Request " + str(x) + " "+ str(index) + " "
+        print(f"{temp} ")
 
         msgFromServer = ()
-        def try_reuest():
-            nonlocal msgFromServer, y
-            y = random.randint(0, n-1)
-            udp_socket.sendto(temp.encode(), (SERVER, server_ports[index][0]))
-            try:
-                # ack from server
-                msgFromServer = udp_socket.recvfrom(1024)
-            except:
-                try_reuest()
-        try_reuest()
-        while(msgFromServer[0].decode() != "Chunk_Request_Ack"):
-            try_reuest()
+        y = random.randint(0, n-1)
+        tcp_socket.send(temp.encode())
+        # ack from server
+        msgFromServer = tcp_socket.recv(1024).decode().split('#')
+        print("ack recieved")
 
         # send ack to server using tcp
         temp = "Chunk_Request_Ack_Ack " + str(x) + " "
-        tcp_socket.send(temp.encode())
+        # udp_socket.sendto(temp.encode(), eval(msgFromServer[1]))
 
-        tcp_socket.settimeout(2)
-        try:
-            temp =  tcp_socket.recv(2048).decode().split('#')
-            if(temp[0] != "Retry" or temp[1] != "Retry"): 
-                client_data[index][int(temp[0])] = temp[1] 
-        except:
-            _ = 0
+        udp_socket.settimeout(2)
+        print(msgFromServer[1])
+        def try_recv():
+            nonlocal temp
+            try:
+                udp_socket.sendto(temp.encode(), eval(msgFromServer[1]))
+                temp, _ =  udp_socket.recvfrom(2048)
+                temp = temp.decode().split('#')
+                if(temp[0] != "Retry" or temp[1] != "Retry"): 
+                    client_data[index][int(temp[0])] = temp[1] 
+                udp_socket.sendto("Data Recieved".encode(), eval(msgFromServer[1]))
+                print(f"Client {index} for query {temp[0]} {x}  recieved {temp[1][0:10]}")
+            except:
+                time.sleep(2)
+                print("trying")
+                try_recv()
+        try_recv()
 
-        tcp_socket.send("OK".encode())
+        udp_socket.sendto("OK".encode(), eval(msgFromServer[1]))
+        print("OK")
 
-# send ack to server that all data recieved
+    # need to send ack to server that all chunks recieved
+
+    print(f"Client {index} has recieved all data")
+
+
     temp = "Done Client " + str(index)
-    udp_socket.sendto(temp.encode(), (SERVER, server_ports[index][0]))    
 
-    filename = "client" + str(index) + ".txt"
+    tcp_socket.send(temp.encode())    
+
+    filename = "S_client" + str(index) + ".txt"
     complete_data = ""
     for i in range(data_size):
         complete_data += client_data[index][i]
 
     print(f"md5 hash of client {index} {hashlib.md5(complete_data.encode()).hexdigest()}")
+    # print(client_data[index])
 
     f = open(filename, "w")
     f.write(complete_data)
+    f.write(hashlib.md5(complete_data.encode()).hexdigest())
     f.close()
 
     tcp_socket.close()
@@ -102,14 +120,20 @@ def ask_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
 def ans_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
     global client_data
 
-    msgFromServer, addr = udp_socket.recvfrom(1024)
+    msgFromServer = tcp_socket.recv(1024)
+    if(len(msgFromServer) < 2): 
+        return
     # ack
-    udp_socket.sendto("Request recieved".encode(), addr)
+    tcp_socket.send("Request recieved".encode())
 
-    temp = (msgFromServer.decode()).split()
+    print(f"request recieved {msgFromServer} ")
+
+    temp = (msgFromServer.decode()).split('#')
 
     if(temp[0] == "Close"):
-        time.sleep(0.1)
+        time.sleep(10)
+        # tcp_socket.close()
+        # udp_socket.close()
         return
 
     if(temp[0] != "Chunk_Request_S"): 
@@ -121,15 +145,17 @@ def ans_query(udp_socket: socket.socket, tcp_socket: socket.socket, index: int):
     else:   
         data_send = client_data[index].get(int(temp[1]))
 
-    try:
-        tcp_socket.send(data_send.encode())
-    except:
-        return
+    print(f"data to send {data_send[0:10]} ")
 
-    tcp_socket.settimeout(1)
+    tcp_socket.send(data_send.encode())
+
+    print("Sent successfully")
+
+    udp_socket.settimeout(1)
+
     message = ""
     try:
-        message = tcp_socket.recv(1024).decode()
+        message, _ = udp_socket.recvfrom(1024).decode()
     except:
         if(message != "OK"): 
             _ = 0
@@ -170,11 +196,13 @@ def handle(p1, p2, index):
 
      # initial data for clients
     num_packets = client_tcp_1.recv(1024).decode()
+    print(num_packets)
     client_tcp_1.send("ok".encode())
     for i in range(int(num_packets)):
         incoming_data = client_tcp_1.recv(2048).decode()
         client_tcp_1.send("ok".encode())
         temp = incoming_data.split('#')
+        # print(temp)
         client_data[index][int(temp[0])] = temp[1]
 
     client_tcp_1.send("done".encode())
@@ -184,25 +212,24 @@ def handle(p1, p2, index):
     client_thread_1.start()
     client_thread_2.start()
 
-    client_thread_1.join()
-    client_thread_2.join()
+    # client_tcp_1.close()
+    # client_tcp_2.close()
+    # client_udp_1.close()
+    # client_udp_2.close()
 
-threads = []
+
 # connect to n clients using threads
 def start():
     for i in range(n):
         thread = threading.Thread(target=handle, args=(server_ports[i], client_ports[i], i))
         thread.start()
-        threads.append(thread)
-    for i in range(n):
-        threads[i].join()
 
 def main(): 
     global client_data
     initial_rec()
     client_data = [dict() for x in range(n)]
+    print(n)
+    print(data_size)
     start()
 
-start_time = time.time()
 main()
-print(f"Time Taken {time.time() - start_time} ")

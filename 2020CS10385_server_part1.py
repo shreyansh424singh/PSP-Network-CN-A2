@@ -7,7 +7,7 @@ import random
 import time
 from collections import OrderedDict
 
-n = 10
+n = 5
 total_recieved = 0
 c = 0
 HEADER = 1024
@@ -114,7 +114,7 @@ def handle_request(client_id: int, packet_id: int, UDPServerSocket_2: socket.soc
         
         # ack from client
         try:
-            msgRecieved, _ = UDPServerSocket_2.recvfrom(1024)
+            _, _ = UDPServerSocket_2.recvfrom(1024)
         except:
             continue
 
