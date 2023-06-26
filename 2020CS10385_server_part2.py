@@ -22,17 +22,18 @@ client_ports = []
 socket_list_tcp = []
 socket_list_tcp_2 = []
 
+socket_list_udp_2 = []
+
 busy = False
 lock = threading.Lock()
 
-class Cache_LRU:
+class LRUCache:
 
  # initialising capacity
     def __init__(self, capacity: int):
         self.cache = OrderedDict()
         self.capacity = capacity
 
-    # retrive data from cache if exist else retun "-1"
     def get(self, k: int) -> string:
         lock.acquire()
         if k not in self.cache:
@@ -43,7 +44,6 @@ class Cache_LRU:
             lock.release()
             return self.cache[k]
 
-    # put data in cache. If cache gets full remove LRU data
     def put(self, k: int, v: string) -> None:
         lock.acquire()
         self.cache[k] = v
@@ -59,7 +59,6 @@ def read_file(f):
             break
         yield data
 
-# read file as 1024 sized chunks and store in list data
 def split_file(file_name, chunk_size):
     c = 0
     with open(file_name) as f:
@@ -97,7 +96,6 @@ def initial_send():
         message = connectionSocket.recv(bufferSize).decode()
         message = int(message)
         
-        # close the initial socket
         if message == -1:
             connectionSocket.close()
             TCPServerSocket.close()
@@ -107,27 +105,23 @@ def initial_send():
 # Brodcast request to all clients and return data
 def handle_request(client_id: int, packet_id: int, UDPServerSocket_2: socket.socket) -> string:
 
-    UDPServerSocket_2.settimeout(1)
-
-    # broadcast the request to all clients
     for i in range(n):
 
         if(i == client_id): continue
-        message = "Chunk_Request_S  " + str(packet_id) + " "
-        UDPServerSocket_2.sendto(message.encode(), (localIP, client_ports[i][1]))
+        message = "Chunk_Request_S#" + str(packet_id) + "#" + str(UDPServerSocket_2.getsockname()) + "#"
+        socket_list_tcp_2[i].send(message.encode())
         
         # ack from client
         try:
-            _, _ = UDPServerSocket_2.recvfrom(1024)
+            msgRecieved = socket_list_tcp_2[i].recv(1024)
         except:
             continue
 
-        data_recieved = "data"
         try:
-            data_recieved = socket_list_tcp_2[i].recv(1024).decode().split('#')
+            data_recieved, addr = UDPServerSocket_2.recvfrom(1024).decode().split('#')
         except:
             continue
-        socket_list_tcp_2[i].send("OK".encode())
+        UDPServerSocket_2.sendto("OK".encode(), addr)
 
         if(data_recieved[0] == "Not_Present"):
             continue
@@ -142,23 +136,25 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
     global data, total_recieved, socket_list_tcp
 
     # listen query from clients
-    client_req, _ = UDPServerSocket_1.recvfrom(1024)
+    client_req = TCPServerSocket_1.recv(1024)
     request = client_req.decode().split()
     
     if(request[0] == "Done"):
         total_recieved += 1
         return
 
-    temp = "Chunk_Request_Ack"
-    UDPServerSocket_1.sendto(temp.encode(), (localIP, client_ports[index][0]))
+    temp = "Chunk_Request_Ack#" + str(UDPServerSocket_1.getsockname())
+    TCPServerSocket_1.send(temp.encode())
+    time.sleep(0.002)
 
     # check ack from client using tcp and timeout , recurse
-    TCPServerSocket_1.settimeout(1)
+    UDPServerSocket_1.settimeout(1)
     try:
-        temp = TCPServerSocket_1.recv(1024).decode().split()
+        temp, addr = UDPServerSocket_1.recvfrom(1024)
+        temp = temp.decode().split()
     except:
         handle_client(index, TCPServerSocket_1, TCPServerSocket_2, UDPServerSocket_1, UDPServerSocket_2)
-        
+
     try:
         _ = int(request[2]) + int(temp[1]) 
     except:
@@ -172,22 +168,24 @@ def handle_client(index: int, TCPServerSocket_1: socket.socket, TCPServerSocket_
     cache.put(int(temp[1]), data_to_send)
     data_to_send = "#" + socket_list_tcp[int(temp[1])] + "#" + data_to_send
     data_to_send = request[1] + data_to_send
-    try:
-        TCPServerSocket_1.send(data_to_send.encode('utf-8', 'ignore'))
-    except:
-        TCPServerSocket_1.close()
-        return
+    def try_send():
+        UDPServerSocket_1.sendto(data_to_send.encode('utf-8', 'ignore'), addr)
+        try:
+            msg, _ = UDPServerSocket_1.recvfrom(1024)
+        except:
+            try_send()
+    try_send()
 
     try:
-        ack =  TCPServerSocket_1.recv(1024)
+        # ack from client
+        ax =  UDPServerSocket_1.recv(1024)
     except:
-        TCPServerSocket_1.send(data_to_send.encode('utf-8', 'ignore'))
+        UDPServerSocket_1.send(data_to_send.encode('utf-8', 'ignore'))
 
     # recurse
     handle_client(index, TCPServerSocket_1, TCPServerSocket_2, UDPServerSocket_1, UDPServerSocket_2)
 
 
-# sends initial chunks to clients and initiate the sockets
 def send_chunks(port1, port2):
     global c, data, socket_list_tcp, socket_list_tcp_2, socket_list_udp, socket_list_udp_2
 
@@ -203,7 +201,11 @@ def send_chunks(port1, port2):
     TCPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
     TCPServerSocket.bind((localIP, port1))
     TCPServerSocket.listen(n)
+
     connectionSocket, _ = TCPServerSocket.accept()
+    # socket_list_tcp.append(connectionSocket)
+
+
     TCPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
     TCPServerSocket_2.bind((localIP, port2))
     socket_list_tcp = data
@@ -214,8 +216,10 @@ def send_chunks(port1, port2):
 
     UDPServerSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
     UDPServerSocket.bind((localIP, port1))
+
     UDPServerSocket_2 = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
     UDPServerSocket_2.bind((localIP, port2))
+    socket_list_udp_2.append(UDPServerSocket_2)
 
 # initial send
     connectionSocket.send(str(num_packets).encode())
@@ -236,12 +240,13 @@ def send_chunks(port1, port2):
         message = "Close "
         for i in range(n):
             UDPServerSocket_2.sendto(message.encode(), (localIP, client_ports[i][1]))
-    TCPServerSocket.close()
-    TCPServerSocket_2.close()
-    connectionSocket.close
-    connectionSocket_2.close
-    UDPServerSocket.close()
-    UDPServerSocket_2.close()
+    # TCPServerSocket.close()
+    # TCPServerSocket_2.close()
+    # connectionSocket.close()
+    # connectionSocket_2.close()
+    # UDPServerSocket.close()
+    # UDPServerSocket_2.close()
+
 
 threads = []
 # connect to n clients using threads
@@ -253,17 +258,18 @@ def start():
     for i in range(n):
         threads[i].join()
 
-cache = Cache_LRU(0)
+cache = LRUCache(0)
 
 def main():
     global data, cache
-    cache = Cache_LRU(n)
-
+    cache = LRUCache(n)
     file_name = "./A2_small_file.txt"
+    # file_name = "./test1.txt"
     split_file(file_name, 1024)
 
-    # temp = open("./A2_small_file.txt", 'r')
-    # print(hashlib.md5(temp.read().encode()).hexdigest())
+    temp = open("./A2_small_file.txt", 'r')
+    # temp = open("./test1.txt", 'r')
+    print(hashlib.md5(temp.read().encode()).hexdigest())
 
     initial_send()
     start()
